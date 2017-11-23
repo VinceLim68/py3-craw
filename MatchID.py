@@ -93,7 +93,7 @@ class MatchID(object):
     def update_id(self,dataid,comm_id):
         # 把匹配成功的commid写入表中
         sql_update = "UPDATE for_sale_property SET community_id = %s WHERE id = %s"
-        print(dataid)
+        #print(dataid)
         self.cursor.execute(sql_update,(comm_id,dataid))
         self.db.commit()
 
@@ -176,7 +176,7 @@ class MatchID(object):
         # self.close_db()
 
 if __name__=="__main__":
-    n = 0
+    n = 1500000
     step = 150000
     k = 0
     dupli = 1
@@ -187,4 +187,6 @@ if __name__=="__main__":
 
     for data in datas:
         commid = matchid.matchid(data)
+        if commid > 0 :
+            matchid.update_id(data['id'],commid)
         print(commid)
