@@ -85,7 +85,7 @@ class MatchID(object):
 
     def get_datas(self,n,step):
         #从数据库里按要求查出挂牌记录集        
-        sql = "SELECT id,title,community_name FROM for_sale_property WHERE community_id is NULL or community_id = 0 ORDER BY id LIMIT " + str(n) + "," + str(step)
+        sql = "SELECT id,title,community_name FROM for_sale_property WHERE community_id < 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
         self.cursor.execute(sql)
         datas = self.cursor.fetchall()
         return datas
@@ -176,10 +176,10 @@ class MatchID(object):
         # self.close_db()
 
 if __name__=="__main__":
-    n = 1500000
+    n = 0
     step = 150000
     k = 0
-    dupli = 1
+    matchnum = 0
 
     matchid = MatchID()
 
@@ -189,4 +189,6 @@ if __name__=="__main__":
         commid = matchid.matchid(data)
         if commid > 0 :
             matchid.update_id(data['id'],commid)
-        print(commid)
+            matchnum += 1
+            print(commid)
+    print('一共匹配了{0}个记录'.format(matchnum))
