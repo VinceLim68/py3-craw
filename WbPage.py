@@ -60,15 +60,17 @@ class WbPage(PageParser.PageParser):
                 if len(comms)>=2:
                     each_data['region'] = comms[1].get_text().strip()
             except Exception as e:
-                print('-------这个记录没有拿到小区的区域------------')
-                ToolsBox.printDic(each_data)
+                # print('-------这个记录没有拿到小区的区域------------')
+                # ToolsBox.printDic(each_data)
+                print(e)
 
             try:
                 if len(comms) >= 3:
                     each_data['community_address'] = comms[2].get_text().get_text().strip()
             except Exception as e:
-                print('-------这个记录没有拿到小区地址------------')
-                ToolsBox.printDic(each_data)
+                # print('-------这个记录没有拿到小区地址------------')
+                # ToolsBox.printDic(each_data)
+                print(e)
 
             each_data = self.pipe(each_data)
 
