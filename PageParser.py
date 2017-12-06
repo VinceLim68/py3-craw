@@ -164,6 +164,8 @@ class PageParser(object):
                 return False
             else:
                 datadic['price'] = round(float(datadic['total_price'] * 10000 / datadic['area']), 2)
+            if datadic['price'] < 1500 or datadic['price'] > 300000:
+                return False
             if datadic['community_name'] is None or len(datadic['community_name'])<=2:
                 return False
             if datadic['total_floor'] > 60: datadic['total_floor'] = 35         #把过高楼层的设为35层
