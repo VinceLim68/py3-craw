@@ -187,7 +187,7 @@ if __name__=="__main__":
 
     for data in datas:
         commid = matchid.matchid(data)
-        if commid > 0 :
+        if commid > 999 :
             matchid.update_id(data['id'],commid)
             matchnum += 1
             print(commid)

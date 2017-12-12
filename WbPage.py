@@ -38,7 +38,6 @@ class WbPage(PageParser.PageParser):
             each_data = {'advantage': '', 'builded_year': 0, 'spatial_arrangement': '', 'floor_index': 0,
                          'total_floor': 0, 'title': title.get_text(), 'details_url': title.get('href'),
                          'total_price': ToolsBox.strToInt(price.get_text())}
-
             details = house.select('p.baseinfo')
             spans = details[0].select('span')
             for span in spans:
@@ -47,8 +46,9 @@ class WbPage(PageParser.PageParser):
                 d1 = self.parse_item(string)
                 each_data = dict(each_data, **d1)
             comms = details[1].select('a')
-            each_data['community_name'] = comms[0].get_text()
 
+            each_data['community_name'] = comms[0].get_text()
+            # input(comms)
             if comms[0].get('href') is None:
                 each_data['comm_url'] = ''
             else:
@@ -58,6 +58,7 @@ class WbPage(PageParser.PageParser):
 
             try:
                 if len(comms)>=2:
+                    # input('region')
                     each_data['region'] = comms[1].get_text().strip()
             except Exception as e:
                 # print('-------这个记录没有拿到小区的区域------------')
@@ -66,7 +67,8 @@ class WbPage(PageParser.PageParser):
 
             try:
                 if len(comms) >= 3:
-                    each_data['community_address'] = comms[2].get_text().get_text().strip()
+                    # input('address')
+                    each_data['community_address'] = comms[2].get_text().strip()
             except Exception as e:
                 # print('-------这个记录没有拿到小区地址------------')
                 # ToolsBox.printDic(each_data)
@@ -84,7 +86,7 @@ class WbPage(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = WbPage()
-    url = 'http://xm.58.com/ershoufang/pn2/'
+    url = ' http://xm.58.com/ershoufang/pn9/?key=%E5%9B%BD%E8%B4%B8%E5%A4%A9%E7%90%B4%E6%B9%BE1%E6%9C%9F'
     html_cont = downloader.download(url)
     # print(type(html_cont))
     urls,datas = parser.page_parse(html_cont)
