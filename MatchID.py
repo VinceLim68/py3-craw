@@ -72,7 +72,8 @@ class MatchID(object):
                     for j in range(1,lenth):
                         # 只要找到一个，说明符合条件，即可退出循环
                         if formatch.find(key_words[j].upper()) >=0:     
-                            temp = [start,key_words[0].upper(),i[0]]    #key_words[0] = keyword , key_words[1]以后的是辅助字
+                            #如果是有关键字的，起始位置提前一点，这样会优先于没有关键字的匹配
+                            temp = [start-0.5,key_words[0].upper(),i[0]]    #key_words[0] = keyword , key_words[1]以后的是辅助字
                             getid.append(temp)                          #i[0]就是comm_id
                             break
                 # 如果没有辅助字
@@ -103,7 +104,7 @@ class MatchID(object):
         """
         处理 getid 中匹配成功不止一个id
         处理的原则是以起始字段在前的为准，
-        如果超始字段相同，则以字符串长的为准
+        如果起始字段相同，则以字符串长的为准
         如果起始与字串长度都一样，则人工判断
         """
         flag = False                            #标志位，如果能解析出唯一id,则标志位设成ture
@@ -184,11 +185,16 @@ if __name__=="__main__":
     matchid = MatchID()
 
     datas = matchid.get_datas(n,step)
-
+    # datas = [{'title':'漳州五洲城商铺，好铺养三代，开发商包租10年','community_name':'凯城花园'},
+    #          {'title': '厦门西南 别墅 东山岛 庄园御海 海上养生豪宅 东方夏威夷', 'community_name': '凯城花园'}]
     for data in datas:
         commid = matchid.matchid(data)
+        # print(commid)
         if commid > 999 :
             matchid.update_id(data['id'],commid)
             matchnum += 1
             print(commid)
     print('一共匹配了{0}个记录'.format(matchnum))
+
+    # for data in datas:
+    #     commid = matchid.matchid(data)

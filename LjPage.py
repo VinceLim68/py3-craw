@@ -35,6 +35,7 @@ class LjPage(PageParser.PageParser):
         houseinfo = soup.select("div.houseInfo")
         positionInfo = soup.select("div.positionInfo")
         totalprices = soup.select("div.totalPrice")
+        #
         for title, info, position, totalPrice in zip(titles, houseinfo, positionInfo, totalprices):
             each_data = {'builded_year': 0, 'spatial_arrangement': '', 'floor_index': 0, 'total_floor': 0}
             each_data['title'] = title.get_text()
@@ -65,6 +66,8 @@ class LjPage(PageParser.PageParser):
 
             each_data = self.pipe(each_data)
 
+            # page_datas.append(each_data)
+
             if each_data:
                 page_datas.append(each_data)
             else:
@@ -75,9 +78,9 @@ class LjPage(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = LjPage()
-    url = "http://xm.lianjia.com/ershoufang/pg1/"
+    url = "https://xm.lianjia.com/ershoufang/pg1/"
     html_cont = downloader.download(url)
-    # print(type(html_cont))
+    # print((html_cont))
     urls,datas = parser.page_parse(html_cont)
     # soup = parser.get_soup(html_cont)
     # datas = parser.parse_datas(soup)

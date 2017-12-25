@@ -135,14 +135,33 @@ class PageParser(object):
         
         return parse_dict
 
+    def excep(self,str):
+    #     去除不需要的小区
+        ex = ['厦门周边', '漳州', '泉州', '龙岩', '长泰', '角美', '漳州港', '南安', '晋江']
+        flag = False
+        for item in ex:
+            if item in str:
+                flag = True
+                break
+        return flag
+
     def pipe(self,datadic):
         # 有效性检验
         # 把小区的区块、板块及小区地址写到title里去
+
         title_temp = ''
         if 'region' in datadic.keys():
-            title_temp += ' r:' + datadic['region'].strip()
+            if self.excep(datadic['region'].strip()):
+                return False
+            else:
+                title_temp += ' r:' + datadic['region'].strip()
+
         if 'block' in datadic.keys():
-            title_temp += ' b:' + datadic['block'].strip()
+            if self.excep(datadic['block'].strip()):
+                return False
+            else:
+                title_temp += ' b:' + datadic['block'].strip()
+        # input('执行1')
         if 'community_address' in datadic.keys():
             title_temp += ' a:' + datadic['community_address'].strip()
         # if 'title' in datadic.keys():
@@ -153,10 +172,6 @@ class PageParser(object):
         if len(title2) > 50 :
             title2 = title2[:50]
         datadic['title'] = title2
-        # if ('title' in datadic.keys()) and len(datadic['title'].strip())+len(title_temp) < 50:
-        #     datadic['title'] = title_temp.strip() + datadic['title']
-        # else:
-        #     datadic['title'] = title_temp.strip()
 
         datadic['community_id'] = self.MI.matchid(datadic)
         if ('total_floor' in datadic.keys()) and ('total_price' in datadic.keys()) and ('area' in datadic.keys()) and ('community_name' in datadic.keys())  :
@@ -198,11 +213,15 @@ class PageParser(object):
         
 if __name__=="__main__":
 
-    url = 'http://xm.ganji.comhttp://aozdclick.ganji.com/gjadJump?gjadType=3&target=pZwY0jCfsL6VshI6UhGGshPfUiqhmyOMPitzPWDvn1E1nHDYXaOCIAYhuj6-n176mhNVuAm1niYYP1FhsH91rjnVP1I6nAcYuHnvPynzFWDkPjmQPHDOPWchnHEOnH03rj9zPW9vPH93FWcvnHm1PjnQnHEhP1utsgkVFWItnW7tsgkVFW0LPjmQmWmLsH9QnvEVPj6BnaY3rjmQsyELP1DLnAP6rymQuamQPjbznjmYn1mzP1DdFhIJUA-1IZGbFWDh0A7zmyYhnau8IyQ_FWEhnHDLsWcOsWDvnz3QPjchUMR_UamQFhOdUAkhUMR_UT&end=end'
-    print(len(url) )
+    # url = 'http://xm.ganji.comhttp://aozdclick.ganji.com/gjadJump?gjadType=3&target=pZwY0jCfsL6VshI6UhGGshPfUiqhmyOMPitzPWDvn1E1nHDYXaOCIAYhuj6-n176mhNVuAm1niYYP1FhsH91rjnVP1I6nAcYuHnvPynzFWDkPjmQPHDOPWchnHEOnH03rj9zPW9vPH93FWcvnHm1PjnQnHEhP1utsgkVFWItnW7tsgkVFW0LPjmQmWmLsH9QnvEVPj6BnaY3rjmQsyELP1DLnAP6rymQuamQPjbznjmYn1mzP1DdFhIJUA-1IZGbFWDh0A7zmyYhnau8IyQ_FWEhnHDLsWcOsWDvnz3QPjchUMR_UamQFhOdUAkhUMR_UT&end=end'
+    # print(len(url) )
 
 
-    # str2 = ’0123456789′
+    # str2 = '湖里大道′
+    p = PageParser()
+    flag = p.excep('厦门周边')
+    print(flag)
+    # print(p.excep('湖里大道′))
     # print str[0:3] #截取第一位到第三位的字符
     # parser = HtmlParser()
     # # str1 ='4层2008年建'
