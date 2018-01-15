@@ -181,10 +181,11 @@ class PageParser(object):
                 datadic['price'] = round(float(datadic['total_price'] * 10000 / datadic['area']), 2)
             if datadic['price'] < 1500 or datadic['price'] > 300000:
                 return False
+            datadic['community_name'] = datadic['community_name'].strip()
             if datadic['community_name'] is None or len(datadic['community_name'])<=2:
                 return False
-            if datadic['total_floor'] > 60: datadic['total_floor'] = 35         #把过高楼层的设为35层
-            datadic['community_name'] = datadic['community_name'].strip()
+            if datadic['total_floor'] > 60:
+                datadic['total_floor'] = 35         #把过高楼层的设为35层
             if datadic['total_price'] == 0 : return False                       #2016.9.13 价格为0的过滤掉
 
             if 'builded_year' in datadic.keys():

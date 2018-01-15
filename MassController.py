@@ -141,7 +141,7 @@ class MassController(object):
     def add_comm(self,data):
         #把添加小区列表提出来，因为会有不一样的需求，有的需要小区名称，有的需要小区链接
         comm_add = data['community_name']
-        if len(comm_add) > 11:
+        if len(comm_add) > 15:
             print('{0}---->名字过长的小区名将被忽略。'.format(comm_add))
         else:
             comm = self.comms.add_new_url(comm_add)
