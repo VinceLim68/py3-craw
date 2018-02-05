@@ -11,14 +11,13 @@ class CrawInit(object):
             print( "Connect failed")
         self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
         self.rows = []
+        self.where = 'first_acquisition_time < DATE_SUB(CURDATE(), INTERVAL 2 MONTH )'
 
     def get_datas(self):
         #从数据库里读取指定时期的记录
 
-        sql = """
-            SELECT * FROM for_sale_property where 
-            first_acquisition_time >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH )
-        """
+        sql = "SELECT * FROM for_sale_property where " + self.where
+        # print(sql)
         self.cur.execute(sql)
         self.rows = self.cur.fetchall()
         print(len(self.rows))
@@ -63,15 +62,27 @@ class CrawInit(object):
 
     def del_datas(self):
         # 删除记录
-        pass
+        sql = 'DELETE FROM for_sale_property WHERE ' + self.where
+        sta = self.cur.execute(sql)
+        if sta == 1:
+            print('删除成功')
+        else:
+            print('删除失败')
+        conn.commit()
 
     def close_db(self):
         self.cur.close()
         self.conn.close()
         return
 
+    def start(self):
+        self.get_datas()
+        self.insert_datas()
+        self.del_datas()
+        self.close_db()
+
 if __name__=="__main__":
     start = CrawInit()
     start.get_datas()
-    start.insert_datas()
-    start.close_db()
+    # for data in start.rows:
+    #     print(data)

@@ -9,6 +9,7 @@ class SF(MassController.MassController):
             "Origin":"http://esf.xm.fang.com",
             "Referer":"http://esf.xm.fang.com/"
         }
+        self.delay = 2
 
     def add_comm(self,data):
         #把添加小区列表提出来，因为会有不一样的需求，有的需要小区名称，有的需要小区链接
