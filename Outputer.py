@@ -29,8 +29,6 @@ class Outputer(object):
             Outputer.__instance = object.__new__(cls,*args,**kwd)
         return Outputer.__instance
 
-
-
     def collect_data(self,datas):
         # 清理重复数据
         if datas is None or len(datas) == 0:
@@ -105,7 +103,6 @@ class Outputer(object):
         return data_num
 
     def clear_datas(self):
-        # self.datas = []             #清洗后的数据
         self.raw_datas = []         #原始数据
         return
 
