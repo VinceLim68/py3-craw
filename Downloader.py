@@ -26,14 +26,16 @@ class Downloader(object):
         try:
             r = requests.get(url = url, headers = headers, 
                 timeout = 8, proxies = proxy)
-            if 400 <= r.status_code <500:
-                html = 404
-            elif 500 <= r.status_code <600:         #递归:服务器端出错时
-                if num_retries > 0:
-                    print('服务器瑞出现问题，将再下载{0}次'.format(num_retries-1))
-                    html = self.download(url,num_retries-1)
-                else:
-                    html = None
+            if 400 <= r.status_code < 600:
+                # html = 404
+                html = r.status_code
+                print('返回'+r.status_code)
+            # elif 500 <= r.status_code <600:         #递归:服务器端出错时
+            #     if num_retries > 0:
+            #         print('服务器瑞出现问题，将再下载{0}次'.format(num_retries-1))
+            #         html = self.download(url,num_retries-1)
+            #     else:
+            #         html = r.status_code
             else:
                 # requests 在解析页面时，如果title没有声明charset,会默认使用'ISO-8859-1'，造成解码错误
                 if r.encoding == 'ISO-8859-1':
@@ -42,6 +44,7 @@ class Downloader(object):
                     html = r.text
         except Exception as e:
             print("Request failed(在Downloader里): {0}".format(e))
+            # print("Request failed(在Downloader里): {0}".format(e))
             html = None
 
         # print('r.headers["content-type"]is {0}'.format(r.headers['content-type']))

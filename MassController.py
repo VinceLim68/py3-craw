@@ -68,17 +68,22 @@ class MassController(object):
         # 下载
         html_cont = self.downloader.download(new_url,headers=self.headers,
             proxy=proxy,num_retries=self.retry_times)
-        
+        # print(type(html_cont))
         # 对下载内容进行处理
         # 1、如果被404的处理
-        if html_cont == 404:                    
+        if type(html_cont)=='int' and (400 <= (html_cont) < 600):
+        # if html_cont == 404:
             self.HTTP404 += 1
+            # print('返回404码')
+            print("返回（在MassController里）: {0}".format(html_cont))
             time.sleep( 30 * self.HTTP404 )                             #被禁止访问了，消停一会
             if self.HTTP404 > self.HTTP404_stop:
                 input('你似乎被禁止访问了，按任意键继续......')
                 self.HTTP404 = 0
             else:
                 return self.craw_a_page(new_url)
+        # elif 500 <= html_cont <600:
+        #     print("返回（在MassController里）: {0}".format(html_cont))
         # 2、正常得到网页
         elif html_cont is not None:
             new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
@@ -102,6 +107,7 @@ class MassController(object):
                     with open('logtest.txt','a+') as fout:
                         fout.write('\n*******' + str(datetime.datetime.now()) + '*************')
                         fout.write('\n 本页面无数据:%s. \n' %new_url)
+                    self.nodata = 0
             else:                                                        # 正常情况，解析
                 print('本页面      datas:{0}，urls:{1}'.format(len(new_datas),len(new_urls)))
                 # 把页面链接放入url管理器
@@ -132,7 +138,21 @@ class MassController(object):
                 self.HTTP404 = 0                        #如果有数据，把self.HTTP404计数器清零
         # 3、html_cont内容是None，这是出现500以上的download失败
         else:
-            print('未能从服务器上下载{0}'.format(new_url))
+            print('不能从服务器上下载{0}'.format(new_url))
+            self.HTTP404 += 1
+            # print("返回（在MassController里）: {0}".format(html_cont))
+            time.sleep(15 * self.HTTP404)  # 被禁止访问了，消停一会
+            if self.HTTP404 > self.HTTP404_stop:
+                self.delay = input('连续不能获取页面内容，可点击上面链接检查，如无问题，输入延时秒数后，保留已解析的数据......')
+                if self.delay == '':
+                    self.delay = 0
+                else:
+                    self.delay = ToolsBox.strToInt(self.delay)
+                self.total = self.total + self.outputer.out_mysql()
+                self.HTTP404 = 0
+            else:
+                return self.craw_a_page(new_url)
+
 
         # 延时模块：放在最后，第一次抓取时不用延时
         if self.delay > 0 :
