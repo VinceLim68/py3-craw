@@ -64,6 +64,7 @@ class CrawInit(object):
         # 删除记录
         sql = 'DELETE FROM for_sale_property WHERE ' + self.where
         sta = self.cur.execute(sql)
+        print(sta)
         if sta == 1:
             print('删除成功')
         else:
@@ -84,8 +85,8 @@ class CrawInit(object):
 if __name__=="__main__":
     start = CrawInit()
     # start.del_datas()
-    # start.get_datas()
-    start.start()
+    start.get_datas()
+    # start.start()
     # start.insert_datas()
     # for data in start.rows:
     #     print(data)
