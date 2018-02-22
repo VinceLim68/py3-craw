@@ -4,7 +4,7 @@ class WB(MassController.MassController):
     def __init__(self, parseClass):
         super(WB, self).__init__(parseClass)
         self.comm_count = 1                         #计数：抓取小区的数量
-        self.delay = 0
+        self.delay = 1
         self.headers = {
             "Host": "xm.58.com",
         }
