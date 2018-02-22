@@ -23,7 +23,6 @@ class MatchID(object):
             MatchID.__instance = object.__new__(cls,*args,**kwd)
         return MatchID.__instance
 
-
     def get_comm_arr_fromMysql(self,pri):
         # 从comm表，生成comm数组
         # 按关键字进行了拆分，一个id会有多个关键字
@@ -53,16 +52,15 @@ class MatchID(object):
         # 轮询小区id与其关键字的对应数组
         for i in comm_arr:                              
             # i[1]=keywords ，关键字后带辅助字的，先将关键字与辅助字拆开
-            key_words = i[1].split("/")                 
-            
+            key_words = i[1].split("/")
+            lenth = len(key_words)      #根据lenth判断是否有辅助字
             # 在小区名称中查找关键字，不含辅助字
             start = commName.find(key_words[0].upper())         
             
             # 如果找到
             if start >= 0:
                 # 如果有带辅助字，必须同时匹配到辅助字才可以
-                lenth = len(key_words)
-                if lenth > 1:               
+                if lenth > 1:
                     if data['title']:
                         formatch = commName + data['title'].upper()
                     else:
@@ -80,13 +78,41 @@ class MatchID(object):
                 else:
                     temp = [start,key_words[0].upper(),i[0]]            
                     getid.append(temp)
-        
-        # 返回：[起始位置，关键字，id]
+            else:
+                # 如果没有匹配上，就到title里去找一下
+                if data['title']:
+                    formatch = commName + data['title'].upper()
+                else:
+                    formatch = commName
+                start1 = formatch.find(key_words[0].upper())
+
+                # 如果找到
+                if start1 >= 0:
+                    # lenth>1,表示有辅助字，必须同时匹配到辅助字才可以
+                    if lenth > 1:
+                        # 在formatch中查找辅助字
+                        for j in range(1, lenth):
+                            # 只要找到一个，说明符合条件，即可退出循环
+                            if formatch.find(key_words[j].upper()) >= 0:
+                                # 如果是有关键字的，起始位置提前一点，这样会优先于没有关键字的匹配
+                                temp = [start1 - 0.5, key_words[0].upper(),
+                                        i[0]]  # key_words[0] = keyword , key_words[1]以后的是辅助字
+                                getid.append(temp)  # i[0]就是comm_id
+                                break
+                    # 如果没有辅助字
+                    else:
+                        temp = [start1, key_words[0].upper(), i[0]]
+                        getid.append(temp)
+
+
+                # 返回：[起始位置，关键字，id]
         return getid
 
-    def get_datas(self,n,step):
+    def get_datas(self,n,step,tablename):
         #从数据库里按要求查出挂牌记录集        
-        sql = "SELECT id,title,community_name FROM for_sale_property WHERE community_id < 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
+        # sql = "SELECT id,title,community_name FROM for_sale_property WHERE community_id < 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
+        sql = "SELECT id,title,community_name FROM " + tablename + " WHERE community_id < 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
+
         self.cursor.execute(sql)
         datas = self.cursor.fetchall()
         return datas
@@ -97,8 +123,6 @@ class MatchID(object):
         #print(dataid)
         self.cursor.execute(sql_update,(comm_id,dataid))
         self.db.commit()
-
-
 
     def handle_match_mul(self,data,getid):
         """
@@ -139,7 +163,6 @@ class MatchID(object):
             return len(get)
         else:
             return first[2]
-
 
     def close_db(self):
         self.cursor.close()
@@ -184,7 +207,7 @@ if __name__=="__main__":
 
     matchid = MatchID()
 
-    datas = matchid.get_datas(n,step)
+    datas = matchid.get_datas(n,step,'allsales')
     # datas = [{'title':'漳州五洲城商铺，好铺养三代，开发商包租10年','community_name':'凯城花园'},
     #          {'title': '厦门西南 别墅 东山岛 庄园御海 海上养生豪宅 东方夏威夷', 'community_name': '凯城花园'}]
     for data in datas:
@@ -195,6 +218,6 @@ if __name__=="__main__":
             matchnum += 1
             print(commid)
     print('一共匹配了{0}个记录'.format(matchnum))
-
+    matchid.close_db()
     # for data in datas:
     #     commid = matchid.matchid(data)

@@ -22,7 +22,7 @@ class CrawInit(object):
         self.cur.execute(sql)
         # rows1 =
         self.maxd = self.cur.fetchall()[0]['maxd']
-        # print(maxd)
+        print(self.maxd)
         # i = 0
         # for date in self.rows:
         #     i += 1
