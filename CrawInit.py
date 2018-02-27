@@ -52,7 +52,7 @@ class CrawInit(object):
                     first_acquisition_time,from_,community_id) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
                 """
         for data in self.rows:
-            if date['first_acquisition_time'] > self.maxd:
+            if dat['first_acquisition_time'] > self.maxd:
                 # 如果日期比总库里的新才追加，总库根据日期来判断重复
                 try:
                     self.cur.execute(sql, (data['title'], data['area'], data['spatial_arrangement'], data['price'],
@@ -90,7 +90,7 @@ class CrawInit(object):
         sta = self.cur.execute(sql)
         print(sta)
         if sta >= 1:
-            print('删除成功')
+            print('删除成功{0}个'.format(sta))
         else:
             print('删除失败')
         self.conn.commit()

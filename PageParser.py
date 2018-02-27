@@ -182,7 +182,7 @@ class PageParser(object):
             if datadic['price'] < 1500 or datadic['price'] > 300000:
                 return False
             datadic['community_name'] = datadic['community_name'].strip()
-            if datadic['community_name'] is None or len(datadic['community_name'])<=2:
+            if datadic['community_name'] is None or len(datadic['community_name'])<2:
                 return False
             if datadic['total_floor'] > 60:
                 datadic['total_floor'] = 35         #把过高楼层的设为35层

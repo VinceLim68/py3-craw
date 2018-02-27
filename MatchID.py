@@ -117,12 +117,24 @@ class MatchID(object):
         datas = self.cursor.fetchall()
         return datas
 
-    def update_id(self,dataid,comm_id):
+    def update_id(self,dataid,comm_id,table):
         # 把匹配成功的commid写入表中
-        sql_update = "UPDATE for_sale_property SET community_id = %s WHERE id = %s"
+        sql_update = "UPDATE " + table + " SET community_id = %s WHERE id = %s"
         #print(dataid)
-        self.cursor.execute(sql_update,(comm_id,dataid))
-        self.db.commit()
+        try:
+            result = self.cursor.execute(sql_update,(comm_id,dataid))
+            self.db.commit()
+        except Exception as e:
+            print(e.args[0])
+            if e.args[0] == 1062:
+                # 如果重复就把它删除
+                sql_del = 'DELETE FROM ' + table + ' WHERE id = %s'
+                # print(sql_del)
+                self.cursor.execute(sql_del,(dataid))
+                self.db.commit()
+                print('成功删除{0}'.format(dataid))
+            result = False
+        return result
 
     def handle_match_mul(self,data,getid):
         """
@@ -199,25 +211,35 @@ class MatchID(object):
         return comm_id
         # self.close_db()
 
+    def get_and_update(self,tablename):
+        n = 0
+        step = 150000
+        datas = self.get_datas(n, step, tablename)
+        input('当前库为{0},共有{1)条记录待处理，按任意键继续....'.format(tablename,len(datas)))
+        for data in datas:
+            commid = self.matchid(data)
+            if commid > 999:
+                resu = self.update_id(data['id'], commid,tablename)
+                print('result is {0} from {1}'.format(resu,tablename))
+                if(resu):
+                    self.matchnum += 1
+                    print(commid)
+                else:
+                    print('记录{0}没改成，小区id是{1}'.format(data['id'],commid))
+
+    def matchall(self):
+        # 这是一个一次性计算所有未取得id记录的匹配模块
+
+        self.matchnum = 0
+        # 先从总库取
+        self.get_and_update('allsales')
+        print('一共匹配了{0}个记录'.format(self.matchnum))
+
+        # 再从当前库取
+        self.get_and_update('for_sale_property')
+        print('一共匹配了{0}个记录'.format(self.matchnum))
+        self.close_db()
 if __name__=="__main__":
-    n = 0
-    step = 150000
-    k = 0
-    matchnum = 0
 
     matchid = MatchID()
-
-    datas = matchid.get_datas(n,step,'allsales')
-    # datas = [{'title':'漳州五洲城商铺，好铺养三代，开发商包租10年','community_name':'凯城花园'},
-    #          {'title': '厦门西南 别墅 东山岛 庄园御海 海上养生豪宅 东方夏威夷', 'community_name': '凯城花园'}]
-    for data in datas:
-        commid = matchid.matchid(data)
-        # print(commid)
-        if commid > 999 :
-            matchid.update_id(data['id'],commid)
-            matchnum += 1
-            print(commid)
-    print('一共匹配了{0}个记录'.format(matchnum))
-    matchid.close_db()
-    # for data in datas:
-    #     commid = matchid.matchid(data)
+    matchid.matchall()
