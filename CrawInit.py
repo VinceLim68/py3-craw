@@ -52,7 +52,7 @@ class CrawInit(object):
                     first_acquisition_time,from_,community_id) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
                 """
         for data in self.rows:
-            if dat['first_acquisition_time'] > self.maxd:
+            if data['first_acquisition_time'] > self.maxd:
                 # 如果日期比总库里的新才追加，总库根据日期来判断重复
                 try:
                     self.cur.execute(sql, (data['title'], data['area'], data['spatial_arrangement'], data['price'],

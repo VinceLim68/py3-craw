@@ -15,10 +15,10 @@ class WB(MassController.MassController):
 
         while self.comms.has_new_url():
             comm = self.comms.get_new_url()
-            c1,c2 = self.comms.get_quantity()
-            comm_url = "http://xm.58.com/ershoufang/?key=" + (comm)
-            comm_url = quote(comm_url, safe='/:?=')
-            print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))
+            c1, c2 = self.comms.get_quantity()
+            # comm_url = "http://xm.58.com/ershoufang/?key=" + (comm)
+            comm_url = "http://xm.58.com/ershoufang/?key=" + quote(comm, safe='/:?=')
+            print('*******{0}/{1}:{2}*********'.format(self.comm_count, c1+c2, comm))
             url_list = []
             url_list.append(comm_url)
             self.craw_controller(url_list)
