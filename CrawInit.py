@@ -22,7 +22,7 @@ class CrawInit(object):
         self.cur.execute(sql)
         # rows1 =
         self.maxd = self.cur.fetchall()[0]['maxd']
-        print(self.maxd)
+        print('在allsales库中的最晚采集数据时间是{0}'.format(self.maxd))
         # i = 0
         # for date in self.rows:
         #     i += 1
@@ -39,7 +39,7 @@ class CrawInit(object):
         # print(sql)
         self.cur.execute(sql)
         self.rows = self.cur.fetchall()
-        print(len(self.rows))
+        print('从for_sale_property表中读取三个月内的数据有{0}条'.format(len(self.rows)))
 
     def insert_datas(self):
         # 把记录插入总库中
