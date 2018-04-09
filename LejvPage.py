@@ -9,7 +9,7 @@ class LejvPage(PageParser.PageParser):
             print("本页面没有翻页链接。")
         else:
             for link in pagelinks:
-                if link.has_attr('href'): new_urls.add(link['href'])
+                if link.has_attr('href'): new_urls.add('http:'+link['href'])
         return new_urls
 
     def parse_datas(self,soup):
@@ -64,4 +64,4 @@ if __name__ == "__main__":
     url = 'http://xm.esf.leju.com/house'
     html_cont = downloader.download(url)
     urls,datas = parser.page_parse(html_cont)
-    ToolsBox.priList(datas)
+    ToolsBox.priList(urls)

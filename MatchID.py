@@ -132,7 +132,7 @@ class MatchID(object):
                 # print(sql_del)
                 self.cursor.execute(sql_del,(dataid))
                 self.db.commit()
-                print('成功删除{0}'.format(dataid))
+                print('成功删除id为{0}的记录'.format(dataid))
             result = False
         return result
 
@@ -215,7 +215,7 @@ class MatchID(object):
         n = 0
         step = 150000
         datas = self.get_datas(n, step, tablename)
-        input('当前库为{0},共有{1)条记录待处理，按任意键继续....'.format(tablename,len(datas)))
+        input('当前库为{0},共有{1}条记录待处理，按任意键继续....'.format(tablename,len(datas)))
         for data in datas:
             commid = self.matchid(data)
             if commid > 999:

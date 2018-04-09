@@ -13,7 +13,7 @@ class CrawInit(object):
             print("Connect failed")
         self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
         self.rows = []
-        self.where = 'first_acquisition_time < DATE_SUB(CURDATE(), INTERVAL 3 month )'
+        self.where = 'first_acquisition_time <= DATE_SUB(CURDATE(), INTERVAL 3 month )'
         # self.where = '1=1'
 
     def gt_max_FAT(self):
