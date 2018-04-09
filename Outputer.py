@@ -71,6 +71,9 @@ class Outputer(object):
                     print(traceback.format_exc())
                     code, message = e.args
                     print(code,message)
+                    if e.args[0] == 1366:
+                        print(data['title'])
+
             except pymysql.err.InterfaceError as e:
                 # 有的时候长时间暂停，connect会断开，要重新连接一下
                 try:
