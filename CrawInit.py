@@ -23,14 +23,6 @@ class CrawInit(object):
         # rows1 =
         self.maxd = self.cur.fetchall()[0]['maxd']
         print('在allsales库中的最晚采集数据时间是{0}'.format(self.maxd))
-        # i = 0
-        # for date in self.rows:
-        #     i += 1
-        #     print(i)
-        #     if date['first_acquisition_time'] > maxd:
-        #         print('true')
-        #     else:
-        #         print('false')
 
     def get_datas(self):
         # 从数据库里读取指定时期的记录
