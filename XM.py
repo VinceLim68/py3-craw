@@ -1,11 +1,11 @@
 import MassController,XmhousePage,LejvPage,GanjiPage,MaitianPage
 num = 0
-# url=['http://esf.xmhouse.com/sell/t4_r_a_u_l_z_s_itp_b_it_if_ih_p-_ar-_pt_o_ps_2.html']
-# XM = MassController.MassController(XmhousePage.XmhousePage)
-# XM.total = num
-# XM.craw_controller(url)
-# # num += XM.total
-# num = XM.total + XM.outputer.out_mysql()
+url=['http://esf.xmhouse.com/sell/t4_r_a_u_l_z_s_itp_b_it_if_ih_p-_ar-_pt_o_ps_2.html']
+XM = MassController.MassController(XmhousePage.XmhousePage)
+XM.total = num
+XM.craw_controller(url)
+# num += XM.total
+num = XM.total + XM.outputer.out_mysql()
 print('==================厦门HOUSE网共抓取{0}个记录=================='.format(num))
 
 url = ['http://xm.esf.leju.com/house']

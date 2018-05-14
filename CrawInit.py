@@ -31,7 +31,7 @@ class CrawInit(object):
         # print(sql)
         self.cur.execute(sql)
         self.rows = self.cur.fetchall()
-        print('从for_sale_property表中读取三个月内的数据有{0}条'.format(len(self.rows)))
+        print('从for_sale_property表中读取三个月前的数据有{0}条'.format(len(self.rows)))
 
     def insert_datas(self):
         # 把记录插入总库中
@@ -43,6 +43,7 @@ class CrawInit(object):
                     total_floor,builded_year,advantage,total_price,details_url,community_name,
                     first_acquisition_time,from_,community_id) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
                 """
+        print('正在将数据插入allsales表中，请稍侯......')
         for data in self.rows:
             if data['first_acquisition_time'] > self.maxd:
                 # 如果日期比总库里的新才追加，总库根据日期来判断重复
@@ -54,7 +55,10 @@ class CrawInit(object):
                                            data['from_'], data['community_id']))
                     success = success + 1
                     self.conn.commit()
-                    print(success)
+                    # print(success)
+                    if success % 500 == 0:`
+
+                        print('已经成功插入{0}个记录...'.format(success))
                 except pymysql.err.IntegrityError as e:
                     if e.args[0] == 1062:
                         dupli = dupli + 1
@@ -78,11 +82,12 @@ class CrawInit(object):
 
     def del_datas(self):
         # 删除记录
+        print('正在从for_sale_property表中删除数据，请稍侯......')
         sql = 'DELETE FROM for_sale_property WHERE ' + self.where
         sta = self.cur.execute(sql)
-        print(sta)
+        # print(sta)
         if sta >= 1:
-            print('删除成功{0}个'.format(sta))
+            print('从for_sale_property表中删除成功{0}个'.format(sta))
         else:
             print('删除失败')
         self.conn.commit()
