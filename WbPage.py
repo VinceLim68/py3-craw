@@ -23,7 +23,10 @@ class WbPage(PageParser.PageParser):
             print("本页面没有翻页链接。")
         else:
             for link in pages:
-                new_urls.add(link.get('href'))
+                if 'http://xm.58.com' in link.get('href'):
+                    new_urls.add(link.get('href'))
+                else:
+                    new_urls.add('http://xm.58.com'+link.get('href'))
         return new_urls
 
     def parse_datas(self,soup):

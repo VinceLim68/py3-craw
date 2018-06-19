@@ -105,7 +105,6 @@ if __name__ == "__main__":
         "Host": "xm.anjuke.com",
         "Referer": "http://xm.anjuke.com/",
         'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/7.0)',
-
     }
     html_cont = downloader.download(url,headers=headers)
     # print(html_cont)

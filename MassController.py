@@ -101,6 +101,7 @@ class MassController(object):
                 self.nodata += 1                
                 if self.nodata < self.nodata_stop:
                     print("本页面未解析出数据，可再试{0}次".format(self.nodata_stop-self.nodata))
+                    print(html_cont)
                     time.sleep(random.randint(3,7))
                     return self.craw_a_page(new_url)
                 else:

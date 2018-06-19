@@ -57,7 +57,7 @@ class PageParser(object):
         elif '（' in item:      #2016.12.1增加全角的（
             sep = '（'    
         else:
-            sep = '/'     
+            sep = '/'
         try:
             after_sep = (item.split(sep)[1]) if sep in item else item
             # print(after_sep)
@@ -161,7 +161,6 @@ class PageParser(object):
                 return False
             else:
                 title_temp += ' b:' + datadic['block'].strip()
-        # input('执行1')
         if 'community_address' in datadic.keys():
             title_temp += ' a:' + datadic['community_address'].strip()
         # if 'title' in datadic.keys():
@@ -171,7 +170,8 @@ class PageParser(object):
             title2 = title_temp.strip()
         if len(title2) > 50 :
             title2 = title2[:50]
-        datadic['title'] = title2
+        datadic['title'] = title2.strip()
+        datadic['community_name'] = datadic['community_name'].strip()
 
         datadic['community_id'] = self.MI.matchid(datadic)
         if ('total_floor' in datadic.keys()) and ('total_price' in datadic.keys()) and ('area' in datadic.keys()) and ('community_name' in datadic.keys())  :
@@ -181,7 +181,7 @@ class PageParser(object):
                 datadic['price'] = round(float(datadic['total_price'] * 10000 / datadic['area']), 2)
             if datadic['price'] < 1500 or datadic['price'] > 300000:
                 return False
-            datadic['community_name'] = datadic['community_name'].strip()
+
             if datadic['community_name'] is None or len(datadic['community_name'])<2:
                 return False
             if datadic['total_floor'] > 60:

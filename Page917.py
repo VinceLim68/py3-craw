@@ -24,7 +24,8 @@ class www917Page(PageParser.PageParser):
             print("本页面没有翻页链接。")
         else:
             for url in pages:
-                new_urls.add(' http://www.917.com' + url.get('href'))
+                if 'javascript' not in url.get('href'):
+                    new_urls.add(' http://www.917.com' + url.get('href'))
         return new_urls
 
     def parse_datas(self,soup):
@@ -39,7 +40,7 @@ class www917Page(PageParser.PageParser):
         for title, item, price, more in zip(titles, items, prices, mores):
             each_data = dict(builded_year=0, spatial_arrangement='', floor_index=0, total_floor=0)
             each_data['title'] = title.get_text()
-            each_data['details_url'] = 'http://www.917.com/' + title.get('href')
+            each_data['details_url'] = 'http://www.917.com' + title.get('href')
 
             item1 = item.select('p')
             houseinfo = ToolsBox.clearStr(item1[1].get_text()).split('|')
