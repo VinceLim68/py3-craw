@@ -1,4 +1,5 @@
 import MassController,AjkPage
+from urllib import parse
 
 class AJK(MassController.MassController):
     def __init__(self, parseClass):
@@ -15,7 +16,7 @@ class AJK(MassController.MassController):
         while self.comms.has_new_url():
             comm = self.comms.get_new_url()
             c1,c2 = self.comms.get_quantity()
-            comm_url = 'http://xm.anjuke.com/sale/p1-rd1/?kw=' + comm + '&from_url=kw_final#filtersort'
+            comm_url = 'http://xm.anjuke.com/sale/p1-rd1/?kw=' + parse.quote(comm) + '&from_url=kw_final#filtersort'
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))
             url_list = []
             url_list.append(comm_url)

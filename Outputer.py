@@ -73,7 +73,6 @@ class Outputer(object):
                     print(code,message)
                     if e.args[0] == 1366:
                         print(data['title'])
-
             except pymysql.err.InterfaceError as e:
                 # 有的时候长时间暂停，connect会断开，要重新连接一下
                 try:
@@ -82,12 +81,14 @@ class Outputer(object):
                 except:
                     print("Connect failed")
                 self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
-            except pymysql.err.InternalError as e:
+            # except pymysql.err.InternalError as e===pymysql.err.OperationalError:
+            except Exception as e:
                 with open('logtest.txt','a+') as fout:
-                    fout.write(str(datetime.datetime.now()) + 'record by outputer \n')
+                    fout.write('========' + str(datetime.datetime.now()) + 'record by outputer \n')
                     traceback.print_exc(file=fout)
                     print(traceback.format_exc())
                 code, message = e.args
+                print('未被归类的错误类型')
                 print(code,message)
 
 
