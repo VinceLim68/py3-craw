@@ -137,7 +137,8 @@ class PageParser(object):
 
     def excep(self,str):
     #     去除不需要的小区
-        ex = ['厦门周边', '漳州', '泉州', '龙岩', '长泰', '角美', '漳州港', '南安', '晋江']
+        ex = ['厦门周边', '漳州', '泉州', '龙岩', '长泰',
+              '角美', '漳州港', '南安', '晋江','厦门后花园','厦门西']
         flag = False
         for item in ex:
             if item in str:

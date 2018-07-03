@@ -101,7 +101,7 @@ class MatchID(object):
                                 break
                     # 如果没有辅助字
                     else:
-                        temp = [start1, key_wo rds[0].upper(), i[0]]
+                        temp = [start1, key_words[0].upper(), i[0]]
                         getid.append(temp)
 
 
