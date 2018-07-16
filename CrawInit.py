@@ -83,7 +83,7 @@ class CrawInit(object):
         # 删除记录
         print('正在从for_sale_property表中删除数据，请稍侯......')
         sql = 'DELETE FROM for_sale_property WHERE ' + self.where
-        print(sql)
+        # print(sql)
         sta = self.cur.execute(sql)
         # print(sta)
         if sta >= 1:
