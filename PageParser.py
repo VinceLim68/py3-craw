@@ -98,6 +98,7 @@ class PageParser(object):
         r1_2 = '(\d+.?\d+)平米'        #厦门house的面积是浮点数
         r1_3 = '(\d+.?\d+)㎡'         #2016.9.13增加麦田的面积解析
         r1_4 = '(\d+.?\d+)m²'        #2017.3.8安居客
+        r1_5 = '(\d+.?\d+)�O'        #2018.8.3搜房,这个乱码就是㎡
         r2_1 = '\d+室'
         r2_2 = '\d+房'
         r3 = '(\d+)元/'
@@ -114,6 +115,8 @@ class PageParser(object):
             parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
         elif re.search(r1_4, string, flags=0):                                          #2017.3.8安居客的面积解析
             parse_dict['area'] = int(round(float(re.search(r1_4, string).groups(0)[0]),0))
+        elif re.search(r1_5, string, flags=0):  # 2018.8.3搜房的面积解析
+            parse_dict['area'] = int(round(float(re.search(r1_5, string).groups(0)[0]), 0))
         elif re.search(r2_1, string, flags=0):
             parse_dict['spatial_arrangement'] = string.strip()
         elif re.search(r2_2, string, flags=0):
