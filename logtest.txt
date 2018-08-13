@@ -2861,3 +2861,876 @@ Traceback (most recent call last):
   File "E:\py3-craw\PageParser.py", line 215, in pipe
     datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
 KeyError: 'spatial_arrangement'
+
+*******2018-08-06 08:31:10.453764*************
+ 本页面无数据:http://www.917.com/sell/?k=龙华大厦(南湖花园）. 
+
+*******2018-08-06 08:34:12.599178*************
+ 本页面无数据:http://www.917.com/sell/?k=坑内路13-18号小区. 
+
+*******2018-08-06 08:36:35.474490*************
+ 本页面无数据:http://www.917.com/sell/?k=石亭路21-25号. 
+
+*******2018-08-06 08:37:54.343565*************
+ 本页面无数据:http://www.917.com/sell/?k=小城故事--禹洲新城一期. 
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:39:29.785387*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:39:34.407147*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:47:39.518187*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:47:40.238229*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:54:11.558461*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+*******2018-08-06 08:54:36.577106*************
+ 本页面无数据:http://www.917.com/sell/?k=华昌路7-61小区. 
+
+*******2018-08-06 08:57:12.932597*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg1rs%E5%B0%86%E5%86%9B%E7%A5%A0%E8%B7%AF132-137%E5%8F%B7/. 
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:58:04.733155*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '90-100'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:58:07.841057*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '90-100'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:58:18.248212*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:58:22.225150*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '90-100'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 08:58:32.465489*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '90-100'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:05:55.644727*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:06:15.270391*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:12:18.046872*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-08-06 09:17:32.022033*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg1rs%E5%85%B4%E9%9A%86%E8%B7%AF259-263/. 
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:18:37.237672*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:21:45.990959*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:22:30.961871*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:24:54.676522*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+========2018-08-06 09:26:11.948058record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-08-06 09:27:29.263005*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg1rs%E6%96%87%E5%9B%AD%E8%B7%AF1-3%E5%8F%B7/. 
+========2018-08-06 09:29:33.076910record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:30:08.608308*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-08-06 09:31:40.761639*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg1rs%E5%B0%8F%E5%AD%A6%E8%B7%AF92-94%E5%8F%B7/. 
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:39:34.596662*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:42:58.338151*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:43:09.435975*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:50:05.715526*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 09:51:32.156207*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 10:01:45.065482*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 10:11:30.325792*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 10:18:10.727644*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\SfPage.py", line 74, in parse_datas
+    each_data = self.pipe(each_data)
+  File "E:\py3-craw\PageParser.py", line 215, in pipe
+    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+KeyError: 'spatial_arrangement'
+========2018-08-06 10:21:03.518785record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-08-06 10:30:08.014835record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-08-06 10:33:29.285674record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-08-06 10:43:09.829685record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 10:46:57.258694*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-08-06 10:48:53.102320*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA%28%E5%95%86%E4%BD%8F%E6%A5%BC. 
+========2018-08-06 10:50:26.292046record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 10:52:27.472977*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 12:32:27.170205*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 13:49:53.118938*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '75-100'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 14:40:51.812282*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 14:41:00.892595*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 14:41:06.039286*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 14:41:09.107659*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 14:41:38.018106*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 14:41:41.091282*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 14:41:41.534307*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 14:41:46.029758*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+*******2018-08-06 14:53:29.339347*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E4%B8%AD%E5%A4%AE%E6%B5%B7%E5%B2%B8%E4%BA%8C%E6%9C%9F%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-08-06 15:04:44.697478*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-08-06 15:06:25.401785*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E5%9B%BD%E9%99%85%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-08-06 15:35:28.228855*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%BB%A8%E6%B5%B7%E5%95%86%E4%BD%8F%E4%B8%AD%E5%BF%83. 
+
+*******2018-08-06 15:36:27.344224*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E5%B7%9E%E4%B8%AD%E5%A4%AE%E6%B5%B7%E5%B2%B8%E4%B8%80%E6%9C%9F3%E5%8F%B7%E6%A5%BC811. 
+
+*******2018-08-06 15:55:19.491784*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn28/?key=%E4%B8%AD%E8%88%AA%E5%9F%8Ec%E5%8C%BA. 
+
+*******2018-08-06 15:58:05.785834*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E6%B5%A6%E8%B7%AF%E4%BC%B4%E5%B1%B1%E5%85%AC%E5%AF%93%E4%BA%8C%E6%9C%9F%E5%B1%B1%E6%B0%B4%E5%BA%AD%E9%99%A2. 
+
+*******2018-08-06 16:06:07.260411*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%BC%98%E6%A1%A5%E8%8A%B1%E5%9B%AD. 
+
+*******2018-08-06 16:12:54.900597*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%85%86%E7%BF%94%E6%B5%B7%E5%A4%A9%E9%9F%B5. 
+
+*******2018-08-06 16:33:01.772038*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn10/?key=%E7%BB%BF%E5%88%9B%E2%80%A2%E9%93%82%E6%82%A6%E5%BA%9C. 
+
+*******2018-08-06 16:34:24.796364*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%96%B0%E8%8E%B2%E8%8A%B1%E6%96%B0%E9%BE%99%E5%B1%B1%E8%8A%B1%E5%9B%AD. 
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 16:35:33.748471*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '100-110'
+
+*******2018-08-06 17:17:22.130817*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E5%9B%BD%E9%99%85%E5%95%86%E4%BD%8F%E6%A5%BC. 
+
+*******2018-08-06 17:35:59.950753*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%87%BA%E5%94%AE%E6%B5%85%E6%B0%B4%E6%B9%BE%E7%95%94%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+               *******newFunc*******,error record by @mylog on 2018-08-06 17:41:15.282849*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 89, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '40-60'
+
+*******2018-08-06 17:42:00.834605*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%AC%A3%E7%9B%9B%E4%B8%B0%E4%B9%90%E6%B4%BB. 
+
+*******2018-08-06 17:49:11.476411*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn28/?key=%E4%B8%AD%E8%88%AA%E5%9F%8EC%E5%8C%BA. 
+
+*******2018-08-06 17:51:01.918607*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%A1%A5%E4%B8%9C%E5%B0%8F%E5%8C%BA. 
+
+*******2018-08-06 17:58:06.480890*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9C%BA%E6%A2%B0%E5%8E%82%E5%AE%BF%E8%88%8D. 
+
+*******2018-08-06 18:04:32.666572*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%87%91%E5%B8%9D%E8%8A%B1%E5%9B%AD. 
+
+*******2018-08-06 18:13:10.808309*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E7%9B%9B%E6%A5%BC. 
+
+*******2018-08-06 18:15:34.348791*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8D%A3%E5%8D%8E%E6%A5%BC%28%E6%80%9D%E6%98%8E%29. 
+
+*******2018-08-06 18:28:53.329345*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E4%B8%80%E6%9D%91%E7%9B%88%E7%BF%A0%E9%87%8C%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+*******2018-08-06 18:46:47.013930*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AD%A6%E5%8C%BA%E6%88%BF. 

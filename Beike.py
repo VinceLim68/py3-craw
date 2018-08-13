@@ -24,6 +24,7 @@ class Beike(MassController.MassController):
             self.comm_count += 1
 
         self.total = self.total + self.outputer.out_mysql()
+        print('==================共抓取{0}个记录=================='.format(self.total))
 
 if __name__=="__main__":
     url = ["https://xm.ke.com/ershoufang/"]
