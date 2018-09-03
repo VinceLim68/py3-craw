@@ -28,6 +28,7 @@ class MassController(object):
         # 构建请求头信息
         agent = self.rqBuilder.get_agent()
         self.headers["User-Agent"] = agent
+        # print(self.headers["User-Agent"] )
 
     def proxy_builder(self):
         # 构建代理信息

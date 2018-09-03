@@ -1,4 +1,5 @@
 import MassController,LjPage
+from urllib import parse
 
 class LJ(MassController.MassController):
     def __init__(self, parseClass):
@@ -15,7 +16,7 @@ class LJ(MassController.MassController):
         while self.comms.has_new_url():
             comm = self.comms.get_new_url()
             c1,c2 = self.comms.get_quantity()
-            comm_url = "http://xm.lianjia.com/ershoufang/rs" + comm
+            comm_url = "http://xm.lianjia.com/ershoufang/rs" + parse.quote(comm)
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))
             url_list = []
             url_list.append(comm_url)
