@@ -6,7 +6,7 @@ class SF(MassController.MassController):
         self.comm_count = 1                         #计数：抓取小区的数量
         self.headers = {
             "Host":"esf.xm.fang.com",
-            "Origin":"http://esf.xm.fang.com",
+            # "Origin":"http://esf.xm.fang.com",
             "Referer":"http://esf.xm.fang.com/"
         }
         self.delay = 3
@@ -22,6 +22,7 @@ class SF(MassController.MassController):
                 print('>>>>>>>>>>>>>>>>{0}:{1}'.format(comm_add,comm))
 
     def CommsController(self,url):
+        print(self.headers)
         self.craw_controller(url)
         while self.comms.has_new_url():
             comm = self.comms.get_new_url()

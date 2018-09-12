@@ -65,6 +65,7 @@ class MassController(object):
         # proxy = self.proxy_builder()
         proxy = None
         self.headers_builder()
+        print(self.headers)
 
         # 下载
         html_cont = self.downloader.download(new_url,headers=self.headers,
