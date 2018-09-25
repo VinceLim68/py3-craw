@@ -89,7 +89,8 @@ def strToInt(string1):
         b = re.findall(r'\d+.\d+', string1)
         try:
             # string1 = int(round(float(string1)))
-            string1 = b[0]
+            string1 = int(round(float(b[0])))
+            # string1 =
             # string1 = int(round(float(re.sub("\D", "",string1))))
         # except ValueError as e:
         except:
@@ -115,5 +116,5 @@ def to_str(bytes_or_str):
         value = bytes_or_str
     return value # Instance of str
 
-# str2 = '<strong></strong>万</span>'
-# print(strToInt(str2))
+str2 = '<strong></strong>万</span>'
+print(strToInt(str2)/13)
