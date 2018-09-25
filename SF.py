@@ -22,7 +22,7 @@ class SF(MassController.MassController):
                 print('>>>>>>>>>>>>>>>>{0}:{1}'.format(comm_add,comm))
 
     def CommsController(self,url):
-        print(self.headers)
+        # print(self.headers)
         self.craw_controller(url)
         while self.comms.has_new_url():
             comm = self.comms.get_new_url()
