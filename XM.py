@@ -31,6 +31,7 @@ print('厦门HOUSE网:{0},乐居网{1},赶集网{2},共{3}个'.format(XM.total, 
 
 url = ['http://xm.maitian.cn/esfall/PG2']
 MT = MassController.MassController(MaitianPage.MaitianPage)
+MT.delay = 3
 MT.headers = dict(Host="xm.maitian.cn")
 # MT.total = num
 MT.craw_controller(url)

@@ -86,7 +86,9 @@ def printDic(data):
 
 def strToInt(string1):
     if isinstance(string1, str):
-        b = re.findall(r'\d+.\d+', string1)
+        b = re.findall(r'\d+.?\d*', string1)
+        # b = re.findall(r'\d+.\d+', string1)
+        print(b)
         try:
             # string1 = int(round(float(string1)))
             string1 = int(round(float(b[0])))
@@ -115,6 +117,6 @@ def to_str(bytes_or_str):
     else:
         value = bytes_or_str
     return value # Instance of str
-
-str2 = '<strong></strong>万</span>'
-print(strToInt(str2)/13)
+#
+# str2 = '300.51万'
+# print(strToInt(str2))

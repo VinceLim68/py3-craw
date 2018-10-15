@@ -5,7 +5,8 @@ class SF(MassController.MassController):
         super(SF, self).__init__(parseClass)
         self.comm_count = 1                         #计数：抓取小区的数量
         self.headers = {
-            "Host":"esf.xm.fang.com",
+            # "Host":"esf.xm.fang.com",
+            "Host":"xm.esf.fang.com",
             # "Origin":"http://esf.xm.fang.com",
             "Referer":"http://esf.xm.fang.com/"
         }

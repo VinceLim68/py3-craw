@@ -212,7 +212,7 @@ class PageParser(object):
                         datadic['price'] = round(float(datadic['total_price'] * 10000 / datadic['area']), 2)
                     datadic['total_floor'] = 4
                     datadic['floor_index'] = 1
-                    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅"
+                    datadic['spatial_arrangement'] = datadic['spatial_arrangement'] + u"别墅" if 'spatial_arrangement' in datadic.keys() else u"别墅"
                     return datadic
             return False
         

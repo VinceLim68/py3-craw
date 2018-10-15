@@ -111,7 +111,7 @@ class MatchID(object):
     def get_datas(self,n,step,tablename):
         #从数据库里按要求查出挂牌记录集        
         # sql = "SELECT id,title,community_name FROM for_sale_property WHERE community_id < 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
-        sql = "SELECT id,title,community_name FROM " + tablename + " WHERE community_id < 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
+        sql = "SELECT id,title,community_name FROM " + tablename + " WHERE community_id <= 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
 
         self.cursor.execute(sql)
         datas = self.cursor.fetchall()
@@ -170,8 +170,10 @@ class MatchID(object):
         # 匹配成功写入一张表，没成功就写入另一张表。
         # 其实不用，成功就写进id,没成功就空着即可
         if flag:
-            print('=============匹配多个小区id=================')
+            print('*********匹配多个小区id**********')
             ToolsBox.printDic(data)
+            print('*********匹配的小区**********')
+            ToolsBox.printDic(get)
             return len(get)
         else:
             return first[2]
