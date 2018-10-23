@@ -69,11 +69,12 @@ class MassController(object):
 
         # 下载
         html_cont = self.downloader.download(new_url,headers=self.headers,
-            proxy=proxy,num_retries=self.retry_times)
+            proxy=proxy)
+
         # print(type(html_cont))
         # 对下载内容进行处理
         # 1、如果被404的处理
-        if type(html_cont)=='int' and (400 <= (html_cont) < 600):
+        if type(html_cont) == 'int' and (400 <= (html_cont) < 600):
         # if html_cont == 404:
             self.HTTP404 += 1
             # print('返回404码')

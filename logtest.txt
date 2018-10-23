@@ -12482,3 +12482,1516 @@ ValueError: could not convert string to float: '58㎡60'
 
 *******2018-10-15 12:57:33.047779*************
  本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9A%E4%B8%BB%E8%87%AA%E5%94%AE%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+*******2018-10-22 08:02:38.659845*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E4%B8%AD%E5%A4%AE%E6%B9%BE%E5%8C%BA%E7%90%A5%E7%8F%80%E6%B9%BE. 
+
+*******2018-10-22 08:07:20.842119*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%B1%B1%E6%B0%B4%E8%8A%B3%E9%82%BB. 
+
+*******2018-10-22 08:07:39.589786*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%8F%A4%E6%A5%BC%E5%8D%97%E9%87%8C. 
+========2018-10-22 08:08:42.214963record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1213, 'Deadlock found when trying to get lock; try restarting transaction')
+========2018-10-22 08:12:02.511560record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-22 08:12:02.540562record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-22 08:12:32.798044*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9CB%E5%8C%BA. 
+
+*******2018-10-22 08:13:00.454307*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E6%BB%A8%E5%8D%97%E8%B7%AF142-144%E5%8F%B7. 
+
+*******2018-10-22 08:14:02.307099*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%A3%AE%E6%B5%B7%E4%B8%BD%E6%99%AF. 
+
+*******2018-10-22 08:14:35.492397*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B3%B0%E8%A3%95%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 08:15:04.188287*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E9%98%B3%E5%85%89%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:16:12.467321*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E9%87%91%E6%B9%96%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:16:43.847292*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E7%BF%94%E9%B9%AD%E8%8A%B1%E5%9F%8E%E4%B8%89%E6%9C%9F. 
+
+*******2018-10-22 08:17:17.269301*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%BA%BF%E5%8A%9B%E9%9F%B3%E4%B9%90%E8%8A%B1%E5%9B%AD%E4%BA%8C%E6%9C%9F%E7%91%9F%E5%9B%AD. 
+
+*******2018-10-22 08:18:45.194979*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E9%91%AB%E5%A1%94%E6%B0%B4%E5%B0%9A. 
+========2018-10-22 08:23:10.393607record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-22 08:23:37.473718*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%AE%98%E9%82%B8%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 08:24:11.234746*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%BA%91%E9%A1%B6%E5%B1%B1%E5%BA%84%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:25:00.607578*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn12/?key=%E9%87%91%E5%B0%9A%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 08:25:45.081069*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%8F%E9%9A%86%E4%B8%9C%E6%96%B9%E4%B8%BD%E6%99%AF. 
+
+*******2018-10-22 08:26:09.589117*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%AE%9D%E9%BE%99%E4%B8%AD%E5%BF%83%E4%B8%80%E6%9C%9F. 
+
+*******2018-10-22 08:26:34.756110*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E4%B8%AD%E5%A4%AE%E6%B9%BE%E5%8C%BA%E7%8F%8A%E7%91%9A%E6%B5%B7. 
+
+*******2018-10-22 08:26:56.924925*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%89%8D%E5%9F%94%E5%8C%97%E5%8C%BA%E4%BA%8C%E9%87%8C. 
+
+*******2018-10-22 08:27:27.057009*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%9B%BD%E9%99%85%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 08:27:52.281085*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%9B%BD%E9%99%85%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 08:28:21.290590*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%BF%A1%E5%92%8C%E9%93%B6%E6%B9%96%E5%A4%A9%E5%B3%B0. 
+
+*******2018-10-22 08:29:08.387674*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E8%B1%A1%E5%B1%BF%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:29:43.107160*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%88%A9%E5%8D%8E%E8%8B%91. 
+
+*******2018-10-22 08:30:40.667902*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E5%86%A0%E5%AE%8F%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:31:22.128541*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E6%96%B0%E6%99%AF%E9%BE%99%E9%83%A1. 
+
+*******2018-10-22 08:31:48.467295*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E9%A6%99%E6%A7%9F%E5%9F%8E. 
+
+*******2018-10-22 08:32:21.949241*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%8D%97%E5%B1%B1%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 08:32:53.052128*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%BE%A8%E7%A6%8F%E5%9F%8E%E5%B0%8F%E5%8C%BA%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 08:33:11.748740*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%B2%AD%E5%85%9C%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 08:33:52.726084*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E7%BF%94%E9%B9%AD%E8%8A%B1%E5%9F%8E%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 08:34:19.141594*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%8F%E9%9A%86%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:35:16.913899*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BA%BF%E5%8A%9B%E6%82%A6%E6%B5%B7. 
+
+*******2018-10-22 08:35:48.914729*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%95%85%E5%AE%AB%E8%A3%95%E6%99%AF. 
+
+*******2018-10-22 08:36:14.232026*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E4%B8%87%E6%99%AF%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:38:49.978560*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E6%9E%97%E8%8A%B1%E5%9B%AD%E4%B8%80%E6%9C%9F. 
+
+*******2018-10-22 08:39:40.583017*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B2%AD%E5%85%9C%E4%BD%B3%E5%9B%AD%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 08:40:18.045099*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E5%BA%B7%E4%B9%90%E6%96%B0%E6%9D%91%E4%B8%80%E6%9C%9F. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-22 08:40:54.467740*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 91, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-10-22 08:41:14.834536*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%AB%98%E6%9E%97%E5%B1%85%E4%BD%8F%E5%8C%BA%E5%8D%97%E5%8C%BA. 
+
+*******2018-10-22 08:42:27.294882*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn14/?key=%E8%8A%99%E8%93%89%E8%8B%91. 
+
+*******2018-10-22 08:43:09.053224*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn15/?key=%E8%8A%99%E8%93%89%E8%8B%91. 
+
+*******2018-10-22 08:43:27.840819*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%BE%E7%A5%A5%E9%A6%96%E5%BA%9C. 
+
+*******2018-10-22 08:46:03.307683*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E7%89%B9%E6%88%BF%E9%BB%8E%E5%AE%89%E5%B0%8F%E9%95%87%E4%B8%80%E6%9C%9F. 
+
+*******2018-10-22 08:46:21.774268*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%A3%AE%E6%99%AF%E5%8D%8E%E5%BA%AD. 
+
+*******2018-10-22 08:46:44.078959*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%87%AF%E5%9F%8E%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:47:23.798211*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%8E%A6%E8%88%AA%E6%B4%AA%E6%96%87%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 08:48:08.597625*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E8%8E%B2%E5%B2%B3%E9%87%8C%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 08:48:42.230712*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%A7%92%E6%BB%A8%E8%B7%AF%E5%B9%BF%E7%94%B5%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 08:49:02.959374*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E5%8F%A4%E9%BE%99%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 08:49:44.417665*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E5%9F%8E%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:50:28.080108*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%BE%E7%A5%A5%E8%A5%BF%E8%B7%AF268%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 08:52:32.319025*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn10/?key=%E8%8E%B2%E8%8A%B1%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 08:52:51.225907*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn11/?key=%E8%8E%B2%E8%8A%B1%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 08:53:09.354944*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn12/?key=%E8%8E%B2%E8%8A%B1%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 08:53:34.224367*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%97%E5%8D%8E%E8%B7%AF15%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 08:53:58.396749*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg2rs%E6%B0%B4%E6%99%B6%E6%B9%96%E9%83%A1C%E5%8C%BA/. 
+
+*******2018-10-22 08:54:05.962182*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%81%94%E5%8F%91%E6%AC%A3%E6%82%A6%E5%AD%A6%E5%BA%9C. 
+
+*******2018-10-22 08:54:48.062590*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B0%8F%E5%AD%A6%E8%B7%AF%E6%B0%91%E6%88%BF. 
+
+*******2018-10-22 08:55:05.087564*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E6%BB%A8%E5%8D%97%E8%B7%AF32-38%E5%8F%B7. 
+
+*******2018-10-22 08:55:46.176914*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%8D%97%E5%B1%B1%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 08:56:13.604483*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E4%BA%BF%E5%8A%9B%E9%9F%B3%E4%B9%90%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 08:56:31.998134*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%9B%BD%E8%B4%B8%E6%96%B0%E5%A4%A9%E5%9C%B0. 
+
+*******2018-10-22 08:57:32.512933*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%83%A0%E7%A5%A5%E8%8A%B1%E5%9B%AD. 
+========2018-10-22 09:01:03.886208record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-22 09:01:36.471149*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%99%BD%E9%B9%AD%E8%8B%91. 
+
+*******2018-10-22 09:02:21.706948*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%BA%91%E9%A1%B6%E8%87%B3%E5%B0%8A. 
+
+*******2018-10-22 09:03:08.464822*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8A%E5%B1%B1%E8%B1%AA%E5%9B%AD%E4%B8%80%E6%9C%9F. 
+
+*******2018-10-22 09:03:49.958508*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E6%B5%B7%E8%B1%9A%E6%B9%BE. 
+
+*******2018-10-22 09:04:22.258478*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%90%9B%E4%B8%B4%E5%AE%9D%E9%82%B8. 
+
+*******2018-10-22 09:05:33.889697*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%98%8E%E5%8F%91%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 09:06:07.620626*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%9B%BD%E9%99%85%E9%82%AE%E8%BD%AE%E5%9F%8E%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 09:06:57.651887*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E6%BA%90%E9%80%9A%E4%B8%AD%E5%BF%83. 
+
+*******2018-10-22 09:07:29.003680*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E7%A6%BE%E7%A5%A5%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 09:08:13.451223*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%96%B0%E5%9F%8E%E5%AE%89%E7%BD%AE%E5%9B%9B%E7%BB%84%E5%9B%A2. 
+
+*******2018-10-22 09:08:36.945567*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BE%99%E5%B1%B1%E4%BA%8C%E6%9C%9F%E5%AE%89%E7%BD%AE%E6%88%BF. 
+
+*******2018-10-22 09:08:59.482856*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%9B%BD%E8%B4%B8%E6%98%A5%E5%A4%A9. 
+
+*******2018-10-22 09:09:53.900968*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 09:10:26.866854*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%BA%B7%E4%B9%90%E6%96%B0%E6%9D%91%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 09:10:54.085410*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BF%A1%E5%92%8C%E4%B8%AD%E5%A4%AE%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 09:11:37.358886*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%90%8E%E5%9F%AD%E6%BA%AA%E8%B7%AF90%E5%8F%B7. 
+
+*******2018-10-22 09:12:05.742509*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%96%87%E5%9B%AD%E8%B7%AF90%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+========2018-10-22 09:12:56.858433record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1033, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+*******2018-10-22 09:16:08.303383*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E9%87%91%E6%9E%AB%E5%9B%AD. 
+
+*******2018-10-22 09:17:37.542487*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BB%84%E9%87%91%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 09:18:12.707498*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%81%87%E6%97%A5%E9%A6%99%E6%B8%AF%E5%B9%BF%E5%9C%BA. 
+========2018-10-22 09:22:03.375692record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1033, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+*******2018-10-22 09:25:13.756581*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%BE%A1%E6%99%AF%E8%B1%AA%E5%BA%AD. 
+
+*******2018-10-22 09:25:31.996624*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%91%9E%E6%99%AF%E7%94%9F%E6%B4%BB%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 09:27:22.217928*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E6%98%8C%E5%B0%8F%E5%8C%BA%E6%AD%A3%E8%A7%84%E4%B8%89%E6%88%BF%E4%B8%80%E5%8E%85%E5%87%BA%E5%94%AE. 
+
+*******2018-10-22 09:28:40.233391*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E6%BA%90%E6%98%8C%E5%9B%BD%E9%99%85%E5%9F%8E%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 09:30:05.171249*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%BE%8E%E6%96%B0%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 09:30:24.528356*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AE%9D%E6%82%A6%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 09:30:46.801630*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8E%A6%E8%88%AA%E6%B4%AA%E6%96%87%E5%B1%85%E4%BD%8F%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 09:36:44.841109*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%BF%A1%E7%BF%A0%E5%B1%B1%E5%BA%84. 
+========2018-10-22 09:37:37.880142record by outputer 
+Traceback (most recent call last):
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1021, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "G:\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1029, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10054] 远程主机强迫关闭了一个现有的连接。)')
+
+*******2018-10-22 09:38:53.243453*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%89%B9%E6%88%BF%E4%BA%94%E7%BC%98%E5%B0%8A%E5%BA%9C. 
+
+*******2018-10-22 09:40:00.171281*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8E%A6%E9%97%A8%E7%B2%AE%E9%A3%9F%E9%9B%86%E5%9B%A2%E6%B2%B9%E5%8E%82%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 09:40:22.292546*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E5%89%8D%E8%A5%BF%E8%B7%AF71-77%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 09:40:58.662626*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%A5%BF%E5%A0%A4%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 09:41:18.719774*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%97%B6%E5%B0%9A%E5%9B%BD%E9%99%85. 
+
+*******2018-10-22 09:42:09.666688*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%98%8E%E5%BE%B7%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 09:42:48.895931*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%8F%A4%E9%BE%99%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 09:43:50.379448*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B0%B4%E6%99%B6%E8%8B%B9%E6%9E%9C. 
+
+*******2018-10-22 09:44:14.112805*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%8E%89%E6%88%90%E8%B1%AA%E5%9B%AD. 
+========2018-10-22 09:45:49.584873record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1033, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+*******2018-10-22 09:46:55.099215*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AE%9D%E9%BE%99%E4%B8%AD%E5%BF%83%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 09:48:16.248103*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 09:48:52.455204*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%8E%89%E6%B3%89%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 09:49:42.284721*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E6%95%85%E5%AE%AB%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 09:50:04.366395*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%95%85%E5%AE%AB%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 09:52:43.242875*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E5%A4%A9%E8%B7%AF5%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 09:53:48.857624*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%B9%BF%E5%9C%BA%E6%B9%96%E7%95%94. 
+
+*******2018-10-22 09:55:55.731877*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E4%B8%AD%E5%A4%AE%E7%BE%8E%E5%9C%B0. 
+========2018-10-22 09:56:57.505408record by outputer 
+Traceback (most recent call last):
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1021, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "G:\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1029, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10054] 远程主机强迫关闭了一个现有的连接。)')
+
+*******2018-10-22 09:57:16.739508*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E6%B5%B7%E5%B1%B1%E5%BA%84. 
+
+*******2018-10-22 09:58:35.051985*************
+ 本页面无数据:http://xm.ganji.com/fang5/o3/. 
+
+*******2018-10-22 09:58:57.317258*************
+ 本页面无数据:http://xm.ganji.com/fang5/o6/. 
+
+*******2018-10-22 09:59:21.603647*************
+ 本页面无数据:http://xm.ganji.com/fang5/o11/. 
+
+*******2018-10-22 09:59:22.927723*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%B5%B7%E6%B9%BE%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 09:59:43.861921*************
+ 本页面无数据:http://xm.ganji.com/fang5/. 
+
+*******2018-10-22 10:00:05.257144*************
+ 本页面无数据:http://xm.ganji.com/fang5/o13/. 
+
+*******2018-10-22 10:00:33.585763*************
+ 本页面无数据:http://xm.ganji.com/fang5/o12/. 
+
+*******2018-10-22 10:00:44.667397*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%B9%E5%B7%9E%E5%9F%8E%E4%B8%8A%E5%9F%8E. 
+
+*******2018-10-22 10:00:54.882981*************
+ 本页面无数据:http://xm.ganji.com/fang5/o14/. 
+
+*******2018-10-22 10:01:12.209970*************
+ 本页面无数据:http://xm.ganji.com/fang5/o15/. 
+
+*******2018-10-22 10:01:38.532474*************
+ 本页面无数据:http://xm.ganji.com/fang5/o4/. 
+
+*******2018-10-22 10:01:41.998673*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E8%8E%B2%E8%8A%B1%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 10:01:57.820576*************
+ 本页面无数据:http://xm.ganji.com/fang5/o7/. 
+
+*******2018-10-22 10:02:06.906096*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%96%B0%E6%99%AF%E4%B8%83%E6%98%9F%E5%85%AC%E9%A6%86. 
+
+*******2018-10-22 10:02:16.086621*************
+ 本页面无数据:http://xm.ganji.com/fang5/o8/. 
+
+*******2018-10-22 10:02:27.374266*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%A7%82%E6%B5%B7%E6%BE%9C%E5%BA%AD. 
+
+*******2018-10-22 10:02:38.381896*************
+ 本页面无数据:http://xm.ganji.com/fang5/o5/. 
+
+*******2018-10-22 10:02:48.892495*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B4%AA%E6%96%87%E4%B8%89%E9%87%8C21%E5%8F%B7. 
+
+*******2018-10-22 10:02:57.684998*************
+ 本页面无数据:http://xm.ganji.com/fang5/o9/. 
+
+*******2018-10-22 10:03:42.984589*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AE%98%E4%BB%BB%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 10:04:01.786665*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%B9%B8%E7%A6%8F%E5%AF%86%E7%A0%81. 
+
+*******2018-10-22 10:04:30.978333*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%81%94%E4%B8%B0%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 10:05:03.345184*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E9%BC%93%E6%B5%AA%E5%B1%BF. 
+
+*******2018-10-22 10:05:26.420504*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn8/?key=%E9%BC%93%E6%B5%AA%E5%B1%BF. 
+
+*******2018-10-22 10:06:25.112860*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%99%B6%E7%84%B6%E5%8C%97%E5%B2%B8. 
+
+*******2018-10-22 10:06:55.426594*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%9C%E6%96%B9%E6%97%B6%E4%BB%A3%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 10:07:46.578518*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%81%94%E4%B8%B0%E5%95%86%E5%9F%8E%E4%BA%94%E6%9C%9F. 
+
+*******2018-10-22 10:08:58.925654*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%90%89%E7%A5%A5%E5%AE%B6%E5%9B%AD. 
+
+*******2018-10-22 10:09:13.833507*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%AE%9D%E5%98%89%E8%AA%89%E5%B3%B0. 
+
+*******2018-10-22 10:12:21.710247*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%B5%A6%E5%8D%97%E6%96%B0%E6%9D%91. 
+
+*******2018-10-22 10:13:48.155191*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%87%91%E6%9E%97%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 10:14:34.428730*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%B9%E6%B4%B2%E4%BA%91%E9%A1%B6%E5%9B%BD%E9%99%85. 
+
+*******2018-10-22 10:15:35.744805*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AE%9D%E9%BE%99%E5%BE%A1%E6%B9%96%E5%AE%98%E9%82%B8. 
+
+*******2018-10-22 10:15:59.799021*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%BA%90%E6%98%8C%E8%B1%AA%E5%BA%AD2%E6%9C%9F. 
+
+*******2018-10-22 10:16:34.674299*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E7%A6%B9%E6%B4%B2%E6%96%B0%E6%9D%91. 
+
+*******2018-10-22 10:16:54.610303*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E6%80%A1%E6%99%AF%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 10:17:22.521733*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%89%8D%E5%9F%94%E5%8D%97%E5%8C%BA%E6%96%87%E5%85%B4%E4%BA%8C%E9%87%8C. 
+
+*******2018-10-22 10:18:10.251130*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E6%9E%8B%E6%B9%96%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 10:18:31.060177*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%AE%B6%E5%AE%B6%E6%B5%B7%E6%99%AF. 
+
+*******2018-10-22 10:18:58.900571*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E6%B9%96%E5%8C%97%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 10:19:46.134936*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%85%89%E6%98%8E%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 10:21:01.701731*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E8%8E%B2%E8%8A%B1%E6%96%B0%E5%9F%8E%E4%B8%89%E6%9C%9F. 
+
+*******2018-10-22 10:21:31.159203*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%B9%E6%B4%B2%E5%9F%8E%E4%B8%8A%E5%9F%8E. 
+
+*******2018-10-22 10:22:20.729710*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E7%A6%8F%E6%BB%A1%E5%B1%B1%E5%BA%84. 
+
+*******2018-10-22 10:23:02.270787*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%8E%AF%E5%9F%8E%E4%B8%AD%E8%B7%AF%E6%B3%95%E9%99%A2%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 10:24:10.568223*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E8%8A%B3%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85%29. 
+
+*******2018-10-22 10:24:39.115653*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E5%9B%BD%E9%93%81%E5%BB%BA%E6%B5%B7%E6%9B%A6. 
+
+*******2018-10-22 10:25:34.816458*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%98%B3%E5%85%89%E6%B5%B7%E5%B2%B8%28%E5%88%AB%E5%A2%85%29. 
+
+*******2018-10-22 10:26:08.608151*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%B9%E6%B4%B2%E4%B8%96%E7%BA%AA%E6%B5%B7%E6%B9%BE. 
+
+*******2018-10-22 10:26:31.103292*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%87%AF%E6%82%A6%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 10:27:49.572336*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%89%8D%E5%9F%94%E5%8D%97%E5%8C%BA%E6%96%87%E5%85%B4%E4%B8%80%E9%87%8C. 
+
+*******2018-10-22 10:28:31.338486*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%BE%E7%A5%A5%E8%A5%BF%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 10:31:19.790087*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E5%9B%BD%E8%B4%B8%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 10:32:16.137942*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg4rs%E7%A6%BE%E7%A5%A5%E8%A5%BF%E8%B7%AF230-232%E5%8F%B7/. 
+
+*******2018-10-22 10:32:18.075038*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E7%89%B9%E6%88%BF%E5%B0%8A%E5%BA%9C. 
+
+*******2018-10-22 10:33:32.493826*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%8C%AF%E5%8D%8E%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 10:35:00.017331*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn9/?key=%E7%A6%B9%E6%B4%B2%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 10:35:51.232910*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn9/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 10:36:26.326667*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%89%B9%E6%88%BF%E9%BB%8E%E5%AE%89%E5%B0%8F%E9%95%87%E5%9B%9B%E6%9C%9F. 
+
+*******2018-10-22 10:36:49.157816*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%B5%B7%E5%BE%B7%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 10:37:26.077671*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg3rs%E8%8E%B2%E5%9D%82%E6%96%B0%E6%9D%91%EF%BC%88%E4%B8%89%E5%8C%BA%EF%BC%89/. 
+
+*******2018-10-22 10:38:23.156528*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%91%A9%E7%99%BB%E6%97%B6%E4%BB%A3%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 10:38:51.563943*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%BA%BA%E7%BB%87%E8%B7%AF1-11%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 10:39:12.114975*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9CA%E5%8C%BA. 
+
+*******2018-10-22 10:39:36.918221*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E8%A5%BF%E4%B9%9D%E5%8F%B7. 
+
+*******2018-10-22 10:39:54.196076*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%96%B0%E5%AE%B6%E5%9B%AD. 
+
+*******2018-10-22 10:41:29.514844*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%8D%8E%E4%B8%9C%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 10:44:13.101078*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%A4%A7%E6%B4%8B%E9%9B%85%E8%8B%91. 
+
+*******2018-10-22 10:44:37.696307*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E8%81%94%E4%B8%B0%E6%96%B0%E5%9F%8E. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-22 10:45:11.647991*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 91, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-10-22 10:46:18.737363*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%89%8D%E5%9F%94%E5%8D%97%E5%B0%8F%E5%8C%BA%28%E5%BA%97%E4%B8%8A%E4%B8%9C%E9%87%8C%29. 
+
+*******2018-10-22 10:46:55.660207*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg2rs%E4%BB%99%E5%B2%B3%E7%A4%BE%E5%8C%BA297-301%E5%8F%B7/. 
+
+*******2018-10-22 10:47:24.340645*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E4%BB%99%E6%B4%9E%E5%B1%B1%E5%BA%84. 
+
+*******2018-10-22 10:48:44.782671*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E7%91%9E%E6%99%AF%E5%85%AC%E5%9B%AD. 
+
+*******2018-10-22 10:50:48.516845*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E6%BB%A8%E5%8D%97%E8%B7%AF44-48%E5%8F%B7. 
+
+*******2018-10-22 10:51:07.451781*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%BE%E7%A5%A5%E8%8B%91. 
+
+*******2018-10-22 10:52:22.902558*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AF%8C%E8%B4%B5%E9%97%A8%E8%8A%B1%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2018-10-22 10:56:10.967483*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%B1%B1%E6%99%AF%E5%8F%A0%E9%99%A2. 
+
+*******2018-10-22 10:57:42.198244*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn8/?key=%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9C. 
+
+*******2018-10-22 10:58:26.212853*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9D%8F%E6%9E%97%E4%B8%9C%E8%B7%AF25-27%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 10:59:30.739489*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%83%E6%98%9F%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 11:01:09.557294*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E9%9B%86%E7%BE%8E%E6%96%B0%E5%9F%8E%E4%BD%8F%E5%AE%85.%E8%8E%B2%E8%8A%B1%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 11:01:28.759836*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E9%9B%86%E7%BE%8E%E6%96%B0%E5%9F%8E%E4%BD%8F%E5%AE%85.%E8%8E%B2%E8%8A%B1%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 11:03:00.161424*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%B9%E6%B4%B2%E8%8A%B1%E5%9B%AD%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 11:03:24.622117*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E7%BF%BC0592. 
+
+*******2018-10-22 11:04:06.977435*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%A6%E5%8D%97%E5%AE%89%E7%BD%AE%E6%88%BF. 
+
+*******2018-10-22 11:05:23.184464*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%87%E5%AF%BF%E4%B8%87%E6%99%AF%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 11:05:49.058440*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8E%A6%E9%97%A8%E7%BF%94%E5%AE%89%E6%B5%B7%E5%B3%A1%E7%8E%B0%E4%BB%A3%E5%9F%8E. 
+
+*******2018-10-22 11:05:52.609603*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg2rs%E7%A6%BE%E7%A5%A5%E8%A5%BF%E8%B7%AF501-513/. 
+
+*******2018-10-22 11:06:22.933819*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg6rs%E7%A6%BE%E7%A5%A5%E8%A5%BF%E8%B7%AF501-513/. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-22 11:06:36.721345*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 91, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '58㎡60'
+
+*******2018-10-22 11:08:19.371421*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%B9%96%E6%BB%A8%E4%B8%80%E9%87%8C%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 11:09:05.202231*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%9B%BD%E8%B4%B8%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 11:09:49.822982*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn8/?key=%E5%8E%A6%E9%97%A8%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9C. 
+
+*******2018-10-22 11:10:27.219516*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%B9%E6%B4%B2%E5%8D%8E%E4%BE%A8%E9%87%91%E6%B5%B7%E5%B2%B8. 
+
+*******2018-10-22 11:12:43.371071*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E5%89%8D%E5%9F%94%E5%8C%97%E5%8C%BA%E4%B8%80%E9%87%8C. 
+
+*******2018-10-22 11:13:17.514246*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E6%82%A6%E5%8D%8E%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 11:14:24.627776*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E6%B0%B8%E5%8D%87%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 11:15:01.425206*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E5%8E%A6%E8%88%AA%E9%AB%98%E9%83%A1. 
+
+*******2018-10-22 11:15:54.105209*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%BB%BA%E5%8F%91%E5%A4%AE%E7%8E%BA. 
+
+*******2018-10-22 11:16:35.123774*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B8%AF%E9%BE%99%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 11:22:15.103641*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%BB%A8%E5%8C%97%E5%9B%BD%E9%99%85%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 11:23:14.698050*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%81%92%E9%80%9A%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 11:24:57.924954*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%BA%BF%E5%8A%9B%E9%9F%B3%E4%B9%90%E8%8A%B1%E5%9B%AD%E4%B8%80%E6%9C%9F%E7%90%B4%E5%9B%AD. 
+
+*******2018-10-22 11:25:19.994216*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn11/?key=%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 11:25:52.853095*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn10/?key=%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 11:27:10.527538*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn14/?key=%E6%B0%B8%E5%8D%87%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 11:28:57.308646*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%A6%99%E6%B8%AF%E5%85%AC%E9%A6%86. 
+
+*******2018-10-22 11:29:23.593149*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%8D%8E%E4%BE%A8%E6%B5%B7%E6%99%AF%E5%9F%8E. 
+
+*******2018-10-22 11:29:48.451571*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E9%BE%99%E9%97%A8%E5%A4%A9%E4%B8%8B. 
+
+*******2018-10-22 11:30:07.735674*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%89%B9%E6%88%BF%E4%BA%94%E7%BC%98%E5%B0%9A%E5%BA%A7. 
+
+*******2018-10-22 11:32:02.201921*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%96%87%E5%8D%8E%E8%B7%AF1-9%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 11:32:25.129232*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E6%BB%A8%E4%B8%AD%E8%B7%AF11-29%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 11:33:34.969227*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%BA%90%E6%B3%89%E5%B1%B1%E5%BA%84A%E5%8C%BA. 
+
+*******2018-10-22 11:34:14.783504*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E6%96%B0%E5%9F%8E%E8%87%BB%E5%9B%AD. 
+
+*******2018-10-22 11:36:01.777624*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn28/?key=%E6%96%B0%E5%9F%8E%E5%9B%BD%E9%99%85. 
+
+*******2018-10-22 11:36:28.333143*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn31/?key=%E6%96%B0%E5%9F%8E%E5%9B%BD%E9%99%85. 
+
+*******2018-10-22 11:36:52.140504*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn29/?key=%E6%96%B0%E5%9F%8E%E5%9B%BD%E9%99%85. 
+
+*******2018-10-22 11:39:04.247060*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E9%98%B3%E5%85%89%E7%BE%8E%E5%9C%B0. 
+
+*******2018-10-22 11:39:32.866697*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9D%8F%E6%9E%97%E6%97%A5%E4%B8%9C%E8%B7%AF%E5%B0%8F%E5%AD%A6%E6%97%81%E4%B8%A4%E6%88%BF. 
+
+*******2018-10-22 11:39:59.870242*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%9B%BD%E8%B4%B8%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 11:40:19.641373*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%9B%BD%E8%B4%B8%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 11:41:14.453508*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E8%82%B2%E7%A7%80%E4%B8%AD%E5%BF%83. 
+
+*******2018-10-22 11:43:10.526147*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E4%BB%99%E5%B2%B3%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 11:45:55.546585*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%B5%B7%E5%A4%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 11:47:19.158368*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%87%A4%E7%A5%A5%E5%88%AB%E5%A2%85. 
+
+*******2018-10-22 11:48:14.125577*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E9%83%BD%E5%B8%82%E6%B8%AF%E6%B9%BE. 
+
+*******2018-10-22 11:49:33.721011*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%91%9E%E6%99%AF%E5%95%86%E4%B8%9A%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 11:51:19.316405*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E7%B1%B3%E5%85%B0%E6%98%A5%E5%A4%A9. 
+
+*******2018-10-22 11:51:45.913589*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E6%99%AF%E6%98%8E%E7%8F%A0%28%E5%88%AB%E5%A2%85%29. 
+
+*******2018-10-22 11:52:34.755835*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%9D%BE%E6%9F%8F%E5%8D%8E%E5%BA%AD. 
+
+*******2018-10-22 11:54:07.633371*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn8/?key=%E5%8E%A6%E7%A6%BE%E8%A3%95%E6%99%AF. 
+
+*******2018-10-22 12:00:42.524968*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn28/?key=%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6. 
+
+*******2018-10-22 12:02:54.538480*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn9/?key=%E5%98%89%E7%9B%9B%E8%B1%AA%E5%9B%AD. 
+
+*******2018-10-22 12:03:27.826384*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BA%BF%E5%8A%9B%E4%B9%90%E5%9B%AD. 
+
+*******2018-10-22 12:04:02.775383*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%81%94%E4%B8%B0%E7%91%9E%E5%9B%AD. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-22 12:04:23.728582*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 91, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '58㎡60'
+
+*******2018-10-22 12:05:27.671239*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E6%BA%90%E6%98%8C%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 12:05:51.650610*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E7%9B%9B%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 12:06:19.500203*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E4%B8%AD%E4%BA%A4%E5%92%8C%E7%BE%8E%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 12:06:40.884426*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%8A%E5%8F%A4%E8%A1%9782%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 12:07:12.347226*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E4%BA%A4%E5%92%8C%E7%BE%8E%E6%96%B0%E5%9F%8E%28%E5%88%AB%E5%A2%85%29. 
+
+*******2018-10-22 12:07:34.076469*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%B0%E8%B1%A1%E4%BA%94%E5%8F%B7. 
+
+*******2018-10-22 12:07:50.162389*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%96%B0%E6%99%AF%E4%B8%96%E7%BA%AA%E5%9F%8EA%E5%8C%BA. 
+
+*******2018-10-22 12:08:09.979522*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%8A%E4%B8%9C%E7%BE%8E%E5%9C%B0. 
+
+*******2018-10-22 12:08:53.384005*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%B0%B4%E5%B2%B8%E7%AD%BC%E7%AD%9C. 
+
+*******2018-10-22 12:09:29.080047*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%95%85%E5%AE%AB%E8%B7%AF%E8%B4%A2%E6%94%BF%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 12:09:53.992472*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E8%8A%B3%E5%B1%B1%E5%BA%84. 
+
+*******2018-10-22 12:10:33.828750*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%96%87%E5%BA%B7%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 12:11:01.651341*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E6%B5%B7%E5%B3%A1%E5%9B%BD%E9%99%85%E7%A4%BE%E5%8C%BA%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 12:12:11.664346*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%85%AC%E4%BA%A4%E5%AE%BF%E8%88%8D. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-22 12:12:39.380931*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 91, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '58㎡60'
+
+*******2018-10-22 12:14:15.712441*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%AD%E9%93%81%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 12:15:58.700332*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn21/?key=%E4%B8%9C%E5%8D%97%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 12:19:48.104453*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9D%8F%E6%9E%97%E6%97%A5%E4%B8%9C%E8%B7%AF%E5%85%AC%E5%9B%AD%E6%97%81%E4%B8%A4%E6%88%BF. 
+
+*******2018-10-22 12:20:34.489106*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A1%98%E8%BE%B9%E9%82%AE%E7%94%B5%E5%B1%80%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 12:21:13.612344*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E9%87%8C%E5%A4%96%E5%8F%A3%E7%94%9F%E6%B4%BB%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 12:21:47.573286*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%96%B0%E6%99%AF%E7%BF%A1%E7%BF%A0%E8%8B%91. 
+
+*******2018-10-22 12:22:36.105062*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E6%B2%A7%E5%A4%96%E5%8F%A3%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 12:24:26.335367*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AD%A6%E5%BA%9C%E5%85%AC%E5%9B%AD. 
+
+*******2018-10-22 12:25:36.735393*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E7%A6%B9%E5%B7%9E%E6%96%B0%E6%9D%91. 
+
+*******2018-10-22 12:27:21.546388*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn9/?key=%E9%BB%8E%E5%AE%89%E5%B0%8F%E9%95%87. 
+
+*******2018-10-22 12:28:12.085279*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8F%8C%E7%8B%AE%E5%B1%B1%E6%B8%AF%E5%8A%A1%E5%B1%80%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 12:28:40.853924*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%BB%BA%E5%85%B4%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 12:35:37.638763*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E7%A6%8F%E9%9A%86%E5%9B%BD%E9%99%85. 
+
+*******2018-10-22 12:36:03.060217*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9D%8F%E5%8D%97%E8%B7%AF31%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 12:39:48.588117*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E8%8E%B2%E8%8A%B1%E5%9B%BD%E9%99%85. 
+
+*******2018-10-22 12:40:44.535317*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E9%98%B3%E5%85%89%E6%B5%B7%E5%B2%B8. 
+
+*******2018-10-22 12:41:16.216129*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%90%8C%E5%AD%A6%E5%BA%9C. 
+
+*******2018-10-22 12:41:39.411455*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9CD%E5%8C%BA. 
+
+*******2018-10-22 12:42:49.868485*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn9/?key=%E6%B5%B7%E6%99%9F%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A. 
+
+*******2018-10-22 12:43:19.675190*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%8F%B0%E5%8C%97%E6%96%B0%E6%9D%91. 
+
+*******2018-10-22 12:43:50.734967*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E6%BA%90%E6%98%8C%E8%B1%AA%E5%BA%AD. 
+
+*******2018-10-22 12:44:42.769943*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%B4%AB%E9%87%91%E5%AE%B6%E5%9B%AD%E5%8C%97%E5%8C%BA. 
+
+*******2018-10-22 12:45:29.454613*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%89%B9%E6%88%BF%E5%B0%8A%E5%A2%85. 
+
+*******2018-10-22 12:45:53.511989*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E8%A3%95%E7%9B%9B%E5%9B%AD. 
+
+*******2018-10-22 12:48:12.569943*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%98%89%E7%BE%8E%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 12:48:39.648492*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%9B%BD%E8%B4%B8%E5%A4%A9%E7%90%B4%E6%B9%BE2%E6%9C%9F. 
+
+*******2018-10-22 12:49:12.318360*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E4%B8%96%E7%BA%AA%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 12:50:12.164783*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%89%B9%E6%88%BF%E4%BA%94%E7%BC%98%E6%96%B0%E5%BA%A7. 
+
+*******2018-10-22 12:51:30.313253*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E8%8E%B2%E8%8A%B1%E6%96%B0%E5%9F%8E%E6%B9%96%E5%9B%AD. 
+
+*******2018-10-22 12:52:24.755367*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E7%BF%94%E9%B9%AD%E8%8A%B1%E5%9F%8E%E4%B8%80%E6%9C%9F. 
+
+*******2018-10-22 12:54:43.676313*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%9B%BD%E8%B4%B8%E5%A4%A9%E7%90%B4%E6%B9%BE1%E6%9C%9F. 
+
+*******2018-10-22 12:55:07.815693*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%9C%E6%99%96%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 12:55:52.616256*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%9B%BD%E8%B4%B8%E5%A4%A9%E7%90%B4%E6%B9%BE1%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2018-10-22 12:56:51.375617*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn9/?key=%E7%89%B9%E6%88%BF%E9%94%A6%E7%BB%A3%E7%A5%A5%E5%AE%89. 
+
+*******2018-10-22 12:57:26.542628*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%A6%E5%8D%97%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 12:58:05.166837*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%80%A1%E6%99%AF%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 12:58:35.255558*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn14/?key=%E5%98%89%E7%A6%BE%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 12:59:36.367054*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AF%8C%E8%B4%B5%E9%97%A8%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 13:00:17.386400*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn8/?key=%E7%91%9E%E6%99%AF%E6%96%B0%E6%9D%91. 
+
+*******2018-10-22 13:00:39.314654*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E7%91%9E%E6%99%AF%E6%96%B0%E6%9D%91. 
+
+*******2018-10-22 13:01:57.641134*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%97%E5%B1%B1%E8%B7%AF101%E5%8F%B7. 
+
+*******2018-10-22 13:02:55.237428*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B9%8C%E7%9F%B3%E6%B5%A6%E6%96%B0%E6%9D%91%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-22 13:03:40.252003*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%82%B2%E9%9D%92%E8%B7%AF15%E5%8F%B7%E5%89%8D%E6%A5%BC%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:04:04.425386*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E8%A5%BF%E6%B4%8B%E6%B5%B7%E6%99%AF%E5%9F%8E. 
+
+*******2018-10-22 13:04:51.108056*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AE%9A%E5%AE%89%E8%B7%AF36%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:05:44.954136*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn25/?key=%E4%B8%AD%E5%B1%B1%E8%B7%AF. 
+
+*******2018-10-22 13:06:22.599289*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn27/?key=%E4%B8%AD%E5%B1%B1%E8%B7%AF. 
+
+*******2018-10-22 13:07:04.826704*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%89%B9%E6%88%BFG01%E6%96%B0%E5%BA%A7. 
+
+*******2018-10-22 13:07:34.449398*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%BA%90%E6%98%8C%E8%B1%AA%E5%BA%AD%E4%B8%80%E6%9C%9F. 
+
+*******2018-10-22 13:08:02.563006*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E9%87%91%E5%B1%B1%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:09:19.986435*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B0%9A%E5%BF%A0%E7%A4%BE15%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:10:08.965236*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E7%91%9E%E6%99%AF%E6%96%B0%E6%9D%91%E8%85%BE%E9%B9%AD%E8%8B%91. 
+
+*******2018-10-22 13:11:14.657994*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%AD%A6%E5%A4%B7%E5%98%89%E5%9B%AD. 
+
+*******2018-10-22 13:11:32.755029*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%A5%BF%E6%9E%97%E8%B7%AF14%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:13:55.523195*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%87%AF%E6%82%A6%E5%85%AC%E9%A6%86. 
+
+*******2018-10-22 13:14:24.497852*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%A5%BF%E5%A0%A4%E5%88%AB%E5%A2%85. 
+
+*******2018-10-22 13:15:02.474024*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%87%91%E6%9E%8B%E4%B8%96%E5%AE%B6. 
+
+*******2018-10-22 13:15:27.295444*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E6%B5%A6%E8%B7%AF60%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:15:52.654894*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E4%B8%AD%E5%BF%83%E4%BA%91%E7%8E%BA. 
+
+*******2018-10-22 13:16:21.831563*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%AB%98%E6%9E%97%E5%B1%85%E4%BD%8F%E5%8C%BA%28%E4%BA%8C%E6%9C%9F%29. 
+
+*******2018-10-22 13:17:37.523892*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E4%BE%A8%E7%A6%8F%E5%9F%8E. 
+
+*******2018-10-22 13:17:59.526151*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B1%85%E5%AE%89%E9%87%8C26-27%E5%8F%B7. 
+
+*******2018-10-22 13:18:22.364457*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%8F%A4%E6%A5%BC%E5%8C%97%E9%87%8C. 
+
+*******2018-10-22 13:19:06.103959*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%B9%96%E8%BE%B9%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 13:19:24.967038*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E5%B7%9E%E9%A6%99%E6%A7%9F%E5%9F%8E. 
+
+*******2018-10-22 13:19:53.001641*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%B5%B7%E9%9F%B5%E5%8D%8E%E5%BA%AD. 
+
+*******2018-10-22 13:21:30.980245*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%89%B9%E6%88%BF%E4%BA%94%E7%BC%98%E5%B0%8A%E5%A2%85. 
+
+*******2018-10-22 13:21:47.234175*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%82%B2%E9%9D%92%E8%B7%AF17-23%E5%8F%B7%E6%A5%BC. 
+
+*******2018-10-22 13:22:18.162944*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%A6%8F%E8%BE%BE%E9%87%8C. 
+
+*******2018-10-22 13:22:52.957934*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%89%B9%E6%88%BF%E5%B1%B1%E6%B0%B4%E6%96%B0%E5%BA%A7. 
+
+*******2018-10-22 13:23:22.353615*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%9B%BD%E8%B4%B8%E6%96%B0%E5%9F%8E. 
+
+*******2018-10-22 13:23:56.505569*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%A6%99%E6%B8%AF%E6%97%B6%E4%BB%A3%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 13:25:08.394681*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AE%98%E9%83%BD%E9%87%8C. 
+
+*******2018-10-22 13:25:58.858567*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A7%91%E7%91%9E%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 13:26:30.351368*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%9B%BD%E8%B4%B8%E5%A4%A9%E7%90%B4%E6%B9%BE2%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2018-10-22 13:26:56.237849*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%AD%A3%E5%85%83%E6%96%B0%E9%83%BD%E4%BC%9A. 
+
+*******2018-10-22 13:30:42.317780*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%BA%90%E6%B3%89%E5%B1%B1%E5%BA%84%28%E6%B9%96%E9%87%8C%29. 
+
+*******2018-10-22 13:35:10.516120*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E4%B8%AD%E5%A4%AE%E6%B5%B7%E5%B2%B8%E4%BA%8C%E6%9C%9F%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-10-22 13:35:53.900601*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%89%B9%E6%88%BF%E5%B1%B1%E6%B0%B4%E5%B0%9A%E5%BA%A7. 
+
+*******2018-10-22 13:37:18.460438*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E6%B8%A1%E5%86%9C%E8%A1%8C%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 13:37:39.296630*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%AD%A6%E8%B7%AF117%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:38:32.914697*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E4%B8%9C%E6%B8%A1%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:38:52.879839*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn8/?key=%E4%B8%9C%E6%B8%A1%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:39:09.181771*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%98%89%E5%B9%B4%E5%8D%8E%E5%A4%A7%E5%8E%A6%E6%B0%91%E7%AB%8B%E5%B0%8F%E5%AD%A6. 
+
+*******2018-10-22 13:39:37.494390*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%9C%AA%E6%9D%A5%E6%A9%99%E5%A0%A1B. 
+
+*******2018-10-22 13:40:15.085540*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%BB%A8%E5%AE%89%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 13:40:35.388702*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%AB%98%E6%9E%97%E5%B1%85%E4%BD%8F%E5%8C%BA%E5%8C%97%E5%8C%BA. 
+
+*******2018-10-22 13:41:32.042942*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%BD%AE%E6%B8%A1%E5%98%89%E5%B9%B4%E5%8D%8E%E6%80%9D%E6%98%8E%E6%B0%91%E7%AB%8B. 
+
+*******2018-10-22 13:42:35.638580*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%BE%8E%E9%99%A292. 
+
+*******2018-10-22 13:43:00.772017*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%89%B9%E6%88%BF%E5%B1%B1%E6%B0%B4%E6%9D%B0%E5%BA%A7. 
+
+*******2018-10-22 13:44:16.332339*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%BA%90%E6%98%8C%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 13:45:41.523212*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BB%84%E5%BA%84%E5%A4%96%E5%8F%A3%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 13:46:34.732255*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8F%E6%88%90%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 13:47:03.699912*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%B3%8C%E5%9B%AD%E8%B7%AF23%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:49:33.246465*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8E%A6%E9%97%A8%E7%94%B5%E6%9C%BA%E5%8E%82%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 13:50:39.799272*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%9B%BD%E8%B4%B8%E6%B6%A6%E5%9B%AD. 
+
+*******2018-10-22 13:51:02.314560*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%85%B4%E4%B8%9A%E4%B8%AD%E5%BF%83. 
+
+*******2018-10-22 13:51:45.184012*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E6%BA%90%E6%98%8C%E5%9B%BD%E9%99%85%E5%9F%8E. 
+
+*******2018-10-22 13:52:12.663584*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%98%89%E8%8B%B1%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 13:52:57.949174*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%BB%BA%E8%AE%BE%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 13:55:01.787257*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn14/?key=%E8%9E%8D%E4%BF%A1%E6%B5%B7%E4%B8%8A%E5%9F%8E. 
+
+*******2018-10-22 13:55:45.387751*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%87%91%E5%B1%B1%E6%B9%96%E6%99%AF%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 13:56:43.070050*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%91%9E%E6%99%AF%E6%96%B0%E6%9D%91%E9%B8%A3%E5%87%A4%E8%8B%91. 
+
+*******2018-10-22 13:57:14.956874*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn12/?key=%E4%B8%AD%E8%88%AA%E5%9F%8EA%E5%8C%BA. 
+
+*******2018-10-22 13:58:05.828783*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%89%B9%E6%88%BF%E5%8D%8E%E8%8B%91. 
+
+*******2018-10-22 13:58:23.860815*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BE%A8%E7%A6%8F%E5%9F%8E%E5%B0%8F%E5%8C%BA%E4%B8%89%E6%9C%9F. 
+
+*******2018-10-22 13:59:16.698837*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9C%E5%88%AB%E5%A2%85. 
+
+*******2018-10-22 13:59:34.859876*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9C%88%E5%8F%B0%E8%B7%AF9%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 13:59:58.399222*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-10-22 14:00:15.628208*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%89%8D%E5%9F%94%E5%8D%97%E5%8C%BA%E5%8F%A4%E6%A5%BC%E5%B9%BF%E5%9C%BA%E7%94%B5%E6%A2%AF%E6%88%BF. 
+
+*******2018-10-22 14:01:15.293620*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn9/?key=%E6%9D%8F%E6%9E%97%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 14:04:11.603705*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%BE%E6%82%A6%E5%9F%8EA%E6%A0%8B. 
+
+*******2018-10-22 14:04:48.075791*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8C%B6%E5%8E%82%E5%AE%BF%E8%88%8D. 
+
+*******2018-10-22 14:05:45.296063*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BA%94%E7%BC%98%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 14:06:05.417214*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%98%A0%E7%A2%A7%E9%87%8C28%E5%8F%B7501. 
+
+*******2018-10-22 14:08:15.280642*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%87%91%E6%9E%97%E6%B9%BE%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 14:09:18.114236*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn10/?key=%E6%B1%9F%E5%A4%B4%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 14:13:21.472155*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E6%BB%A8%E5%8D%97%E8%B7%AF72%E5%8F%B7. 
+
+*******2018-10-22 14:13:55.509024*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%8E%A6%E9%97%A8%E5%B8%82%E5%8D%8E%E4%BE%A8%E6%B5%B7%E6%99%AF%E5%9F%8E. 
+
+*******2018-10-22 14:14:56.505780*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%94%90%E4%BA%94%E7%BC%98YOHO. 
+
+*******2018-10-22 14:15:23.856954*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E5%B3%A1%E5%95%86%E8%B4%B8%E5%9F%8E. 
+
+*******2018-10-22 14:15:51.045477*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%AD%E5%B1%B1%E8%B7%AF%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 14:16:28.595624*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%80%9D%E6%98%8E%E5%8C%BA%E5%89%8D%E5%9F%94%E5%8D%97%E5%8C%BA%E5%8F%A4%E6%A5%BC%E5%8C%97%E9%87%8C. 
+
+*******2018-10-22 14:17:03.716633*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn12/?key=%E6%96%B0%E5%9F%8E%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 14:17:29.482107*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn13/?key=%E6%96%B0%E5%9F%8E%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-22 14:18:37.645944*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn17/?key=%E6%B5%B7%E6%B2%A7%E9%98%BF%E7%BD%97%E6%B5%B7. 
+
+*******2018-10-22 14:20:19.965727*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E9%AA%8F%E5%A4%A9%E5%B3%B0%28%E5%88%AB%E5%A2%85%29. 
+
+*******2018-10-22 14:20:56.598813*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E8%BE%B9%E8%8A%B1%E5%9B%ADA%E5%8C%BA. 
+
+*******2018-10-22 14:21:36.680077*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%85%B1%E5%92%8C%E5%A4%A7%E5%8E%A6. 
+
+*******2018-10-22 14:24:20.102313*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn45/?key=%E6%B9%96%E9%87%8C%E6%B1%9F%E5%A4%B4. 
+
+*******2018-10-22 14:26:23.159290*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E9%87%8C%E4%B8%87%E8%BE%BE%E5%85%AC%E5%AF%93b%E5%8C%BA. 
+
+*******2018-10-22 14:26:58.785291*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9A%E4%B8%BB%E8%87%AA%E5%94%AE%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+*******2018-10-22 14:28:16.277698*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E4%BB%99%E6%BA%90%E9%87%8C. 
+
+*******2018-10-22 14:28:40.207059*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%90%8C%E5%AE%89%E5%B7%A5%E4%B8%9A%E5%8C%BA%E5%A4%A7%E9%97%A8%E5%8F%A3. 
+
+*******2018-10-22 14:31:46.192595*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E8%BE%BE%E5%8D%95%E8%BA%AB%E5%85%AC%E5%AF%93. 
+
+*******2018-10-22 14:32:23.964735*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%87%A4%E7%A5%A5%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-22 14:33:00.948813*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E9%87%8C%E5%8C%BA%E6%BA%90%E6%B3%89%E5%B1%B1%E5%BA%84. 
+
+*******2018-10-22 14:33:40.409044*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn12/?key=%E5%8E%A6%E9%97%A8%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA. 
+
+*******2018-10-22 14:34:10.972783*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn11/?key=%E5%8E%A6%E9%97%A8%E4%B8%87%E8%BE%BE%E5%B9%BF%E5%9C%BA. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-22 15:23:41.849002*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 73, in craw_a_page
+    if len(html_cont.cookies.items()) > 0 :
+AttributeError: 'NoneType' object has no attribute 'cookies'
+========2018-10-22 16:35:46.856340record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')

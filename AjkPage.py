@@ -38,11 +38,12 @@ class AjkPage(PageParser.PageParser):
         houses = soup.select('div.house-details')
         comms = soup.select('span.comm-address')
         prices = soup.select('span.price-det')
-
+        # print(titles)
         for title, details, comm, price in zip(titles, houses, comms, prices):
             each_data = dict(advantage='', builded_year=0, spatial_arrangement='', floor_index=0, total_floor=0)
             each_data['title'] = title.get('title')
             each_data['details_url'] = title.get('href').split('?')[0]
+            # print(price)
 
             try:  # 2016.8.1 这里解析也时有出差，把它保留下来
                 # each_data['total_price'] = int(filter(str.isdigit,price.get_text().encode('utf8')))

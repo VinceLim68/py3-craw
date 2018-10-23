@@ -12,20 +12,23 @@ import sys
 
 class Downloader(object):
 
-    # def __init__(self,headers={},proxy=None):
-
-    #     self.headers = headers  
-    #     self.proxy = proxy
+    def __init__(self):
+        self.cookies = {}
 
     # 下载主体
     # 支持延时，文件头，代理，重复抓取
-    def download(self,url,headers={},proxy=None,num_retries=3):
+    def download(self,url,headers={},proxy=None):
         
         print("Downloadding : {0}".format(url))
         
         try:
             r = requests.get(url = url, headers = headers, 
-                timeout = 8, proxies = proxy)
+                timeout = 8, proxies = proxy,cookies=self.cookies)
+
+            if len(r.cookies.items()) > 0:
+                self.cookies = dict(r.cookies.items())
+                print(self.cookies)
+                # input('有cookies,按任意键继续......')
             if 400 <= r.status_code < 600:
                 # html = 404
                 html = r.status_code
@@ -44,12 +47,7 @@ class Downloader(object):
                     html = r.text
         except Exception as e:
             print("Request failed(在Downloader里): {0}".format(e))
-            # print("Request failed(在Downloader里): {0}".format(e))
             html = None
-
-        # print('r.headers["content-type"]is {0}'.format(r.headers['content-type']))
-        # print('r.encoding is {0}'.format(r.encoding))
-        # print('r.apparent_encoding is {0}'.format( r.apparent_encoding))
 
         return html
 

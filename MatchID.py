@@ -172,7 +172,7 @@ class MatchID(object):
         if flag:
             print('*********匹配多个小区id**********')
             ToolsBox.printDic(data)
-            print('*********匹配的小区**********')
+            print('||||||||||||||||匹配多个小区|||||||||||||||||')
             ToolsBox.printDic(get)
             return len(get)
         else:
