@@ -5,6 +5,20 @@ import traceback
 
 class MaitianPage(PageParser.PageParser):
 
+    def is_check(self,soup):
+        # 判断是否是验证界面
+        ischeck = soup.select("title")
+
+        if len(ischeck) > 0:            #如果找不到title,就认为不是验证界面
+            title = ischeck[0].get_text().strip()
+            iscode = (title == "ERROR: ACCESS DENIED")
+        else:
+            iscode = False
+        if iscode :
+            print('调试：页面标题是---->{0}'.format(title))
+
+        return iscode
+
     def parse_urls(self, soup):
         new_urls = set()
         pagelinks = soup.select("#paging > a")
@@ -80,7 +94,8 @@ class MaitianPage(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = MaitianPage()
-    url = 'http://xm.maitian.cn/esfall/PG2'
+    url = 'http://xm.maitian.cn/esfall/PG4'
     html_cont = downloader.download(url)
-    urls,datas = parser.page_parse(html_cont)
-    ToolsBox.priList(datas)
+    print(html_cont)
+    # urls,datas = parser.page_parse(html_cont)
+    # ToolsBox.priList(datas)

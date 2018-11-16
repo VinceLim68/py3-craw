@@ -13995,3 +13995,1482 @@ Traceback (most recent call last):
   File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
     raise errorclass(errno, errval)
 pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-29 08:17:53.620979*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E5%BB%BA%E5%8F%91%E5%A4%AE%E7%8E%BA. 
+
+*******2018-10-29 08:20:53.323847*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg3rs%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9CD%E5%8C%BA/. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-29 08:31:25.225055*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-10-29 08:44:11.610339*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E5%8E%A6%E9%97%A8%E5%BB%BA%E5%8F%91%E5%A4%AE%E7%8E%BA. 
+
+*******2018-10-29 09:13:48.597947*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E8%A3%95%E5%8F%91%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-29 09:15:40.043559*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E7%89%B9%E6%88%BF%E5%B1%B1%E6%B0%B4%E5%B0%9A%E5%BA%A7. 
+
+*******2018-10-29 09:16:44.081962*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg2rs%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9CC%E5%8C%BA/. 
+
+*******2018-10-29 09:19:21.570928*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E8%8E%B2%E8%8A%B1%E5%88%AB%E5%A2%85. 
+
+*******2018-10-29 09:21:03.909856*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%9B%8A%E8%BE%89%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-29 09:28:15.115009*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-10-29 09:40:03.277961*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%90%8E%E7%82%89%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-29 09:41:15.709439*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%BD%B3%E7%A5%A5%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-29 09:52:51.360161*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E8%B1%A1%E5%B1%BF%E8%8A%B1%E5%9B%AD. 
+========2018-10-29 10:00:36.384820record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:02:58.398595record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:06:22.866161record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:08:57.931406record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+               *******newFunc*******,error record by @mylog on 2018-10-29 10:09:26.969426*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-10-29 10:09:31.251779*************
+ 本页面无数据:http://xm.ganji.com/fang5/o6/. 
+========2018-10-29 10:09:44.916262record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-29 10:09:53.531957*************
+ 本页面无数据:http://xm.ganji.com/fang5/o13/. 
+
+*******2018-10-29 10:10:16.834762*************
+ 本页面无数据:http://xm.ganji.com/fang5/o9/. 
+
+*******2018-10-29 10:10:37.085259*************
+ 本页面无数据:http://xm.ganji.com/fang5/o3/. 
+
+*******2018-10-29 10:10:58.332607*************
+ 本页面无数据:http://xm.ganji.com/fang5/o5/. 
+
+*******2018-10-29 10:11:18.568517*************
+ 本页面无数据:http://xm.ganji.com/fang5/o7/. 
+
+*******2018-10-29 10:11:38.866026*************
+ 本页面无数据:http://xm.ganji.com/fang5/o8/. 
+
+*******2018-10-29 10:11:58.086296*************
+ 本页面无数据:http://xm.ganji.com/fang5/. 
+
+*******2018-10-29 10:12:18.449218*************
+ 本页面无数据:http://xm.ganji.com/fang5/o4/. 
+
+*******2018-10-29 10:12:39.783579*************
+ 本页面无数据:http://xm.ganji.com/fang5/o11/. 
+
+*******2018-10-29 10:12:58.059619*************
+ 本页面无数据:http://xm.ganji.com/fang5/o12/. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-29 10:17:59.223629*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '58㎡60'
+========2018-10-29 10:21:00.585399record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-29 10:21:26.463676*************
+ 本页面无数据:http://xm.ganji.com/fang5/o112/. 
+
+*******2018-10-29 10:21:50.320041*************
+ 本页面无数据:http://xm.ganji.com/fang5/o110/. 
+
+*******2018-10-29 10:22:09.501138*************
+ 本页面无数据:http://xm.ganji.com/fang5/o111/. 
+
+*******2018-10-29 10:22:41.997997*************
+ 本页面无数据:http://xm.ganji.com/fang5/o113/. 
+
+*******2018-10-29 10:23:02.267156*************
+ 本页面无数据:http://xm.ganji.com/fang5/o114/. 
+========2018-10-29 10:24:22.704757record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:31:30.887247record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:34:52.115757record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:38:17.064479record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:41:41.763187record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-29 10:44:31.082872*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E7%BD%97%E5%AE%BE%E6%A3%AE%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-29 10:45:26.121020*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%BD%A9%E8%99%B9%E8%8A%B1%E5%9B%AD. 
+========2018-10-29 10:45:58.702884record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:49:21.569487record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-29 10:51:28.703758*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E9%91%AB%E5%A1%94%E6%B0%B4%E5%B0%9A. 
+========2018-10-29 10:52:42.129958record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:55:12.132538record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:58:37.388278record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-10-29 10:58:49.380964record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-10-29 11:04:11.126367*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%87%E6%B3%B0%E4%B8%9C%E6%96%B9. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-29 11:09:11.761562*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-10-29 11:16:08.424394*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E7%89%B9%E6%88%BF%E5%B1%B1%E6%B0%B4%E6%9D%B0%E5%BA%A7. 
+
+*******2018-10-29 11:23:28.440561*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BE%99%E5%AE%AB%E5%95%86%E4%BD%8F%E6%A5%BC. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-29 11:23:59.094314*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '58㎡60'
+
+*******2018-10-29 11:25:06.975197*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E6%98%8E%E5%8F%91%E5%8D%8A%E5%B2%9B%E7%A5%A5%E6%B9%BE. 
+
+*******2018-10-29 11:31:22.412671*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2018-10-29 11:49:06.405528*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E9%94%A6%E5%8D%8E%E9%87%91%E9%83%BD. 
+
+*******2018-10-29 12:07:27.296494*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E7%BD%97%E5%AE%BE%E6%A3%AE%E7%92%80%E7%92%A8%E6%96%B0%E5%9F%8E%E4%BA%8C%E6%9C%9F. 
+
+*******2018-10-29 12:17:17.785268*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn8/?key=%E9%98%B3%E5%85%89%E5%9F%8E%E7%BF%A1%E4%B8%BD%E6%B9%BE. 
+
+*******2018-10-29 12:51:37.303062*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%96%B0%E6%99%AF%E4%B8%96%E7%BA%AA%E5%9F%8EA%E5%8C%BA. 
+
+*******2018-10-29 12:53:41.860187*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9A%E4%B8%BB%E8%87%AA%E5%94%AE%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+*******2018-10-29 12:54:17.459223*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%9F%95%E8%A5%BF%E6%96%B0%E6%9D%91. 
+
+               *******newFunc*******,error record by @mylog on 2018-10-29 13:00:26.568332*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 45, in page_parse
+    new_datas = self.parse_datas(soup)
+  File "E:\py3-craw\WbPage.py", line 49, in parse_datas
+    d1 = self.parse_item(string)
+  File "E:\py3-craw\PageParser.py", line 115, in parse_item
+    parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+ValueError: could not convert string to float: '58㎡60'
+
+*******2018-10-29 13:07:54.691963*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%B1%B1%E6%B0%B4%E6%9D%B0%E5%BA%A7. 
+
+*******2018-10-29 13:08:44.046786*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%AD%E9%93%81%E8%8A%B1%E5%9B%AD. 
+
+*******2018-10-29 13:09:52.631709*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B9%96%E9%87%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA2%E6%88%BF. 
+
+*******2018-11-05 09:12:30.689262*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg1rs%E5%B0%86%E5%86%9B%E7%A5%A0%E8%B7%AF132-137%E5%8F%B7/. 
+
+*******2018-11-05 09:26:10.448843*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg1rs%E6%B9%96%E5%85%89%E8%B7%AF88-91%E5%8F%B7%E9%99%A2/. 
+
+*******2018-11-05 09:43:06.864061*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E5%9B%BD%E9%99%85%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+========2018-11-05 09:48:23.922472record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-11-05 09:49:58.936309record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-11-05 09:50:58.946113record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-11-05 11:33:18.959562record by outputer 
+Traceback (most recent call last):
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1021, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "G:\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1029, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)')
+========2018-11-05 11:33:35.120758record by outputer 
+Traceback (most recent call last):
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1021, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "G:\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1029, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)')
+========2018-11-05 11:33:51.336002record by outputer 
+Traceback (most recent call last):
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1021, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "G:\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1029, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)')
+========2018-11-05 11:33:55.218702record by outputer 
+Traceback (most recent call last):
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1039, in _write_bytes
+    self._sock.sendall(data)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 855, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1092, in _execute_command
+    self._write_bytes(packet)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1044, in _write_bytes
+    "MySQL server has gone away (%r)" % (e,))
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))")
+========2018-11-05 11:34:03.734123record by outputer 
+Traceback (most recent call last):
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1021, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "G:\Python36\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 987, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1029, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)')
+
+*******2018-11-05 11:39:41.702475*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9CB%E5%8C%BA. 
+
+*******2018-11-05 11:46:26.612601*************
+ 本页面无数据:http://xm.ganji.com/fang5/o3/. 
+
+*******2018-11-05 11:46:45.899366*************
+ 本页面无数据:http://xm.ganji.com/fang5/o4/. 
+
+*******2018-11-05 11:47:07.175715*************
+ 本页面无数据:http://xm.ganji.com/fang5/o6/. 
+
+*******2018-11-05 11:47:32.668225*************
+ 本页面无数据:http://xm.ganji.com/fang5/o8/. 
+
+*******2018-11-05 11:47:52.954608*************
+ 本页面无数据:http://xm.ganji.com/fang5/o10/. 
+
+               *******newFunc*******,error record by @mylog on 2018-11-05 11:48:11.323562*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-11-05 11:48:14.198210*************
+ 本页面无数据:http://xm.ganji.com/fang5/o9/. 
+
+*******2018-11-05 11:48:37.392360*************
+ 本页面无数据:http://xm.ganji.com/fang5/o5/. 
+
+*******2018-11-05 11:48:55.630129*************
+ 本页面无数据:http://xm.ganji.com/fang5/o7/. 
+
+*******2018-11-05 11:57:52.085901*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E9%87%91%E9%A2%86%E5%B9%BF%E5%9C%BA. 
+
+*******2018-11-05 12:11:51.151375*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E6%BA%90%E6%98%8C%E8%B1%AA%E5%BA%AD%E4%B8%80%E6%9C%9F. 
+
+*******2018-11-05 12:28:07.491881*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9A%E4%B8%BB%E8%87%AA%E5%94%AE%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+               *******newFunc*******,error record by @mylog on 2018-11-05 12:33:08.249822*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-11-05 12:41:07.989041*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E4%B9%9D%E9%BE%99%E5%9F%8E. 
+
+*******2018-11-05 12:52:51.806435*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E9%87%91%E6%9E%97%E8%8A%B1%E5%9B%AD. 
+
+*******2018-11-05 12:58:37.106823*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%BB%BA%E5%8F%91%E4%B8%AD%E5%A4%AE%E6%B9%BE%E5%8C%BA%E5%A4%AE%E5%A2%85. 
+
+*******2018-11-05 13:00:43.139837*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%B5%B7%E5%BE%B7%E8%8A%B1%E5%9B%AD. 
+
+*******2018-11-05 13:01:44.009429*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E9%BE%99%E6%B9%96%E6%98%A5%E6%B1%9F%E9%83%A6%E5%9F%8E. 
+
+*******2018-11-05 13:10:30.356019*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%AD%E9%93%81%E8%8A%B1%E5%9B%AD. 
+
+*******2018-11-05 13:17:44.248186*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn16/?key=%E6%B5%B7%E5%B3%A1%E5%9B%BD%E9%99%85. 
+
+*******2018-11-05 13:43:42.185672*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn16/?key=%E6%B5%B7%E6%B2%A7%E4%B8%87%E7%A7%91%E5%9F%8E%E4%B8%80%E6%9C%9F. 
+
+*******2018-11-05 13:56:58.360503*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E7%89%B9%E6%88%BF%E5%B1%B1%E6%B0%B4%E6%9D%B0%E5%BA%A7. 
+
+*******2018-11-05 14:05:40.110981*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn11/?key=%E9%98%B3%E5%85%89%E5%9F%8E%E7%BF%A1%E4%B8%BD%E6%B9%BE. 
+
+*******2018-11-05 14:23:28.619770*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BE%99%E5%AE%AB%E5%95%86%E4%BD%8F%E6%A5%BC. 
+
+*******2018-11-05 14:26:46.413156*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-11-05 14:49:58.413257*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%BE%A1%E4%B9%8B%E8%8B%91. 
+
+*******2018-11-05 14:55:08.637603*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2018-11-05 15:04:39.899685*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E5%B1%B1%E6%B0%B4%E6%9D%B0%E5%BA%A7. 
+========2018-11-12 08:22:44.039768record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-11-12 08:24:37.057016record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-11-12 08:28:00.892158*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn7/?key=%E7%BD%97%E5%AE%BE%E6%A3%AE%E4%BA%8C%E6%9C%9F. 
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 08:31:14.682929*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+========2018-11-12 08:32:34.336862record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'spatial_arrangement' at row 1")
+
+*******2018-11-12 08:49:16.013559*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B8%AD%E8%88%AA%E5%9F%8E%E5%9B%BD%E9%99%85%E7%A4%BE%E5%8C%BAA%E5%8C%BA%28%E5%88%AB%E5%A2%85%29. 
+========2018-11-12 08:57:10.583299record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 09:01:48.650855*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2018-11-12 09:02:30.475601*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg3rs%E6%B0%B4%E6%99%B6%E6%B9%96%E9%83%A1A%E5%8C%BA/. 
+
+*******2018-11-12 09:08:33.505922*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg2rs%E4%B8%9C%E6%96%B9%E5%B7%B4%E9%BB%8E/. 
+
+*******2018-11-12 09:22:19.495552*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E4%B8%AD%E5%A4%AE%E6%B5%B7%E5%B2%B8%E4%BA%8C%E6%9C%9F%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 09:24:00.078780*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+========2018-11-12 10:06:38.173764record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-11-12 10:13:06.598982record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-11-12 10:16:28.001111record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-11-12 10:19:49.003205record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2018-11-12 10:23:12.421165record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-11-12 10:25:23.576566*************
+ 本页面无数据:http://xm.ganji.com/fang5/o12/. 
+
+*******2018-11-12 10:25:48.891171*************
+ 本页面无数据:http://xm.ganji.com/fang5/o3/. 
+
+*******2018-11-12 10:26:03.238439*************
+ 本页面无数据:http://xm.ganji.com/fang5/o11/. 
+
+*******2018-11-12 10:26:24.518322*************
+ 本页面无数据:http://xm.ganji.com/fang5/o6/. 
+
+*******2018-11-12 10:26:43.389336*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E7%99%BD%E9%B9%AD%E8%8A%B1%E5%9B%AD%E5%85%AC%E5%AF%93. 
+
+*******2018-11-12 10:26:43.806950*************
+ 本页面无数据:http://xm.ganji.com/fang5/o4/. 
+
+*******2018-11-12 10:27:08.034735*************
+ 本页面无数据:http://xm.ganji.com/fang5/o5/. 
+
+*******2018-11-12 10:27:31.322875*************
+ 本页面无数据:http://xm.ganji.com/fang5/. 
+
+*******2018-11-12 10:27:51.992737*************
+ 本页面无数据:http://xm.ganji.com/fang5/o10/. 
+
+*******2018-11-12 10:28:11.280351*************
+ 本页面无数据:http://xm.ganji.com/fang5/o9/. 
+
+*******2018-11-12 10:28:32.582447*************
+ 本页面无数据:http://xm.ganji.com/fang5/o7/. 
+
+*******2018-11-12 10:28:51.930281*************
+ 本页面无数据:http://xm.ganji.com/fang5/o13/. 
+
+*******2018-11-12 11:02:58.554486*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn25/?key=%E7%A6%BE%E7%A5%A5%E8%8A%B1%E5%9B%AD. 
+========2018-11-12 11:29:52.803639record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2018-11-12 11:43:10.224273*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%AE%98%E9%83%BD%E9%87%8C. 
+
+*******2018-11-12 11:52:40.776020*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E5%9B%BD%E9%99%85%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-11-12 12:00:27.496232*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%BB%BA%E5%8F%91%E4%B8%AD%E5%A4%AE%E6%B9%BE%E5%8C%BA%E5%A4%AE%E5%A2%85. 
+
+*******2018-11-12 12:51:43.238517*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%B9%9D%E5%A4%A9%E6%B9%96%E5%B0%8F%E5%8C%BA. 
+
+*******2018-11-12 13:10:47.153261*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E9%87%91%E6%9E%97%E8%8A%B1%E5%9B%AD. 
+
+*******2018-11-12 13:17:58.855729*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E4%BA%BF%E5%8A%9B%E7%99%BE%E5%AE%B6%E8%8B%91. 
+
+*******2018-11-12 13:21:40.620442*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2018-11-12 13:22:30.720472*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn3/?key=%E5%8F%A4%E9%BE%99%E6%98%8E%E7%8F%A0. 
+
+*******2018-11-12 13:28:42.241623*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E6%9E%8B%E6%B9%96%E8%8A%B1%E5%9B%AD. 
+
+*******2018-11-12 13:34:35.070801*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2018-11-12 13:51:55.219896*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn19/?key=%E6%96%B0%E5%9F%8E%E8%8A%B1%E5%9B%AD. 
+
+*******2018-11-12 13:54:13.223399*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9A%E4%B8%BB%E8%87%AA%E5%94%AE%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:50.990962*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:51.034965*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:51.062566*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:51.078166*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:51.109366*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:51.144967*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:51.158968*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:51.181969*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:19:51.201970*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:21:43.999555*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 92, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:22:14.248757*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 93, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:22:53.953879*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 93, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:23:31.448930*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 94, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:24:47.736487*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 94, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()
+
+               *******newFunc*******,error record by @mylog on 2018-11-12 17:25:56.793553*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 12, in _deco
+    return func(*a,**b)
+  File "E:\py3-craw\ToolsBox.py", line 27, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 93, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 38, in page_parse
+    soup = self.get_soup(html_cont,parser_build)
+  File "E:\py3-craw\PageParser.py", line 30, in get_soup
+    return BeautifulSoup(html,parser_build)
+  File "G:\Python36\lib\site-packages\bs4\__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'int' has no len()

@@ -20,9 +20,8 @@ class Downloader(object):
     def download(self,url,headers={},proxy=None):
         
         print("Downloadding : {0}".format(url))
-        
         try:
-            r = requests.get(url = url, headers = headers, 
+            r = requests.get(url = url, headers = headers,
                 timeout = 8, proxies = proxy,cookies=self.cookies)
 
             if len(r.cookies.items()) > 0:
@@ -32,7 +31,8 @@ class Downloader(object):
             if 400 <= r.status_code < 600:
                 # html = 404
                 html = r.status_code
-                print('返回'+r.status_code)
+                # print('返回{0}'.format(r.status_code))
+                # print('返回'+r.status_code)
             # elif 500 <= r.status_code <600:         #递归:服务器端出错时
             #     if num_retries > 0:
             #         print('服务器瑞出现问题，将再下载{0}次'.format(num_retries-1))
@@ -55,7 +55,7 @@ class Downloader(object):
 
 if __name__=="__main__":
     # print('qqqqqq')
-    url = r'http://esf.xm.fang.com/'
+    url = r'http://xm.maitian.cn/esfall/PG527'
     # url = "http://esf.xm.fang.com/"
     # url = 'http://www.234.com'
     # url = 'http://xm.58.com/ershoufang/?key=金彩花苑'

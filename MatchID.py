@@ -35,10 +35,9 @@ class MatchID(object):
         for data in datas:
             comms = data['keywords'].split(',')     #data[2] = keywords,把keywords用“,”进行拆分
             for comm in comms:
-                kv = []
-                kv.append(data['comm_id'])
-                kv.append(comm)
-                comm_arr.append(kv)     
+                if 0 < len(comm.strip()):
+                    kv = [data['comm_id'], comm.strip()]
+                    comm_arr.append(kv)
         return comm_arr
 
     def get_id_from_arr(self,data,comm_arr):

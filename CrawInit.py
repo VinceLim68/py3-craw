@@ -100,7 +100,7 @@ class CrawInit(object):
     def start(self):
         self.gt_max_FAT()
         self.get_datas()
-        # self.insert_datas()
+        self.insert_datas()
         self.del_datas()
         self.close_db()
 

@@ -71,14 +71,15 @@ class MassController(object):
         html_cont = self.downloader.download(new_url,headers=self.headers,
             proxy=proxy)
 
-        # print(type(html_cont))
+        # print(isinstance(html_cont,int))
+        # print(400 <= (html_cont) < 600)
         # 对下载内容进行处理
         # 1、如果被404的处理
-        if type(html_cont) == 'int' and (400 <= (html_cont) < 600):
+        if isinstance(html_cont,int) and (400 <= (html_cont) < 600):
         # if html_cont == 404:
             self.HTTP404 += 1
             # print('返回404码')
-            print("返回（在MassController里）: {0}".format(html_cont))
+            print("返回异常（在MassController里）: {0}".format(html_cont))
             time.sleep( 30 * self.HTTP404 )                             #被禁止访问了，消停一会
             if self.HTTP404 > self.HTTP404_stop:
                 input('你似乎被禁止访问了，按任意键继续......')
