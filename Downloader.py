@@ -26,7 +26,10 @@ class Downloader(object):
 
             if len(r.cookies.items()) > 0:
                 self.cookies = dict(r.cookies.items())
-                print(self.cookies)
+                print('返回cookies:{0}'.format(self.cookies))
+            else:
+                self.cookies = {}
+                print('未返回cookies')
                 # input('有cookies,按任意键继续......')
             if 400 <= r.status_code < 600:
                 # html = 404
@@ -86,7 +89,7 @@ if __name__=="__main__":
     headers = {
         # "Host": "esf.xm.fang.com",
         # "Origin":"http://esf.xm.fang.com",
-        "Referer": "http://esf.xm.fang.com/"
+        # "Referer": "http://esf.xm.fang.com/"
     }
     down = Downloader()
     content = down.download(url,headers)

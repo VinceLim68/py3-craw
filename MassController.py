@@ -82,7 +82,13 @@ class MassController(object):
             print("返回异常（在MassController里）: {0}".format(html_cont))
             time.sleep( 30 * self.HTTP404 )                             #被禁止访问了，消停一会
             if self.HTTP404 > self.HTTP404_stop:
-                input('你似乎被禁止访问了，按任意键继续......')
+                self.delay = input("你似乎被禁止访问了，输入延时秒数后，保留已解析的数据......")
+                if self.delay == '':
+                    self.delay = 0
+                else:
+                    self.delay = ToolsBox.strToInt(self.delay)
+                # input('你似乎被禁止访问了，按任意键继续......')
+                self.total = self.total + self.outputer.out_mysql()
                 self.HTTP404 = 0
             else:
                 return self.craw_a_page(new_url)
