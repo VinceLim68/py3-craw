@@ -75,7 +75,7 @@ class MaitianPage(PageParser.PageParser):
             temp = ToolsBox.clearStr(hot.text).split('|')
             for item in temp:
                 d1 = self.parse_item(item)
-                each_data = dict(each_data, **d1)
+                each_data = self.add_advantage(d1, each_data)   #each_data = dict(each_data, **d1)
 
             # 这是解析面积
             each_data = dict(each_data, **self.parse_item(area.get_text()))

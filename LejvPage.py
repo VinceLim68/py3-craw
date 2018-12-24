@@ -31,21 +31,23 @@ class LejvPage(PageParser.PageParser):
             posi = position.select("span")
             for j in range(1,len(posi)):
                 out = self.parse_item(posi[j].get_text())
-                if len(out) > 0:
-                    if ('advantage' in each_data.keys()) and ('advantage' in out.keys()):
-                        each_data['advantage'] = each_data['advantage'] + ',' + out['advantage']
-                    else:
-                        each_data = dict(each_data, **out)
+                each_data = self.add_advantage(out, each_data)
+                # if len(out) > 0:
+                #     if ('advantage' in each_data.keys()) and ('advantage' in out.keys()):
+                #         each_data['advantage'] = each_data['advantage'] + ',' + out['advantage']
+                #     else:
+                #         each_data = dict(each_data, **out)
             for item in mr20:
                 d1 = self.parse_item(item.get_text())
-                if len(d1) > 0:
-                    if ('advantage' in each_data.keys()) and ('advantage' in d1.keys()):
-                        each_data['advantage'] = each_data['advantage'] + ',' + d1['advantage']
-                    else:
-                        each_data = dict(each_data, **d1)
+                each_data = self.add_advantage(d1, each_data)
+                # if len(d1) > 0:
+                #     if ('advantage' in each_data.keys()) and ('advantage' in d1.keys()):
+                #         each_data['advantage'] = each_data['advantage'] + ',' + d1['advantage']
+                #     else:
+                #         each_data = dict(each_data, **d1)
             each_data['community_address'] = region.get_text().strip()
             each_data['community_name'] = comm.get_text()
-            each_data['total_price'] = int(round(float(price.get_text()),0))
+            each_data['total_price'] =ToolsBox.strToInt(price.get_text())
             # each_data['price'] = round(float(each_data['total_price']*10000/each_data['area']),2)
             each_data['from'] = "lejv"
 

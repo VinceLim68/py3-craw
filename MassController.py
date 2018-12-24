@@ -71,14 +71,10 @@ class MassController(object):
         html_cont = self.downloader.download(new_url,headers=self.headers,
             proxy=proxy)
 
-        # print(isinstance(html_cont,int))
-        # print(400 <= (html_cont) < 600)
         # 对下载内容进行处理
         # 1、如果被404的处理
         if isinstance(html_cont,int) and (400 <= (html_cont) < 600):
-        # if html_cont == 404:
             self.HTTP404 += 1
-            # print('返回404码')
             print("返回异常（在MassController里）: {0}".format(html_cont))
             time.sleep( 30 * self.HTTP404 )                             #被禁止访问了，消停一会
             if self.HTTP404 > self.HTTP404_stop:
@@ -123,15 +119,11 @@ class MassController(object):
                 print('本页面      datas:{0}，urls:{1}'.format(len(new_datas),len(new_urls)))
                 # 把页面链接放入url管理器
                 self.urls.add_new_urls(new_urls)
+
                 # 把小区名称放入小区管理器
                 for data in new_datas:
                     self.add_comm(data)
-                    # if len(data['community_name']) > 11 :
-                    #     print('{0}---->名字过长的小区名将被忽略。'.format(data['community_name']))
-                    # else:
-                    #     comm = self.comms.add_new_url(data['community_name'])
-                    #     if comm:
-                    #         print('>>>>>>>>>>>>>>>>{0}'.format(comm))
+
                 # 把挂牌信息传入outputer，清除无效数据后，放在outputer.raw_datas记录集中
                 self.outputer.collect_data(new_datas)
                 data_num = self.outputer.get_datas_quantity()

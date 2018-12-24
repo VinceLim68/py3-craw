@@ -161,13 +161,14 @@ class MatchID(object):
             else:                               #如果有并列第一：
                 if len(getid[l][1]) > len(first[1]):        #字符串长的优先
                     first = getid[l]
-                elif len(getid[l][1]) == len(first[1]):     #字符串长度相同的，标志位设成ture,要人工判断一下
-                    # 起始位置相同，关键字长度相同，不知道是哪个小区了
-                    get.append(getid[l])
-                    # get += str(getid[l][0]) +',' + str(getid[l][1]) +',' + str(getid[l][2]) + "/"
-                    flag = True
-        # 匹配成功写入一张表，没成功就写入另一张表。
-        # 其实不用，成功就写进id,没成功就空着即可
+                elif len(getid[l][1]) == len(first[1]):     #字符串长度相同的
+                    if getid[l][2] != first[2]:
+                    # 起始位置相同，关键字长度也相同，有时是取到了同一个小区id，那就不处理了。
+                    # 否则把标志位设成ture,要人工判断一下
+                        get.append(getid[l])
+                        # get += str(getid[l][0]) +',' + str(getid[l][1]) +',' + str(getid[l][2]) + "/"
+                        flag = True
+        # 成功就写进id,没成功就空着即可
         if flag:
             print('*********匹配多个小区id**********')
             ToolsBox.printDic(data)

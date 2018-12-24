@@ -47,7 +47,7 @@ class WbPage(PageParser.PageParser):
                 string = ToolsBox.clearStr(span.get_text()).encode('utf8')
                 # d1 = {}
                 d1 = self.parse_item(string)
-                each_data = dict(each_data, **d1)
+                each_data = self.add_advantage(d1, each_data)   #each_data = dict(each_data, **d1)
             comms = details[1].select('a')
 
             each_data['community_name'] = comms[0].get_text()

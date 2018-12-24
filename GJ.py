@@ -1,20 +1,19 @@
-import MassController,Page917
+import MassController,GanjiPage
+from urllib import parse
 
-class JYQ(MassController.MassController):
+class GJ(MassController.MassController):
     def __init__(self, parseClass):
-        super(JYQ, self).__init__(parseClass)
+        super(GJ, self).__init__(parseClass)
         self.comm_count = 1                         #计数：抓取小区的数量
-        self.delay = 0
-        self.headers = {
-            "Host": "www.917.com",
-        }
+        self.delay = 1
+        self.headers = {'Host': "xm.ganji.com", 'Referer': "http://xm.ganji.com/"}
 
     def CommsController(self,url):
         self.craw_controller(url)
         while self.comms.has_new_url():
             comm = self.comms.get_new_url()
             c1,c2 = self.comms.get_quantity()
-            comm_url = "https://www.917.com/sell/?k=" + comm
+            comm_url = "http://xm.ganji.com/wblist/ershoufang/?key=" + parse.quote(comm)
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))
             url_list = []
             url_list.append(comm_url)
@@ -25,6 +24,6 @@ class JYQ(MassController.MassController):
         print('==================共抓取{0}个记录=================='.format(self.total))
 
 if __name__=="__main__":
-    url = ["https://www.917.com/sell/pn2/"]
-    jyq = JYQ(Page917.www917Page)
-    jyq.CommsController(url)
+    url = ['http://xm.ganji.com/wblist/ershoufang/pn2/']
+    gj = GJ(GanjiPage.GanjiPage)
+    gj.CommsController(url)

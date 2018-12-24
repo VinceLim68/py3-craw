@@ -25,40 +25,45 @@ class www917Page(PageParser.PageParser):
         else:
             for url in pages:
                 if 'javascript' not in url.get('href'):
-                    new_urls.add(' http://www.917.com' + url.get('href'))
+                    new_urls.add(' https://www.917.com' + url.get('href'))
         return new_urls
 
     def parse_datas(self,soup):
 
         page_datas = []
 
-        titles = soup.select('.title > a')
-        items = soup.select('dd.info ')
+        items = soup.select('div.info')
+        titles = soup.select('p.title a ')
+        comms = soup.select('p.hlistP  a span')
+        addresses = soup.select('p.hlistP a.addressChange')
+        regions = soup.select('p.hlistP > span')
         mores = soup.select('.moreInfo')
         prices = soup.select('.price')
 
-        for title, item, price, more in zip(titles, items, prices, mores):
+        for item,title,comm,addr,region,price,more in \
+                zip(items,titles,comms,addresses,regions,prices,mores):
+
             each_data = dict(builded_year=0, spatial_arrangement='', floor_index=0, total_floor=0)
+
             each_data['title'] = title.get_text()
             each_data['details_url'] = 'http://www.917.com' + title.get('href')
 
-            item1 = item.select('p')
-            houseinfo = ToolsBox.clearStr(item1[1].get_text()).split('|')
-            for temp in houseinfo:
-                d1 = self.parse_item(temp.strip())
-                if ('advantage' in each_data.keys()) and ('advantage' in d1.keys()):
-                    d1['advantage'] = each_data['advantage'] + ',' + d1['advantage']
-                each_data = dict(each_data, **d1)
-                # print(temp)
-            each_data['community_name'] = item1[2].select('a > span')[0].get_text()
-            each_data['community_address'] = item1[2].select('span > a')[0].get_text()
+            details = item.select('p')
+            for string in details[1].stripped_strings:
+                d1 = self.parse_item(string.strip())
+                each_data = self.add_advantage(d1, each_data)
+
+            each_data['community_name'] = comm.get_text()
+            each_data['community_address'] = addr.get_text()
+            each_data['region'] = region.get_text().replace('|', '').replace(' ','')
             each_data['total_price'] = ToolsBox.strToInt(price.get_text())
-
-            # 取面积
-            d1 = self.parse_item(more.get_text())
-            each_data = dict(each_data, **d1)
-
             each_data['from'] = "917"
+
+            getP = more.select('p')
+            for p in getP:
+                if '建筑面积' in p.get_text():
+                    d1 = self.parse_item(p.get_text().strip())
+                    each_data = self.add_advantage(d1, each_data)
 
             each_data = self.pipe(each_data)
 
@@ -71,7 +76,7 @@ class www917Page(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = www917Page()
-    url = 'http://www.917.com/sell/pn2/'
+    url = 'https://www.917.com/sell/pn2/'
     headers = {
         "Host": "www.917.com",
         "Referer": "http://www.917.com/",

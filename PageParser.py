@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import re
 import datetime
 import traceback
-import MatchID
+import MatchID,ToolsBox
 # import sys
 # reload(sys)
 # sys.setdefaultencoding('utf8')
@@ -101,7 +101,8 @@ class PageParser(object):
         r1_5 = '(\d+.?\d+)�O'        #2018.8.3搜房,这个乱码就是㎡
         r2_1 = '\d+室'
         r2_2 = '\d+房'
-        r3 = '(\d+)元/'
+        r3_1 = '(\d+)元/'
+        r3_2 = '(\d+)万'
         r4 = '\d+层'
         r5_1 = '(\d{4})年'
         r5_2 = '年.*(\d{4})'
@@ -121,15 +122,17 @@ class PageParser(object):
             parse_dict['spatial_arrangement'] = string.strip()
         elif re.search(r2_2, string, flags=0):
             parse_dict['spatial_arrangement'] = string.strip()
-        elif re.search(r3, string, flags=0):
-            pass        #单价准备自己计算，不取值
+        elif re.search(r3_1, string, flags=0):
+            pass  #单价准备自己计算，不取值
+        elif re.search(r3_2, string, flags=0):
+            pass    #总价也不处理
         elif re.search(r4, string, flags=0):
             parse_dict['floor_index'],parse_dict['total_floor'] = self.parse_floor(string)
         elif re.search(r5_1, string, flags=0):
             parse_dict['builded_year'] = int(re.search(r5_1, string).groups(0)[0])
         elif re.search(r5_2, string, flags=0):
             parse_dict['builded_year'] = int(re.search(r5_2, string).groups(0)[0])
-        elif string == '|':
+        elif string == '|' or string == '|':
             pass
         elif string == '':
             pass
@@ -139,7 +142,7 @@ class PageParser(object):
         return parse_dict
 
     def excep(self,str):
-    #     去除不需要的小区
+        # 去除不需要的小区
         ex = ['厦门周边', '漳州', '泉州', '龙岩', '长泰',
               '角美', '漳州港', '南安', '晋江','厦门后花园','厦门西']
         flag = False
@@ -149,9 +152,24 @@ class PageParser(object):
                 break
         return flag
 
+    def add_advantage(self,d1,each_data):
+        # 合并advantage,d1是刚解析出的字段，d2是ecah_data
+        if len(d1) > 0:
+            if ('advantage' in each_data.keys()) \
+                    and ('advantage' in d1.keys()) \
+                    and (each_data['advantage'] != ''):
+                each_data['advantage'] = each_data['advantage'] + ',' + d1['advantage']
+            else:
+                each_data = dict(each_data, **d1)
+        # if ('advantage' in each_data.keys()) and ('advantage' in d1.keys()):
+        #     d1['advantage'] = each_data['advantage'] + ',' + d1['advantage']
+        return each_data
+
     def pipe(self,datadic):
         # 有效性检验
         # 把小区的区块、板块及小区地址写到title里去
+        for key in datadic:
+            datadic[key] = ToolsBox.clearStr(datadic[key])
 
         title_temp = ''
         if 'region' in datadic.keys():
@@ -167,7 +185,7 @@ class PageParser(object):
                 title_temp += ' b:' + datadic['block'].strip()
         if 'community_address' in datadic.keys():
             title_temp += ' a:' + datadic['community_address'].strip()
-        # if 'title' in datadic.keys():
+            datadic['community_name'] = datadic['community_name'].strip()
         if 'title' in datadic.keys():
             title2 = title_temp.strip() + ' ' + datadic['title']
         else:
@@ -175,10 +193,12 @@ class PageParser(object):
         if len(title2) > 50 :
             title2 = title2[:50]
         datadic['title'] = title2.strip()
-        datadic['community_name'] = datadic['community_name'].strip()
+
+        if ('community_name' not in datadic.keys()) or len(datadic['community_name'])<2:
+            return False
 
         datadic['community_id'] = self.MI.matchid(datadic)
-        if ('total_floor' in datadic.keys()) and ('total_price' in datadic.keys()) and ('area' in datadic.keys()) and ('community_name' in datadic.keys())  :
+        if ('total_floor' in datadic.keys()) and ('total_price' in datadic.keys()) and ('area' in datadic.keys()) :
             if datadic['total_price'] is None or datadic['area'] is None or datadic['area'] == 0:
                 return False
             else:
@@ -186,8 +206,8 @@ class PageParser(object):
             if datadic['price'] < 1500 or datadic['price'] > 300000:
                 return False
 
-            if datadic['community_name'] is None or len(datadic['community_name'])<2:
-                return False
+            # if datadic['community_name'] is None or len(datadic['community_name'])<2:
+            #     return False
             if datadic['total_floor'] > 60:
                 datadic['total_floor'] = 35         #把过高楼层的设为35层
             if datadic['total_price'] == 0 : return False                       #2016.9.13 价格为0的过滤掉
@@ -200,8 +220,8 @@ class PageParser(object):
 
             #2017.4.14 detail_url字段太长，处理一下
             if len(datadic['details_url']) > 250:datadic['details_url'] = datadic['details_url'][:249]
-
-            if len(datadic['advantage']) > 20:datadic['advantage'] = datadic['advantage'][:20]
+            if 'advantage' in datadic.keys():
+                if len(datadic['advantage']) > 20:datadic['advantage'] = datadic['advantage'][:20]
             return datadic
         else:
             if not ('total_floor' in datadic.keys()) and ('total_price' in datadic.keys()) and ('area' in datadic.keys()) and ('community_name' in datadic.keys())  :

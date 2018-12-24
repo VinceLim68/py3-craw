@@ -36,7 +36,7 @@ class XmhousePage(PageParser.PageParser):
             each_data['title'] = href.get_text().strip()
             each_data['community_name'] = comm.get_text().strip()
             each_data['details_url'] = "http://esf.xmhouse.com" + href.get('href')
-            each_data['total_price'] = int(price.get_text())
+            each_data['total_price'] = ToolsBox.strToInt(price.get_text())
             h_infos = re.search(r'<span style="margin-left: 5px; color: #000000">.*</span>(.*) <div', str(detail), re.S) \
                 .group(1).replace('<br/>', '').replace('\r\n', '').replace(' ', '').split('，')
 
@@ -44,7 +44,7 @@ class XmhousePage(PageParser.PageParser):
                 try:
                     d1 = {}
                     d1 = self.parse_item(item)
-                    each_data = dict(each_data, **d1)
+                    each_data = self.add_advantage(d1, each_data)   #each_data = dict(each_data, **d1)
                 except Exception as e:
                     with open('logtest.txt', 'a+') as fout:
                         fout.write('*************' + str(datetime.datetime.now()) + '*************\n')

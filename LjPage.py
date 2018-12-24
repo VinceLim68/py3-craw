@@ -40,17 +40,21 @@ class LjPage(PageParser.PageParser):
             each_data = {'builded_year': 0, 'spatial_arrangement': '', 'floor_index': 0, 'total_floor': 0}
             each_data['title'] = title.get_text()
             each_data['details_url'] = title.get('href')
-            each_data['total_price'] = int(
-                round(float(re.search('(\d+.?\d+)万', totalPrice.get_text()).groups(0)[0]), 0))
+            each_data['total_price'] = ToolsBox.strToInt(totalPrice.get_text())
+            # print(each_data['total_price'])
+            # each_data['total_price'] = int(
+            #     round(float(re.search('(\d+.?\d+)万', totalPrice.get_text()).groups(0)[0]), 0))
 
             info_item = info.get_text().split('|')
 
             each_data['community_name'] = info_item[0].strip()  # 第1个总是小区名称
             for i in range(1, len(info_item)):
                 d1 = self.parse_item(info_item[i].strip())
-                if ('advantage' in each_data.keys()) and ('advantage' in d1.keys()):
-                    d1['advantage'] = each_data['advantage'] + ',' + d1['advantage']
-                each_data = dict(each_data, **d1)
+                # d1 = self.add_advantage(d1,each_data)
+                # if ('advantage' in each_data.keys()) and ('advantage' in d1.keys()):
+                #     d1['advantage'] = each_data['advantage'] + ',' + d1['advantage']
+                # each_data = dict(each_data, **d1)
+                each_data = self.add_advantage(d1,each_data)
 
             position = position.get_text().replace('\t', '').replace('\n', '').split()
             each_data['block'] = position[-1]
@@ -60,7 +64,8 @@ class LjPage(PageParser.PageParser):
 
             for item in position[0].split(')'):  # 2017.4.1链家格式有改
                 d1 = self.parse_item(item.strip())  # 2017.4.1链家格式有改
-                each_data = dict(each_data, **d1)
+                each_data = self.add_advantage(d1, each_data)
+                # each_data = dict(each_data, **d1)
 
             each_data['from'] = "lianjia"
 
@@ -78,8 +83,11 @@ class LjPage(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = LjPage()
-    url = "https://xm.lianjia.com/ershoufang/pg1/"
-    html_cont = downloader.download(url)
+    url ="https://xm.lianjia.com/ershoufang/pg1/"
+    headers = {"Host": "xm.lianjia.com",
+               "Referer": "https://xm.lianjia.com/ershoufang/",
+               "User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"}
+    html_cont = downloader.download(url,headers=headers)
     # print((html_cont))
     urls,datas = parser.page_parse(html_cont)
     # soup = parser.get_soup(html_cont)

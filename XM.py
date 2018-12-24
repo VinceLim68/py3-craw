@@ -16,15 +16,14 @@ LEJV.total = LEJV.total + LEJV.outputer.out_mysql()
 num += LEJV.total
 print('厦门HOUSE网:{0},乐居网{1}个,共{2}个'.format(XM.total,LEJV.total,num))
 
-url = ['http://xm.ganji.com/fang5/o2/']
-GJ = MassController.MassController(GanjiPage.GanjiPage)
-GJ.delay = 3
-GJ.headers = dict(Host="xm.ganji.com",Referer="http://xm.ganji.com/fang5/o2/")
-# GJ.total = num
-GJ.craw_controller(url)
-GJ.total = GJ.total + GJ.outputer.out_mysql()
-num += GJ.total
-print('厦门HOUSE网:{0},乐居网{1},赶集网{2},共{3}个'.format(XM.total, LEJV.total, GJ.total,num))
+# url = ['http://xm.ganji.com/wblist/ershoufang/pn2/']
+# GJ = MassController.MassController(GanjiPage.GanjiPage)
+# GJ.delay = 3
+# GJ.headers = dict(Host="xm.ganji.com",Referer="http://xm.ganji.com/")
+# GJ.craw_controller(url)
+# GJ.total = GJ.total + GJ.outputer.out_mysql()
+# num += GJ.total
+# print('厦门HOUSE网:{0},乐居网{1},赶集网{2},共{3}个'.format(XM.total, LEJV.total, GJ.total,num))
 
 url = ['https://danxia.com/house/all/PG2']
 DX = MassController.MassController(DanxiaPage.DanxiaPage)
@@ -36,7 +35,7 @@ DX.headers = {
 DX.craw_controller(url)
 DX.total = DX.total + DX.outputer.out_mysql()
 num += DX.total
-print('厦门HOUSE网:{0},乐居网{1},赶集网{2},丹夏网{3},共{4}个'.format(XM.total, LEJV.total, GJ.total,DX.total,num))
+print('厦门HOUSE网:{0},乐居网{1},丹夏网{2},共{3}个'.format(XM.total, LEJV.total, DX.total,num))
 
 url = ['http://xm.maitian.cn/esfall/PG2']
 MT = MassController.MassController(MaitianPage.MaitianPage)
@@ -45,6 +44,6 @@ MT.headers = {'Host': "xm.maitian.cn", 'Referer': "http://xm.maitian.cn/esfall/P
 MT.craw_controller(url)
 MT.total = MT.total + MT.outputer.out_mysql()
 num += MT.total
-print('厦门HOUSE网:{0},乐居网{1},赶集网{2},丹夏网{3},麦田:{4},共{5}个'.format(XM.total, LEJV.total, GJ.total,DX.total,MT.total,num))
+print('厦门HOUSE网:{0},乐居网{1},丹夏网{2},麦田:{3},共{4}个'.format(XM.total, LEJV.total, DX.total,MT.total,num))
 
 

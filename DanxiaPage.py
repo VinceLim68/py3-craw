@@ -37,12 +37,14 @@ class DanxiaPage(PageParser.PageParser):
             temp = detail.select('span')
             for item in temp:
                 d1 = self.parse_item(item.get_text())
-                each_data = dict(each_data, **d1)
+                each_data = self.add_advantage(d1, each_data)
+                # each_data = dict(each_data, **d1)
 
             temp1 = detail1.select('span')
             for item in temp1:
                 d1 = self.parse_item(item.get_text())
-                each_data = dict(each_data, **d1)
+                each_data = self.add_advantage(d1, each_data)
+                # each_data = dict(each_data, **d1)
 
             each_data['total_price'] = ToolsBox.strToInt(price.get_text())
 

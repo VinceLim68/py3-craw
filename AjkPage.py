@@ -46,9 +46,7 @@ class AjkPage(PageParser.PageParser):
             # print(price)
 
             try:  # 2016.8.1 这里解析也时有出差，把它保留下来
-                # each_data['total_price'] = int(filter(str.isdigit,price.get_text().encode('utf8')))
                 each_data['total_price'] = ToolsBox.strToInt(price.get_text())
-                # print(each_data['total_price'])
             except Exception as e:
                 with open('logtest.txt', 'a+') as fout:
                     fout.write('*************' + str(datetime.datetime.now()) + '*************\n')
@@ -76,7 +74,7 @@ class AjkPage(PageParser.PageParser):
                         string = h.get_text().encode('utf8')
                         d1 = {}
                         d1 = self.parse_item(string)
-                        each_data = dict(each_data, **d1)
+                        each_data = self.add_advantage(d1, each_data)   #each_data = dict(each_data, **d1)
                 # each_data['price'] = round(each_data['total_price'] * 10000 / each_data['area'], 0)
                 each_data['from'] = "AJK"
             except Exception as e:
