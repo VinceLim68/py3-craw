@@ -55,12 +55,15 @@ class GanjiPage(PageParser.PageParser):
             each_data['total_price'] = ToolsBox.strToInt(price.get_text())
 
             address = list1.select("dd.address")
-            # print(address[0])
-            if address[0].select("a.address-eara"):
-                each_data['region'] = ToolsBox.clearStr(address[0].select("a.address-eara")[0].get_text())
 
-            if address[0].select("span.address-eara"):
-                each_data['community_name'] = ToolsBox.clearStr(address[0].select("span.address-eara")[0].get_text())
+            # print(address[0])
+            # print(len(address))
+            if len(address) > 0:
+                if len(address[0].select("a.address-eara")) > 0:
+                    each_data['region'] = ToolsBox.clearStr(address[0].select("a.address-eara")[0].get_text())
+
+                if len(address[0].select("span.address-eara")) > 0:
+                    each_data['community_name'] = ToolsBox.clearStr(address[0].select("span.address-eara")[0].get_text())
 
             # try:
             # except (IndexError) as e:
@@ -93,7 +96,7 @@ if __name__ == "__main__":
     # url = 'http://xm.ganji.com/fang5/o2/'
     # url = 'http://xm.ganji.com/wblist/ershoufang/pn6/?key=%E5%A4%A9%E6%B9%96%E5%9F%8E%E5%A4%A9%E6%B9%96'
     # url = 'http://xm.ganji.com/wblist/ershoufang/pn8/?key=%E4%B8%80%E7%BA%BF%E6%B5%B7%E6%99%AF%E6%88%BF'
-    url = 'http://xm.ganji.com/ershoufang/pn5/?key=%E8%A5%BF%E9%9B%85%E5%9B%BE'
+    url = 'http://xm.ganji.com/ershoufang/pn2/?key=%E5%9B%BD%E8%B4%B8%E8%93%9D%E6%B5%B7'
     headers = dict(Host="xm.ganji.com", Referer="http://xm.ganji.com/")
     html_cont = downloader.download(url, headers=headers)
     soup = parser.get_soup(html_cont)

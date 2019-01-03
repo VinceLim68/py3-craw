@@ -1,5 +1,6 @@
 import PageParser,ToolsBox,Downloader
 import bs4
+from urllib import parse
 
 class SfPage(PageParser.PageParser):
 
@@ -68,6 +69,9 @@ class SfPage(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = SfPage()
+    # comm = '泛华大厦'       #%b7%ba%bb%aa%b4%f3%cf%c3
+    # print(parse.quote(comm, "gb2312"))
+    # url = 'http://xm.esf.fang.com/house/c61-kw' + comm + '/'
     url = "http://esf.xm.fang.com/house/i34/"
     html_cont = downloader.download(url)
     urls,datas = parser.page_parse(html_cont)

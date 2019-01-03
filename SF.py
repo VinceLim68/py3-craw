@@ -1,4 +1,5 @@
 import MassController,SfPage
+from urllib import parse
 
 class SF(MassController.MassController):
     def __init__(self, parseClass):
@@ -12,15 +13,19 @@ class SF(MassController.MassController):
         }
         self.delay = 3
 
-    # def add_comm(self,data):
-    #     #把添加小区列表提出来，因为会有不一样的需求，有的需要小区名称，有的需要小区链接
-    #     comm_add = data['community_name']
-    #     if len(comm_add) > 15:
-    #         print('{0}---->名字过长的小区名将被忽略。'.format(comm_add))
-    #     else:
-    #         comm = self.comms.add_new_url(data['comm_url'])
-    #         if comm:
-    #             print('>>>>>>>>>>>>>>>>{0}:{1}'.format(comm_add,comm))
+    def add_comm(self,data):
+        #把添加小区列表提出来，因为会有不一样的需求，有的需要小区名称，有的需要小区链接
+        comm_add = data['community_name']
+        comm = self.comms.add_new_url(data['comm_url'])
+        if comm:
+            print('>>>>>>>>>>>>>>>>{0}:{1}'.format(comm_add, comm))
+
+        # if len(comm_add) > 15:
+        #     print('{0}---->名字过长的小区名将被忽略。'.format(comm_add))
+        # else:
+        #     comm = self.comms.add_new_url(data['comm_url'])
+        #     if comm:
+        #         print('>>>>>>>>>>>>>>>>{0}:{1}'.format(comm_add,comm))
 
     def CommsController(self,url):
         # print(self.headers)
@@ -28,8 +33,8 @@ class SF(MassController.MassController):
         while self.comms.has_new_url():
             comm = self.comms.get_new_url()
             c1,c2 = self.comms.get_quantity()
-            # comm_url = 'http://esf.xm.fang.com' + comm
-            comm_url = 'http://xm.esf.fang.com/house/c61-kw' + parse.quote(comm) + '/'
+            comm_url = 'http://esf.xm.fang.com' + comm
+            # comm_url = 'http://xm.esf.fang.com/house/c61-kw' + comm + '/'
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))
             url_list = []
             url_list.append(comm_url)
