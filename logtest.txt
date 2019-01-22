@@ -49,3 +49,1705 @@
 
 *******2019-01-02 17:04:33.934086*************
  本页面无数据:http://xm.ganji.com/wblist/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-07 08:16:09.281323*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%9E%8D%E4%BE%A8%E8%A7%82%E9%82%B8%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 08:22:09.091601*************
+ 本页面无数据:https://www.917.com/sell/?k=学林雅苑(金房东）. 
+
+*******2019-01-07 08:22:40.952556*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%9A%E5%A3%AB%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 08:23:20.209188record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 08:23:51.137836*************
+ 本页面无数据:https://www.917.com/sell/?k=坑内路13-18号小区. 
+========2019-01-07 08:24:31.201104record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 08:26:07.004878*************
+ 本页面无数据:https://www.917.com/sell/?k=建发SOHO--建发众创空间. 
+
+*******2019-01-07 08:26:36.242122*************
+ 本页面无数据:https://www.917.com/sell/?k=湖明路103-108号. 
+========2019-01-07 08:30:59.435902record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:32:37.431945record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 08:33:26.767752*************
+ 本页面无数据:https://www.917.com/sell/?k=龙华大厦(南湖花园）. 
+
+*******2019-01-07 08:35:06.257052*************
+ 本页面无数据:https://www.917.com/sell/?k=日东新村9-13号小区. 
+========2019-01-07 08:37:48.511769record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:37:49.501804record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:39:55.134916record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:41:13.151727record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 08:41:41.222925*************
+ 本页面无数据:https://www.917.com/sell/?k=文屏巷51-59号小区. 
+
+*******2019-01-07 08:42:22.631407*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E8%88%AA%E5%9F%8E%E5%9B%BD%E9%99%85%E7%A4%BE%E5%8C%BAC%E5%8C%BA%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 08:43:58.677260*************
+ 本页面无数据:https://www.917.com/sell/?k=石亭路21-25号小区. 
+========2019-01-07 08:48:08.152168record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:51:29.191429record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:55:17.289623record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:56:56.298180record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:57:54.300662record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 08:58:38.397250record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 09:00:45.962513*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%AF%8C%E8%B4%B5%E9%97%A8%E8%8A%B1%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 09:01:14.838164record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 09:01:28.737788*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B0%B4%E6%99%B6%E6%B9%96%E9%83%A1%E4%BA%8C%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 09:02:32.729101record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 09:04:39.728924record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 09:07:50.392459*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%89%B9%E6%88%BF%E9%93%B6%E6%BA%AA%E5%A2%85%E5%BA%9C%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:08:10.126493*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%9A%87%E5%BA%9C%E5%BE%A1%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:08:54.149771*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9C%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 09:12:18.229329*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8A%E5%B1%B1%E8%B1%AA%E5%9B%AD%E4%B8%80%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:12:48.228182*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%85%B4%E5%8D%8E%E8%B7%AF%E5%88%AB%E5%A2%85. 
+========2019-01-07 09:14:19.254342record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+               *******newFunc*******,error record by @mylog on 2019-01-07 09:14:40.673179*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 13, in _deco
+    return func(*a, **b)
+  File "E:\py3-craw\ToolsBox.py", line 31, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 95, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+========2019-01-07 09:16:44.771397record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-07 09:17:43.770701record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 09:19:56.620534*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B1%9F%E5%B1%B1%E5%B8%9D%E6%99%AF%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 09:26:14.952399record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 09:27:41.111350*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%96%E8%8C%82%E5%BE%A1%E6%B5%B7%E5%A2%85%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:28:46.225864*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BF%9D%E5%88%A9%E5%8F%81%E4%BB%9F%E6%A0%8B%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:30:13.461218*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%96%E8%8C%82%E7%88%B1%E4%B9%90%E5%9B%BD%E9%A3%8E%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:30:59.840099*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn16/?key=%E6%96%87%E5%9B%AD%E8%B7%AF%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-07 09:31:29.386551*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%BA%90%E6%98%8C%E9%91%AB%E6%B5%B7%E6%B9%BE%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:34:17.258446*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8F%A4%E9%BE%99%E5%B1%B1%E8%AF%AD%E5%90%AC%E6%BA%AA%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 09:35:02.404925record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 09:35:29.470973*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%98%B3%E5%85%89%E5%9F%8E%E7%BF%A1%E4%B8%BD%E6%B9%BE%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:36:29.733879*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E8%88%AA%E5%9F%8E%E5%9B%BD%E9%99%85%E7%A4%BE%E5%8C%BAA%E5%8C%BA%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:39:40.756214*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E9%AA%8F%E5%A4%A9%E8%AA%89%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:49:33.703793*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%A6%96%E5%BC%80%E4%B8%87%E7%A7%91%E7%99%BD%E9%B9%AD%E9%83%A1%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:55:36.900776*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E4%B8%AD%E5%A4%AE%E6%B5%B7%E5%B2%B8%E4%BA%8C%E6%9C%9F%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2019-01-07 09:58:00.998229*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E9%AA%8F%E8%93%9D%E6%B9%BE%E5%B0%9A%E9%83%BD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 09:58:20.389063*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E4%B8%8A%E4%BA%94%E6%9C%88%E8%8A%B1%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 10:00:28.605688*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8F%A4%E9%BE%99%E8%8A%B1%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:00:46.030919*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%A2%90%E6%B5%B7%E5%98%89%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:01:19.165377*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%87%A4%E7%A5%A5%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 10:05:46.426647*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E4%B8%8A%E4%BA%94%E6%9C%88%E8%8A%B1%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:08:47.879765*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8F%B0%E6%B9%BE%E5%B1%B1%E5%BA%84%E7%A6%8F%E5%BE%B7%E5%A0%A1%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:10:52.648784*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B3%B0%E7%A6%BE%E5%8E%A6%E9%97%A8%E9%99%A2%E5%AD%90%28%E5%88%AB%E5%A2%85. 
+
+               *******newFunc*******,error record by @mylog on 2019-01-07 10:12:09.822120*************
+Traceback (most recent call last):
+  File "E:\py3-craw\ToolsBox.py", line 13, in _deco
+    return func(*a, **b)
+  File "E:\py3-craw\ToolsBox.py", line 31, in newFunc
+    back = func(*args, **args2)
+  File "E:\py3-craw\MassController.py", line 95, in craw_a_page
+    new_urls,new_datas = self.parser.page_parse(html_cont)      #返回解析内容
+  File "E:\py3-craw\PageParser.py", line 44, in page_parse
+    new_urls = self.parse_urls(soup)
+  File "E:\py3-craw\LjPage.py", line 25, in parse_urls
+    t_page = eval(links[0].get('page-data'))['totalPage']
+IndexError: list index out of range
+
+*******2019-01-07 10:14:34.917975*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%8F%8D%E7%8F%A0%E6%B9%BE%E8%8A%B1%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:17:31.775485*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E8%88%AA%E5%9F%8E%E5%9B%BD%E9%99%85%E7%A4%BE%E5%8C%BAC%E5%8C%BA%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 10:21:44.324329record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 10:23:31.575517*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E4%BA%A4%E5%92%8C%E7%BE%8E%E6%96%B0%E5%9F%8E%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 10:24:35.800830*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%81%94%E5%8F%91%E6%AC%A3%E6%82%A6%E6%B9%BE%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:26:21.709416*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E6%96%B9%E9%AB%98%E5%B0%94%E5%A4%AB%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 10:31:20.742639*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%9B%BD%E8%B4%B8%E9%87%91%E9%97%A8%E6%B9%BE%E5%A4%A7%E5%BE%B7%E6%B2%99%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:33:08.425798*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BB%99%E5%B2%B3%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:41:47.389481*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9C%AA%E6%9D%A5%E6%B5%B7%E5%B2%B8%E6%B5%AA%E7%90%B4%E6%B9%BE%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:43:14.823482*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E6%BE%B3%E5%9F%8E%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:44:42.216481*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E5%8D%A2%E5%8D%A1%E5%B0%8F%E9%95%87%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:45:04.186738*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E6%96%B0%E8%8B%91%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:45:28.223112*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8E%9F%E4%B9%A1%E5%9B%AD%E5%A2%85%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:46:54.868068*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%BE%A1%E4%B9%8B%E8%8B%91%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:51:35.406707*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%96%E8%8C%82%E5%BE%A1%E6%B5%B7%E5%A2%85%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 10:52:04.765958*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BD%8F%E5%AE%85%E8%8E%B2%E8%8A%B1%E5%B0%9A%E9%99%A2%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:52:35.404412*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%96%B0%E6%99%AF%E6%95%B0%E7%A0%81%E6%B8%AF. 
+
+*******2019-01-07 10:53:44.590534*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B0%B4%E6%99%B6%E6%B9%96%E9%83%A1%E4%B8%89%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:55:08.939882*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%88%A9%E5%8D%8E%E8%8B%91%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 10:56:17.237802*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%90%8D%E4%BB%95%E5%BE%A1%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 10:56:26.738219record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 10:57:16.595906*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6%E4%B8%89%E6%9C%9F%28%E5%88%AB%E5%A2%85%29%28%E6%B9%96%E9%87%8C%29. 
+
+*******2019-01-07 10:57:53.529827*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B3%B0%E7%A6%BE%E6%B1%80%E6%BA%AA%E9%99%A2%E5%AD%90%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 10:59:47.903369record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 11:02:53.845004*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%97%E5%B2%B3%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:05:59.686634*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E6%BA%AA%E5%9C%B0%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:12:41.850636*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E6%BE%9C%E5%B1%B1%E5%A2%85%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:13:06.812064*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E5%B7%9E%E9%A6%99%E6%BA%AA%E9%87%8C%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:16:36.639065*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%9B%BD%E8%B4%B8%E9%87%91%E9%97%A8%E6%B9%BE%E6%9C%97%E7%90%B4%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:19:04.345514*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E6%96%B0%E8%B7%AF%E8%80%81%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:22:01.061621*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BE%99%E6%B9%96%E5%98%89%E5%B1%BF%E5%9F%8E%28%E5%88%AB%E5%A2%85%29. 
+========2019-01-07 11:23:31.956820record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-07 11:25:58.605208*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E8%8A%B3%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:27:24.725725*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BC%98%E5%B1%B1%E7%BE%8E%E5%9C%B0%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:29:17.253572*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B9%B8%E7%A6%8F%E8%B7%AF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:31:17.891110*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%88%AA%E7%A9%BA%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:35:07.697351*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E5%8D%A2%E5%8D%A1%E5%B0%8F%E9%95%87%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:36:18.706092*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E9%A6%99%E6%BA%AA%E9%87%8C%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:38:52.519229*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%B5%A6%E5%8D%97%E8%8A%B1%E5%9B%AD. 
+
+*******2019-01-07 11:39:11.936933*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E9%A6%99%E6%BA%AA%E9%87%8C%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:39:43.592276*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%98%B3%E5%85%89%E6%B5%B7%E5%B2%B8%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:40:08.230756*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BC%93%E6%B5%AA%E5%B1%BF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:46:51.947083*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%98%B3%E5%85%89%E5%9F%8E%E7%BF%A1%E4%B8%BD%E6%B5%B7%E5%B2%B8%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:47:15.112113*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B3%B0%E7%A6%BE%E5%8E%A6%E9%97%A8%E9%99%A2%E5%AD%90%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:47:57.998080*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E6%B4%B2%E5%9B%BD%E9%99%85%E9%BE%99%E9%83%A1%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:48:54.183096*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E6%BE%9C%E5%B1%B1%E5%A2%85%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 11:52:32.738345*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E6%B9%96%E5%BF%83%E5%B2%9B%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:52:50.442576*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8F%A4%E9%BE%99%E5%B1%85%E4%BD%8F%E5%85%AC%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:54:16.329664*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B0%B4%E6%99%B6%E6%B9%96%E9%83%A1%E4%B8%80%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:55:33.789451*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B5%B7%E6%99%AF%E6%98%8E%E7%8F%A0%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 11:59:33.088462*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%94%90%E5%BA%84%E5%88%AB%E5%A2%85%E5%8C%BA. 
+
+*******2019-01-07 12:00:03.958372*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E7%91%9E%E8%8A%B1%E5%9B%AD%E4%BA%8C%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:03:26.358262*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B4%A5%E6%B1%87%E7%BA%A2%E6%A0%91%E6%B9%BE%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:05:44.550437*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%9B%BD%E8%B4%B8%E5%A4%A9%E7%90%B4%E6%B9%BE2%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:06:07.846070*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%98%B3%E5%85%89%E5%9F%8E%E7%BF%A1%E4%B8%BD%E6%B9%BE%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:07:58.928868*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%96%E8%8C%82%E7%88%B1%E4%B9%90%E5%9B%BD%E9%A3%8E%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:08:29.709575*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:08:46.463976*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E9%AA%8F%E5%A4%A9%E5%B3%B0%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:09:50.959294*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%88%AA%E7%A9%BA%E7%A5%A5%E9%83%A1%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:10:38.424398*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A9%E6%B3%89%E5%AF%8C%E9%82%91%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:11:08.916886*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9C%AA%E6%9D%A5%E6%B5%B7%E5%B2%B8%E6%B5%AA%E7%90%B4%E6%B9%BE%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:13:24.652756*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%87%91%E5%B3%B0%E5%B1%B1%E5%BA%84%EF%BC%88%E5%88%AB%E5%A2%85%EF%BC%89. 
+
+*******2019-01-07 12:15:40.848265*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%8D%E9%99%90%E8%B4%AD%E4%B8%80%E7%BA%BF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:16:58.595646*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A9%E6%B9%96%E5%9F%8E%E5%A4%A9%E6%BA%90%EF%BC%88%E5%88%AB%E5%A2%85%EF%BC%89. 
+
+*******2019-01-07 12:23:22.877619*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%9B%86%E7%BE%8E%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:24:14.739482*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E8%88%AA%E5%9F%8E%E5%9B%BD%E9%99%85%E7%A4%BE%E5%8C%BA%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:24:39.725780*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%9A%E5%A3%AB%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:24:57.463419*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%8B%9B%E5%95%86%E6%B5%B7%E5%BE%B7%E5%85%AC%E5%9B%AD%E4%B8%80%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:27:41.249508*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%9B%BD%E8%B4%B8%E5%A4%A9%E7%90%B4%E6%B9%BE1%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:27:56.015835*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%87%A4%E5%87%B0%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:29:34.221751*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%9B%BD%E9%99%85%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:29:51.676778*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%A6%96%E5%BC%80%E9%A2%86%E7%BF%94%E4%B8%8A%E9%83%A1%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:30:15.484630*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%94%90%E5%BA%84%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:30:52.869364*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%88%B1%E7%90%B4%E6%B5%B7%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:33:17.471578*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%81%92%E7%A6%BE%E4%B8%83%E5%B0%9A%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:33:51.349591*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E6%B5%B7%E5%AF%B0%E5%AE%87%E5%A4%A9%E4%B8%8B%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:35:18.073502*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%97%E5%B2%B3%E5%B1%B1%E5%BA%84%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:35:35.642928*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%9B%85%E6%99%AF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:35:59.390375*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-07 12:38:24.045529*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E6%97%8F%E6%B3%89%E5%A4%A9%E4%B8%8B%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:40:29.718318*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BD%8F%E5%AE%85%E8%8E%B2%E8%8A%B1%E5%B0%9A%E9%99%A2%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:42:16.480413*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BE%99%E6%B9%96%E5%98%89%E8%AA%89%EF%BC%88%E5%88%AB%E5%A2%85%EF%BC%89. 
+
+*******2019-01-07 12:42:32.865025*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B0%B8%E5%BB%BA%E9%A1%B6%E5%B0%9A%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:43:33.641322*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8F%A4%E9%BE%99%E6%98%8E%E7%8F%A0%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:43:57.434573*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E5%B0%8A%E6%B5%B7%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:47:00.838206*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2019-01-07 12:47:35.509251*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%87%91%E6%B5%B7%E8%B1%AA%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:48:27.807063*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%93%B6%E6%BA%AA%E6%98%A5%E5%A2%85%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:48:51.573947*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E6%BA%AA%E5%A0%A4%E5%B0%9A%E5%9F%8E%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:49:41.537391*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%98%B3%E5%85%89%E5%9F%8E%E7%BF%A1%E4%B8%BD%E6%B5%B7%E5%B2%B8%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:52:25.440859*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%A6%96%E5%BC%80%E4%B8%87%E7%A7%91%E7%99%BD%E9%B9%AD%E9%83%A1%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:54:00.472294*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B7%B4%E5%8E%98%E9%A6%99%E6%B3%89%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:54:36.786371*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E4%BA%A4%E5%92%8C%E7%BE%8E%E6%96%B0%E5%9F%8E%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 12:55:29.150366*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BA%91%E9%A1%B6%E5%B1%B1%E5%BA%84%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:57:32.371414*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%AF%94%E5%8D%8E%E4%B8%BD%E6%B5%B7%E6%B9%BE%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 12:59:12.024114*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%AD%E6%B5%B7%E5%AF%B0%E5%AE%87%E5%A4%A9%E4%B8%8B%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 13:03:21.477278*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%A5%BF%E5%A0%A4%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 13:03:55.525225*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%BF%A0%E6%B9%96%E5%BA%84%E5%9B%AD%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 13:04:33.071373*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B0%B8%E5%BB%BA%E9%A1%B6%E5%B0%9A%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 13:05:41.502287*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%BF%A0%E6%B9%96%E5%BA%84%E5%9B%AD%28%E5%88%AB%E5%A2%85. 
+
+*******2019-01-07 13:06:04.331592*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%B3%89%E5%B7%9E%E4%B8%AD%E9%AA%8F%E5%95%86%E5%9F%8E%28%E5%95%86%E4%BD%8F%E6%A5%BC. 
+
+*******2019-01-07 13:10:42.473501*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%98%B3%E5%85%89%E5%9F%8E%E5%88%AB%E5%A2%85%E5%87%BA%E5%94%AE. 
+
+*******2019-01-07 13:11:44.027022*************
+ 本页面无数据:http://xm.ganji.com/wblist/ershoufang/?key=%E7%A6%B9%E6%B4%B2%E4%B8%AD%E5%A4%AE%E6%B5%B7%E5%B2%B8%E4%BA%8C%E6%9C%9F%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2019-01-07 13:14:12.213498*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8F%A4%E9%BE%99%E5%BE%A1%E6%99%AF%E4%BA%8C%E6%9C%9F%28%E5%88%AB%E5%A2%85%29. 
+
+*******2019-01-07 13:14:29.659495*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9A%E4%B8%BB%E8%87%AA%E5%94%AE%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+*******2019-01-07 14:37:40.534271*************
+ 本页面无数据:http://xm.ganji.com/wblist/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-07 17:23:54.645627*************
+ 本页面无数据:http://xm.ganji.com/wblist/ershoufang/?key=%E4%B8%87%E7%A7%91%E5%B9%BF%E5%9C%BA%28%E5%95%86%E4%BD%8F%E6%A5%BC%29. 
+
+*******2019-01-07 18:01:17.527626*************
+ 本页面无数据:http://xm.ganji.com/wblist/ershoufang/?key=%E4%B8%96%E8%8C%82%E6%B5%B7%E4%B8%8A%E4%B8%96%E7%95%8C%28%E5%85%AC%E5%AF%93%29. 
+
+*******2019-01-14 08:32:31.979309*************
+ 本页面无数据:https://www.917.com/sell/?k=%E5%9D%91%E5%86%85%E8%B7%AF13-18%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-14 08:35:15.635259*************
+ 本页面无数据:https://www.917.com/sell/?k=%E5%BB%BA%E5%8F%91SOHO--%E5%BB%BA%E5%8F%91%E4%BC%97%E5%88%9B%E7%A9%BA%E9%97%B4. 
+
+*******2019-01-14 08:37:50.429799*************
+ 本页面无数据:https://www.917.com/sell/?k=%E6%97%A5%E4%B8%9C%E6%96%B0%E6%9D%919-13%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-14 08:40:58.207951*************
+ 本页面无数据:https://www.917.com/sell/?k=%E6%B9%96%E6%98%8E%E8%B7%AF103-108%E5%8F%B7. 
+
+*******2019-01-14 08:42:36.970919*************
+ 本页面无数据:https://www.917.com/sell/?k=%E6%96%87%E5%B1%8F%E5%B7%B751-59%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-14 08:46:31.279482*************
+ 本页面无数据:https://www.917.com/sell/?k=%E7%9F%B3%E4%BA%AD%E8%B7%AF21-25%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-14 08:56:11.894431*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%A4%8D%E5%85%B4%E4%B8%96%E7%BA%AA. 
+
+*******2019-01-14 09:12:44.803196*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg1rs%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6%E4%B8%89%2C%E4%BA%94%E6%9C%9F/. 
+========2019-01-14 09:22:10.765997record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-14 09:26:17.733334record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-14 09:38:01.339053*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%85%B4%E5%8D%8E%E8%B7%AF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 09:46:37.907653*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E6%96%B9%E9%AB%98%E5%B0%94%E5%A4%AB%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 09:53:00.827625*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E6%96%B0%E8%B7%AF%E8%80%81%E5%88%AB%E5%A2%85. 
+========2019-01-14 10:00:35.297416record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-14 10:01:53.304878record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-14 10:24:08.704181*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%A5%BF%E5%A0%A4%E5%88%AB%E5%A2%85. 
+========2019-01-14 10:26:52.707488record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-14 10:32:48.080449*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BC%93%E6%B5%AA%E5%B1%BF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 10:35:00.164250*************
+ 本页面无数据:http://xm.ganji.com/wblist/ershoufang/?key=%E8%A3%95%E5%8F%91%E5%B9%BF%E5%9C%BA. 
+========2019-01-14 10:40:56.265817record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-14 10:41:10.160990*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E5%B7%9E%E9%A6%99%E6%BA%AA%E9%87%8C%E5%88%AB%E5%A2%85. 
+========2019-01-14 10:44:20.515661record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-14 10:46:40.406175*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E5%88%AB%E5%A2%85. 
+========2019-01-14 10:47:23.505542record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-14 10:52:09.714212*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E5%98%89%E6%80%A1%E5%9B%AD. 
+
+*******2019-01-14 10:55:20.186443*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9D%BE%E6%9F%8F%E5%88%AB%E5%A2%85. 
+========2019-01-14 11:04:49.468418record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-14 11:08:10.512914record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-14 11:11:31.606416record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-14 11:19:16.933031*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%94%90%E5%BA%84%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 11:40:52.154114*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BA%91%E9%A1%B6%E5%B1%B1%E5%BA%84%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 12:06:22.492644*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn6/?key=%E5%BB%BA%E5%8F%91%E4%B8%AD%E5%A4%AE%E5%A4%A9%E6%88%90. 
+
+*******2019-01-14 12:11:30.795278*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%AF%94%E5%8D%8E%E4%B8%BD%E6%B5%B7%E6%B9%BE%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 12:18:16.813501*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%96%B0%E6%99%AF%E6%95%B0%E7%A0%81%E6%B8%AF. 
+
+*******2019-01-14 12:20:45.701017*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%8D%E9%99%90%E8%B4%AD%E4%B8%80%E7%BA%BF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 12:22:53.370319*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%9B%85%E6%99%AF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 12:24:18.051163*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%88%AA%E7%A9%BA%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 12:30:15.929632*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%94%90%E5%BA%84%E5%88%AB%E5%A2%85%E5%8C%BA. 
+
+*******2019-01-14 12:31:35.602189*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%88%B1%E4%B9%90%E5%BE%A1%E5%BA%9C%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 12:40:20.909235*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B9%B8%E7%A6%8F%E8%B7%AF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-14 12:41:11.687139*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9A%E4%B8%BB%E8%87%AA%E5%94%AE%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+
+*******2019-01-14 12:42:54.497020*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+========2019-01-21 08:31:31.265752record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-21 08:36:43.830898*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%BB%BA%E5%8F%91%E4%B8%AD%E5%A4%AE%E5%A4%A9%E6%88%90. 
+
+*******2019-01-21 08:42:20.680592*************
+ 本页面无数据:https://www.917.com/sell/?k=%E5%9D%91%E5%86%85%E8%B7%AF13-18%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-21 08:42:55.194681*************
+ 本页面无数据:https://www.917.com/sell/?k=%E6%97%A5%E4%B8%9C%E6%96%B0%E6%9D%919-13%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-21 08:42:59.442492*************
+ 本页面无数据:https://xm.ke.com/ershoufang/pg1rs%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6%E4%B8%89%2C%E4%BA%94%E6%9C%9F/. 
+
+*******2019-01-21 08:43:15.908434*************
+ 本页面无数据:https://www.917.com/sell/?k=%E5%BB%BA%E5%8F%91SOHO--%E5%BB%BA%E5%8F%91%E4%BC%97%E5%88%9B%E7%A9%BA%E9%97%B4. 
+
+*******2019-01-21 08:45:44.760734*************
+ 本页面无数据:https://www.917.com/sell/?k=%E6%B9%96%E6%98%8E%E8%B7%AF103-108%E5%8F%B7. 
+
+*******2019-01-21 08:47:41.610417*************
+ 本页面无数据:https://www.917.com/sell/?k=%E6%96%87%E5%B1%8F%E5%B7%B751-59%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-21 08:48:15.021328*************
+ 本页面无数据:https://www.917.com/sell/?k=%E7%9F%B3%E4%BA%AD%E8%B7%AF21-25%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-21 08:58:32.606652*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%85%B4%E5%8D%8E%E8%B7%AF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 09:02:55.627696*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%9B%85%E6%99%AF%E5%88%AB%E5%A2%85. 
+========2019-01-21 09:03:23.310279record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-21 09:10:56.716212*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%94%90%E5%BA%84%E5%88%AB%E5%A2%85. 
+========2019-01-21 09:20:45.407884record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-21 09:34:49.536165*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%BA%91%E9%A1%B6%E5%B1%B1%E5%BA%84%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 09:41:04.522613*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn4/?key=%E6%B9%96%E5%8C%97%E5%A4%A7%E5%8E%A6. 
+
+*******2019-01-21 09:42:30.149511*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%96%87%E8%BD%A9%E8%8A%B1%E5%9B%AD. 
+========2019-01-21 09:54:41.308331record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-21 10:30:30.059232record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-21 10:34:16.906207*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9C%E6%96%B9%E9%AB%98%E5%B0%94%E5%A4%AB%E5%88%AB%E5%A2%85. 
+========2019-01-21 10:35:21.843921record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-21 10:40:18.227873record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-21 10:42:29.750396record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-21 10:43:30.747885record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-21 10:43:40.772458record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+========2019-01-21 10:46:51.768383record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-21 11:08:50.272797*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%AF%94%E5%8D%8E%E4%B8%BD%E6%B5%B7%E6%B9%BE%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 11:29:58.862356*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn2/?key=%E6%96%B0%E6%99%AF%E4%B8%AD%E5%BF%83%E4%BA%8C%E6%9C%9F. 
+
+*******2019-01-21 11:32:15.536173*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%A6%B9%E5%B7%9E%E9%A6%99%E6%BA%AA%E9%87%8C%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 11:43:34.738021*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%B9%B8%E7%A6%8F%E8%B7%AF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 12:00:42.209789*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%BC%93%E6%B5%AA%E5%B1%BF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 12:01:09.963377*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E7%88%B1%E4%B9%90%E5%BE%A1%E5%BA%9C%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 12:01:59.639218*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%8D%8E%E6%96%B0%E8%B7%AF%E8%80%81%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 12:02:11.635904*************
+ 本页面无数据:https://www.917.com/sell/?k=%E5%BB%BA%E5%8F%91SOHO--%E5%BB%BA%E5%8F%91%E4%BC%97%E5%88%9B%E7%A9%BA%E9%97%B4. 
+========2019-01-21 12:02:51.105162record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-21 12:03:13.824461*************
+ 本页面无数据:https://www.917.com/sell/?k=%E6%97%A5%E4%B8%9C%E6%96%B0%E6%9D%919-13%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-21 12:03:21.005872*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%96%E8%8C%82%E6%B9%96%E6%BB%A8%E9%A6%96%E5%BA%9C%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 12:04:29.284777*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%8E%B2%E8%8A%B1%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 12:05:29.283209*************
+ 本页面无数据:https://www.917.com/sell/?k=%E5%9D%91%E5%86%85%E8%B7%AF13-18%E5%8F%B7%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-21 12:06:42.855417*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E8%A5%BF%E5%A0%A4%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 12:11:15.414007*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E9%98%B3%E5%85%89%E5%9F%8E%E5%88%AB%E5%A2%85%E5%87%BA%E5%94%AE. 
+
+*******2019-01-21 12:22:28.075481*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E6%9D%BE%E6%9F%8F%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 12:24:15.036598*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-21 12:24:36.550829*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E4%B8%9A%E4%B8%BB%E8%87%AA%E5%94%AE%E5%AD%A6%E5%8C%BA%E6%88%BF. 
+========2019-01-21 12:42:28.529143record by outputer 
+Traceback (most recent call last):
+  File "E:\py3-craw\Outputer.py", line 61, in out_mysql
+    data['details_url'],data['community_name'],self.now,data['from'],data['community_id']))
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 166, in execute
+    result = self._query(query)
+  File "G:\Python36\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1057, in _read_query_result
+    result.read()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "G:\Python36\lib\site-packages\pymysql\connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "G:\Python36\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+*******2019-01-21 14:10:14.855359*************
+ 本页面无数据:http://xm.ganji.com/wblist/ershoufang/?key=%E5%A4%A7%E5%90%8C%E4%B8%AD%E5%BF%83%E5%B0%8F%E5%AD%A6%E5%AD%A6%E5%8C%BA%E6%88%BF%E9%B8%BF%E5%88%A9%E5%B0%8F%E5%8C%BA. 
+
+*******2019-01-21 14:26:40.738749*************
+ 本页面无数据:http://xm.58.com/ershoufang/?key=%E5%85%B4%E5%8D%8E%E8%B7%AF%E5%88%AB%E5%A2%85. 
+
+*******2019-01-21 14:28:40.198581*************
+ 本页面无数据:http://xm.58.com/ershoufang/pn5/?key=%E5%BB%BA%E5%8F%91%E4%B8%AD%E5%A4%AE%E5%A4%A9%E6%88%90. 

@@ -129,9 +129,15 @@ def to_str(bytes_or_str):
         value = bytes_or_str
     return value  # Instance of str
 
+def clear_comm(str):
+    #清除小区名称中（）内的部分
+    return str.split('(')[0].split('（')[0].strip()
+
 #
-# str2 = '<span class="price-det"><strong>1020万</strong>万</span>'
+# str2 = ' 龙华大厦（南湖花园）'
 # a = strToInt(str2)
 # print(clearStr(a))
 # if isinstance(str2,str):
 #     print(clearStr(str2))
+# print(clear_comm(str2))
+

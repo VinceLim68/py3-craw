@@ -1,4 +1,4 @@
-import MassController,WbPage
+import MassController,WbPage,ToolsBox
 from urllib.parse import quote
 
 class WB(MassController.MassController):
@@ -14,7 +14,8 @@ class WB(MassController.MassController):
         self.craw_controller(url)
 
         while self.comms.has_new_url():
-            comm = self.comms.get_new_url()
+            comm = self.comms.get_new_url
+            comm = ToolsBox.clear_comm(comm)
             c1, c2 = self.comms.get_quantity()
             # comm_url = "http://xm.58.com/ershoufang/?key=" + (comm)
             comm_url = "http://xm.58.com/ershoufang/?key=" + quote(comm, safe='/:?=')

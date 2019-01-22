@@ -1,4 +1,4 @@
-import MassController,GanjiPage
+import MassController,GanjiPage,ToolsBox
 from urllib import parse
 
 class GJ(MassController.MassController):
@@ -11,7 +11,8 @@ class GJ(MassController.MassController):
     def CommsController(self,url):
         self.craw_controller(url)
         while self.comms.has_new_url():
-            comm = self.comms.get_new_url()
+            comm = self.comms.get_new_url
+            comm = ToolsBox.clear_comm(comm)
             c1,c2 = self.comms.get_quantity()
             comm_url = "http://xm.ganji.com/wblist/ershoufang/?key=" + parse.quote(comm)
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))

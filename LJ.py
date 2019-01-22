@@ -1,4 +1,4 @@
-import MassController,LjPage
+import MassController,LjPage,ToolsBox
 from urllib import parse
 
 class LJ(MassController.MassController):
@@ -14,7 +14,8 @@ class LJ(MassController.MassController):
     def CommsController(self,url):
         self.craw_controller(url)
         while self.comms.has_new_url():
-            comm = self.comms.get_new_url()
+            comm = self.comms.get_new_url
+            comm = ToolsBox.clear_comm(comm)
             c1,c2 = self.comms.get_quantity()
             comm_url = "http://xm.lianjia.com/ershoufang/rs" + parse.quote(comm)
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))

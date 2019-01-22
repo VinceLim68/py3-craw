@@ -1,4 +1,4 @@
-import MassController,AjkPage
+import MassController,AjkPage,ToolsBox
 from urllib import parse
 
 class AJK(MassController.MassController):
@@ -14,7 +14,8 @@ class AJK(MassController.MassController):
     def CommsController(self,url):
         self.craw_controller(url)
         while self.comms.has_new_url():
-            comm = self.comms.get_new_url()
+            comm = self.comms.get_new_url
+            comm = ToolsBox.clear_comm(comm)
             c1,c2 = self.comms.get_quantity()
             comm_url = 'http://xm.anjuke.com/sale/p1-rd1/?kw=' + parse.quote(comm) + '&from_url=kw_final#filtersort'
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))

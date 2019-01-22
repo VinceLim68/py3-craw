@@ -4,15 +4,15 @@ import datetime
 
 class UrlManager(object):
 
-    def __init__(self):
+    def __init__(self) -> object:
         self.new_urls = set()
         self.old_urls = set()
 
-    def add_new_url(self,url):
+    def add_new_url(self, url):
         if url is None or url.strip() == "":
             return False
         if url not in self.new_urls and url not in self.old_urls:
-            self.new_urls.add(url)
+            self.new_urls.add(url.strip())
             return url
         return False
 
@@ -26,12 +26,15 @@ class UrlManager(object):
     def has_new_url(self):
         return len(self.new_urls) != 0
 
-    def get_new_url(self):
+    @property
+    def get_new_url(self) -> object:
         try:
             if len(self.new_urls) != 0:
                 new_url = self.new_urls.pop()
                 self.old_urls.add(new_url)
                 return new_url
+            else:
+                print('这里没有urls了！')
         except:
             with open('log.txt','a+') as fout:
                 fout.write(str(datetime.datetime.now()) + '\n')

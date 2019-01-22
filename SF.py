@@ -1,4 +1,4 @@
-import MassController,SfPage
+import MassController,SfPage,ToolsBox
 from urllib import parse
 
 class SF(MassController.MassController):
@@ -31,7 +31,7 @@ class SF(MassController.MassController):
         # print(self.headers)
         self.craw_controller(url)
         while self.comms.has_new_url():
-            comm = self.comms.get_new_url()
+            comm = self.comms.get_new_url
             c1,c2 = self.comms.get_quantity()
             comm_url = 'http://esf.xm.fang.com' + comm
             # comm_url = 'http://xm.esf.fang.com/house/c61-kw' + comm + '/'
