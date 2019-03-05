@@ -38,7 +38,6 @@ class AjkPage(PageParser.PageParser):
         houses = soup.select('div.house-details')
         comms = soup.select('span.comm-address')
         prices = soup.select('span.price-det')
-        # print(titles)
         for title, details, comm, price in zip(titles, houses, comms, prices):
             each_data = dict(advantage='', builded_year=0, spatial_arrangement='', floor_index=0, total_floor=0)
             each_data['title'] = title.get('title')
@@ -75,7 +74,6 @@ class AjkPage(PageParser.PageParser):
                         d1 = {}
                         d1 = self.parse_item(string)
                         each_data = self.add_advantage(d1, each_data)   #each_data = dict(each_data, **d1)
-                # each_data['price'] = round(each_data['total_price'] * 10000 / each_data['area'], 0)
                 each_data['from'] = "AJK"
             except Exception as e:
                 with open('logtest.txt', 'a+') as fout:
@@ -86,7 +84,6 @@ class AjkPage(PageParser.PageParser):
                     fout.write('\n      字段数：' + str(len(house)) + '\n')
                     traceback.print_exc(file=fout)
                     print(traceback.format_exc())
-            # print(each_data)
             each_data = self.pipe(each_data)  # 2016.6.4增加一个专门的数据处理
 
             if each_data:
@@ -94,12 +91,13 @@ class AjkPage(PageParser.PageParser):
             else:
                 if ToolsBox.ShowInvalideData(each_data): page_datas.append(each_data)
 
+
         return page_datas
 
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = AjkPage()
-    url = 'http://xm.anjuke.com/sale/p3/'
+    url = 'https://xm.anjuke.com/sale/p1-rd1/?kw=%E8%8E%B2%E8%8A%B1%E4%B8%89%E6%9D%91%E7%A4%BE%E5%8C%BA&from_url=kw_final#filtersort'
     headers = {
         "Host": "xm.anjuke.com",
         "Referer": "http://xm.anjuke.com/",
@@ -114,4 +112,5 @@ if __name__ == "__main__":
     # urls = parser.parse_urls(soup)
     for data in datas:
         ToolsBox.printDic(data)
+        print('*'*50)
     # print(datas)

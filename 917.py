@@ -7,7 +7,8 @@ class JYQ(MassController.MassController):
         self.comm_count = 1                         #计数：抓取小区的数量
         self.delay = 0
         self.headers = {
-            "Host": "www.917.com",
+            "Referrer Policy": "no - referrer - when - downgrade",
+            # "Host": "www.917.com",
         }
 
     def CommsController(self,url):

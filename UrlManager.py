@@ -9,10 +9,11 @@ class UrlManager(object):
         self.old_urls = set()
 
     def add_new_url(self, url):
-        if url is None or url.strip() == "":
+        url = url.strip()
+        if url is None or url == "":
             return False
         if url not in self.new_urls and url not in self.old_urls:
-            self.new_urls.add(url.strip())
+            self.new_urls.add(url)
             return url
         return False
 
@@ -30,8 +31,12 @@ class UrlManager(object):
     def get_new_url(self) -> object:
         try:
             if len(self.new_urls) != 0:
+                # n1,o1 = self.get_quantity()
+                # print("原来:new({0}),old({1})".format(n1,o1))
                 new_url = self.new_urls.pop()
                 self.old_urls.add(new_url)
+                # n2,o2 = self.get_quantity()
+                # print("现在:new({0}),old({1})".format(n2,o2))
                 return new_url
             else:
                 print('这里没有urls了！')
@@ -44,4 +49,3 @@ class UrlManager(object):
 
     def get_quantity(self):
         return len(self.new_urls),len(self.old_urls)
-    

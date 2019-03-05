@@ -76,7 +76,7 @@ class www917Page(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = www917Page()
-    url = 'https://www.917.com/sell/pn2/'
+    url = 'https://www.917.com/sell/pn10/'
     headers = {
         "Host": "www.917.com",
         "Referer": "http://www.917.com/",
@@ -86,4 +86,4 @@ if __name__ == "__main__":
 
     urls,datas = parser.page_parse(html_cont)
 
-    ToolsBox.priList(datas)
+    ToolsBox.priList(urls)
