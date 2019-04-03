@@ -10,13 +10,23 @@ class SfPage(PageParser.PageParser):
 
         if len(ischeck) > 0:            #如果找不到title,就认为不是验证界面
             title = ischeck[0].get_text().strip()
-            iscode = (title == "访问验证-房天下")
+            iscode = (title == "404 Not Found")
         else:
             iscode = False
         if iscode :
             print('调试：页面标题是---->{0}'.format(title))
 
         return iscode
+
+    def print_title(self, soup):
+        #for test
+        #print the page's title
+        title = soup.select("title")
+        if len(title) > 0:
+            print("The page's title is : {0}".format(title[0].get_text()))
+        else:
+            print("There is no title finded!")
+        return
 
     def parse_urls(self, soup):
         new_urls = set()
@@ -33,6 +43,12 @@ class SfPage(PageParser.PageParser):
     def parse_datas(self,soup):
 
         page_datas = []
+
+        # title = soup.select("title")
+        # if len(title) > 0:
+        #     print("The page's title is : {0}".format(title[0].get_text()))
+        # else:
+        #     print("There is no title finded!")
 
         titles = soup.select(".shop_list > dl h4 a")
         houses = soup.select("p.tel_shop")
@@ -72,13 +88,19 @@ if __name__ == "__main__":
     # comm = '泛华大厦'       #%b7%ba%bb%aa%b4%f3%cf%c3
     # print(parse.quote(comm, "gb2312"))
     # url = 'http://xm.esf.fang.com/house/c61-kw' + comm + '/'
-    url = "http://esf.xm.fang.com/house/i34/"
+    # url = "http://esf.xm.fang.com/house/i34/"
+    url = "http://esf.xm.fang.com/house-xm2213064828/i32/"
     html_cont = downloader.download(url)
-    urls,datas = parser.page_parse(html_cont)
+    print(html_cont)
+    # if isinstance(html_cont, int) and (400 <= (html_cont) < 600):
+    #     print(html_cont)
     # soup = parser.get_soup(html_cont)
+    # parser.is_check(soup)
+    # parser.print_title(soup)
+    # urls,datas = parser.page_parse(html_cont)
     # datas = parser.parse_datas(soup)
     # urls = parser.parse_urls(soup)
     # ToolsBox.printDic(urls)
     # print(datas == 'checkcode')
-    ToolsBox.priList(datas)
+    # ToolsBox.priList(datas)
     # ToolsBox.priList(urls)

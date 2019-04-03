@@ -1,4 +1,4 @@
-import UrlManager, ToolsBox, Downloader, Outputer, ReqBuilder, WbPage
+import UrlManager, ToolsBox, Downloader, Outputer, ReqBuilder, WbPage,requests
 import time, random, datetime
 
 
@@ -68,14 +68,28 @@ class MassController(object):
         # print(self.headers)
 
         # 下载
-        download = self.downloader.download(new_url, headers=self.headers, proxy=proxy)
-        html_cont = download
+        html_cont,code = self.downloader.download(new_url, headers=self.headers, proxy=proxy)
+        # html_cont = self.downloader.download(new_url, headers=self.headers, proxy=proxy)
 
         # 对下载内容进行处理
         # 1、如果被404的处理
-        if isinstance(html_cont, int) and (400 <= (html_cont) < 600):
+        if 400 <= code < 600:
+            # if isinstance(html_cont, int) and (400 <= (html_cont) < 600):
             self.HTTP404 += 1
-            print("返回异常（在MassController里）: {0}".format(html_cont))
+            print("返回异常（在MassController里）: {0}".format(code))
+            # print("返回异常（在MassController里）: {0}".format(html_cont))
+            if html_cont is not None:
+                self.downloader.getTitle(html_cont)
+                new_urls, new_datas = self.parser.page_parse(html_cont)
+                if new_datas == 'checkcode':  # 如果解析出是输入验证码
+                    self.delay = input("遇到验证码，输入延时秒数后，保留已解析的数据......")
+                    if self.delay == '':
+                        self.delay = 0
+                    else:
+                        self.delay = ToolsBox.strToInt(self.delay)
+                    self.total = self.total + self.outputer.out_mysql()
+                    if retries > 0:
+                        return self.craw_a_page(new_url, retries - 1)
             time.sleep(30 * self.HTTP404)  # 被禁止访问了，消停一会
             if self.HTTP404 > self.HTTP404_stop:
                 self.delay = input("你似乎被禁止访问了，输入延时秒数后，保留已解析的数据......")
@@ -83,15 +97,14 @@ class MassController(object):
                     self.delay = 0
                 else:
                     self.delay = ToolsBox.strToInt(self.delay)
-                # input('你似乎被禁止访问了，按任意键继续......')
                 self.total = self.total + self.outputer.out_mysql()
                 self.HTTP404 = 0
             else:
                 return self.craw_a_page(new_url)
-        # elif 500 <= html_cont <600:
-        #     print("返回（在MassController里）: {0}".format(html_cont))
         # 2、正常得到网页
         elif html_cont is not None:
+        # 2019.3.11简化了分析
+        # if html_cont is not None:
             new_urls, new_datas = self.parser.page_parse(html_cont)  # 返回解析内容
 
             if new_datas == 'checkcode':  # 如果解析出是输入验证码
@@ -143,7 +156,6 @@ class MassController(object):
         else:
             print('不能从服务器上下载{0}'.format(new_url))
             self.HTTP404 += 1
-            # print("返回（在MassController里）: {0}".format(html_cont))
             time.sleep(15 * self.HTTP404)  # 被禁止访问了，消停一会
             if self.HTTP404 > self.HTTP404_stop:
                 self.delay = input('连续不能获取页面内容，可点击上面链接检查，如无问题，输入延时秒数后，保留已解析的数据......')

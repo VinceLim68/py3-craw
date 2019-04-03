@@ -47,6 +47,7 @@ def clearStr(string):
         string = string.replace('<br/>', '').replace('\r', '').replace(' ', '').replace('\n', '').strip()
         string = string.replace(u'\xa0', '')  # 去除&nbsp;
         string = string.replace('<b>', '').replace('</b>', '')
+        string = string.replace('<', '').replace('>', '')
     return string
 
 
