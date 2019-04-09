@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="39ccad61-0bb5-42e7-ad0b-b8bb76e0514d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Downloader.py" afterPath="$PROJECT_DIR$/Downloader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Outputer.py" afterPath="$PROJECT_DIR$/Outputer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XM.py" afterPath="$PROJECT_DIR$/XM.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -731,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554277165538</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="2019/4/9 试一下不清除重复数据">
+      <created>1554790543261</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1554790543261</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -786,7 +790,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改：crawinit按时间判断是否与总库重复，重复则不追加" />
     <MESSAGE value="修改：MatchID,小区名不能匹配时转向title找" />
     <MESSAGE value="修改：小区名称两个字的也允许" />
     <MESSAGE value="修改：五八同城的小区名称转化为url编码" />
@@ -811,7 +814,8 @@
     <MESSAGE value="2019/1/22 研究了一下重复小区的问题" />
     <MESSAGE value="2019/3/5" />
     <MESSAGE value="2019/4/3 返回码为400-500时，把页面title解析出来" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019/4/3 返回码为400-500时，把页面title解析出来" />
+    <MESSAGE value="2019/4/9 试一下不清除重复数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019/4/9 试一下不清除重复数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
