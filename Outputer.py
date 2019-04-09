@@ -33,14 +33,17 @@ class Outputer(object):
         # 清理重复数据
         if datas is None or len(datas) == 0:
             return
-        for onedata in datas:
-            key_info = str(onedata['area']) + ":" + str(onedata['floor_index']) + ":" + str(onedata['total_price']) + ":" + onedata['community_name']      #用"面积+层次+总价+小区名称"作为关键字来去重
 
-            if not self.key_infos.is_element_exist(key_info):       #2016.5.27用bloomfilter来代替set()
-                self.key_infos.insert_element(key_info)
-                self.raw_datas.append(onedata)
-            else:
-                self.dupli_count += 1
+        # 2019/4/9试一下不去重
+        self.raw_datas.extend(datas)
+        # for onedata in datas:
+        #     key_info = str(onedata['area']) + ":" + str(onedata['floor_index']) + ":" + str(onedata['total_price']) + ":" + onedata['community_name']      #用"面积+层次+总价+小区名称"作为关键字来去重
+        #
+        #     if not self.key_infos.is_element_exist(key_info):       #2016.5.27用bloomfilter来代替set()
+        #         self.key_infos.insert_element(key_info)
+        #         self.raw_datas.append(onedata)
+        #     else:
+        #         self.dupli_count += 1
 
 
 
@@ -49,8 +52,13 @@ class Outputer(object):
         dupli = 0       #计数：插入数据库时的重复记录值
         success = 0     #计数：插入数据库的成功记录数量
 
+        # sql = """
+        #     INSERT for_sale_property (title,area,spatial_arrangement,price,floor_index,
+        #     total_floor,builded_year,advantage,total_price,details_url,community_name,
+        #     first_acquisition_time,from_,community_id) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+        # """
         sql = """
-            INSERT for_sale_property (title,area,spatial_arrangement,price,floor_index,
+            INSERT for_sale (title,area,spatial_arrangement,price,floor_index,
             total_floor,builded_year,advantage,total_price,details_url,community_name,
             first_acquisition_time,from_,community_id) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
         """

@@ -33,6 +33,7 @@ class Downloader(object):
     def download(self, url, headers={}, proxy=None):
 
         print("Downloadding : {0}".format(url))
+        code = 200
         try:
             r = requests.get(url=url, headers=headers, timeout=8, proxies=proxy, cookies=self.cookies)
 
@@ -58,7 +59,6 @@ class Downloader(object):
                 html = r.text.encode('ISO-8859-1').decode(r.apparent_encoding)
             else:
                 html = r.text
-            code = 200
             if 400 <= r.status_code < 600:
                 code = r.status_code
                 # input('error code:{0}'.format(r.status_code))
@@ -66,6 +66,7 @@ class Downloader(object):
         except Exception as e:
             print("Request failed(在Downloader里): {0}".format(e))
             html = None
+
 
         return html,code
 
