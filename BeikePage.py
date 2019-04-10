@@ -29,32 +29,34 @@ class BeikePage(PageParser.PageParser):
 
         details = soup.select(".houseInfo")
         # comms = soup.select(".houseInfo > a ")
+        comms = soup.select(".positionInfo")
         # regions = soup.select(".positionInfo a  ")
         # ToolsBox.priList(details)
-        positions = soup.select("div.positionInfo")
+        # positions = soup.select("div.positionInfo")
         prices = soup.select(".totalPrice")
         titles = soup.select("div.title a.CLICKDATA")
 
         # for title,comm,detail,position,price,region in zip(titles,comms,details,positions,prices,regions):
-        for title,detail,position,price in zip(titles,details,positions,prices):
+        for title,detail,price,comm in zip(titles,details,prices,comms):
             each_data = dict(builded_year=0, spatial_arrangement='', floor_index=0, total_floor=0,
                              details_url=title.get('href'), advantage='')
             each_data['title'] = title.get_text().strip()
 
             houseInfos = ToolsBox.clearStr(detail.get_text()).split('|')
 
-            each_data['community_name'] = houseInfos[0]
+            # each_data['community_name'] = houseInfos[0]
+            each_data['community_name'] = comm.get_text().strip()
 
-            houseInfos = houseInfos[1:]         #第一个是小区名称，切片去除
+            # houseInfos = houseInfos[1:]         #第一个是小区名称，切片去除
             for item in houseInfos:
                 d1 = self.parse_item(item)
                 each_data = self.add_advantage(d1, each_data)
 
-            p_list = position.get_text().split('\n')
-            for item in p_list:
-                if item.strip() != "":
-                    d1 = self.parse_item(item.strip())
-                    each_data = self.add_advantage(d1, each_data)
+            # p_list = position.get_text().split('\n')
+            # for item in p_list:
+            #     if item.strip() != "":
+            #         d1 = self.parse_item(item.strip())
+            #         each_data = self.add_advantage(d1, each_data)
 
             # each_data['region'] = region.get_text().strip()
             # print(each_data['region'])
@@ -102,7 +104,7 @@ if __name__ == "__main__":
     parser = BeikePage()
     # url = ' https://xm.ke.com/ershoufang/pg1rs嘉源新城（53、55、57）'
     url = 'https://xm.ke.com/ershoufang/pg2/'
-    html_cont = downloader.download(url)
+    html_cont,code = downloader.download(url)
     soup = parser.get_soup(html_cont)
     urls,datas = parser.page_parse(html_cont)
     ToolsBox.priList(datas)

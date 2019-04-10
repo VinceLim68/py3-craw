@@ -37,7 +37,8 @@ class GanjiPage(PageParser.PageParser):
         page_datas = []
 
         details = soup.select(".size")
-        # comms = soup.select("span.address-eara")
+        # comms = soup.select("a span.address-eara")
+        # print(comms)
         prices = soup.select(".num")
         titles = soup.select("div.ershoufang-list .title a")
         regions = soup.select("span.area a")
@@ -58,11 +59,17 @@ class GanjiPage(PageParser.PageParser):
 
             # print(address[0])
             # print(len(address))
+            # for item in comm.stripped_strings:
+            #     print(item)
+            # print(comm.stripped_strings)
+            # print(50*'0')
             if len(address) > 0:
                 if len(address[0].select("a.address-eara")) > 0:
                     each_data['region'] = ToolsBox.clearStr(address[0].select("a.address-eara")[0].get_text())
 
                 if len(address[0].select("span.address-eara")) > 0:
+                    # each_data['community_name'] = address[0].select("span.address-eara")[0].get_text()
+                    # print(each_data['community_name'])
                     each_data['community_name'] = ToolsBox.clearStr(address[0].select("span.address-eara")[0].get_text())
 
             # try:
@@ -96,9 +103,9 @@ if __name__ == "__main__":
     # url = 'http://xm.ganji.com/fang5/o2/'
     # url = 'http://xm.ganji.com/wblist/ershoufang/pn6/?key=%E5%A4%A9%E6%B9%96%E5%9F%8E%E5%A4%A9%E6%B9%96'
     # url = 'http://xm.ganji.com/wblist/ershoufang/pn8/?key=%E4%B8%80%E7%BA%BF%E6%B5%B7%E6%99%AF%E6%88%BF'
-    url = 'http://xm.ganji.com/ershoufang/pn2/?key=%E5%9B%BD%E8%B4%B8%E8%93%9D%E6%B5%B7'
+    url = 'http://xm.ganji.com/ershoufang/?key=%E5%A4%A9%E6%B9%96%E5%9F%8E%E5%A4%A9%E6%B9%96'
     headers = dict(Host="xm.ganji.com", Referer="http://xm.ganji.com/")
-    html_cont = downloader.download(url, headers=headers)
+    html_cont,code = downloader.download(url, headers=headers)
     soup = parser.get_soup(html_cont)
     # print(parser.is_check(soup))
     # print(html_cont)
