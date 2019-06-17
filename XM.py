@@ -5,28 +5,20 @@ XM = MassController.MassController(XmhousePage.XmhousePage)
 XM.craw_controller(url)
 XM.total = XM.total + XM.outputer.out_mysql()
 # XM.total = 0
-num = XM.total
+num += XM.total
 print('厦门HOUSE:{0},共{1}个'.format(XM.total,num))
 #
 url = ['http://xm.esf.leju.com/house']
 LEJV = MassController.MassController(LejvPage.LejvPage)
 LEJV.total = 0
 # num = LEJV.total
-# LEJV.delay = 3
-# LEJV.headers = dict(Host="xm.esf.leju.com", Origin="http://xm.esf.leju.com", Referer="http://xm.esf.leju.com/house/")
-# LEJV.craw_controller(url)
-# LEJV.total = LEJV.total + LEJV.outputer.out_mysql()
-# num += LEJV.total
-# print('厦门HOUSE网:{0},乐居网{1}个,共{2}个'.format(XM.total,LEJV.total,num))
+LEJV.delay = 4
+LEJV.headers = dict(Host="xm.esf.leju.com", Origin="http://xm.esf.leju.com", Referer="http://xm.esf.leju.com/house/")
+LEJV.craw_controller(url)
+LEJV.total = LEJV.total + LEJV.outputer.out_mysql()
+num += LEJV.total
+print('厦门HOUSE网:{0},乐居网{1}个,共{2}个'.format(XM.total,LEJV.total,num))
 
-# url = ['http://xm.ganji.com/wblist/ershoufang/pn2/']
-# GJ = MassController.MassController(GanjiPage.GanjiPage)
-# GJ.delay = 3
-# GJ.headers = dict(Host="xm.ganji.com",Referer="http://xm.ganji.com/")
-# GJ.craw_controller(url)
-# GJ.total = GJ.total + GJ.outputer.out_mysql()
-# num += GJ.total
-# print('厦门HOUSE网:{0},乐居网{1},赶集网{2},共{3}个'.format(XM.total, LEJV.total, GJ.total,num))
 
 url = ['https://danxia.com/house/all/PG2']
 DX = MassController.MassController(DanxiaPage.DanxiaPage)

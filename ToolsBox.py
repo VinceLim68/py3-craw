@@ -48,6 +48,12 @@ def clearStr(string):
         string = string.replace(u'\xa0', '')  # 去除&nbsp;
         string = string.replace('<b>', '').replace('</b>', '')
         string = string.replace('<', '').replace('>', '')
+        # 去除图形符号
+        try:
+            co = re.compile(u'[\U00010000-\U0010ffff]')
+        except re.error:
+            co = re.compile(u'[\uD800-\uDBFF][\uDC00-\uDFFF]')
+        string = co.sub(u'', string)
     return string
 
 
@@ -135,9 +141,9 @@ def clear_comm(str):
     return str.split('(')[0].split('（')[0].strip()
 
 #
-# str2 = ' 龙华大厦（南湖花园）'
+# str2 = '全厦门 吉🏠诚意出售，仅此一套！'
 # a = strToInt(str2)
-# print(clearStr(a))
+# print(clearStr(str2))
 # if isinstance(str2,str):
 #     print(clearStr(str2))
 # print(clear_comm(str2))

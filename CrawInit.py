@@ -83,13 +83,20 @@ class CrawInit(object):
         # 删除记录
         print('正在从for_sale_property表中删除数据，请稍侯......')
         sql = 'DELETE FROM for_sale_property WHERE ' + self.where
-        # print(sql)
         sta = self.cur.execute(sql)
-        # print(sta)
         if sta >= 1:
             print('从for_sale_property表中删除成功{0}个'.format(sta))
         else:
             print('删除失败')
+        self.conn.commit()
+        print('正在从for_sale_property_without_clear表中删除数据，请稍侯......')
+        sql1 = 'truncate for_sale_property_without_clear'
+        sta1 = self.cur.execute(sql1)
+        print(sta1)
+        # if sta1 >= 1:
+        #     print('从for_sale_property_without_clear表中删除成功{0}个'.format(sta1))
+        # else:
+        #     print('删除失败')
         self.conn.commit()
 
     def close_db(self):

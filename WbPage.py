@@ -89,12 +89,13 @@ class WbPage(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = WbPage()
-    url = ' http://xm.58.com/ershoufang/pn9/?key=%E5%9B%BD%E8%B4%B8%E5%A4%A9%E7%90%B4%E6%B9%BE1%E6%9C%9F'
-    html_cont = downloader.download(url)
+    url = 'https://xm.58.com/ershoufang/pn4/?key=%E7%BD%97%E5%AE%BE%E6%A3%AE%E4%BA%8C%E6%9C%9F'
+    headers = dict(Host="xm.58.com",)
+    html_cont,code = downloader.download(url, headers=headers)
     # print(type(html_cont))
     urls,datas = parser.page_parse(html_cont)
     # soup = parser.get_soup(html_cont)
     # datas = parser.parse_datas(soup)
     # urls = parser.parse_urls(soup)
     # ToolsBox.printDic(urls)
-    print(datas)
+    ToolsBox.priList(datas)

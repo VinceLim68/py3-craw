@@ -98,8 +98,6 @@ class Outputer(object):
                 print(traceback.format_exc())
                 code, message = e.args
                 print(code, message)
-                if e.args[0] == 1366:
-                    print(data['title'])
         except pymysql.err.InterfaceError as e:
             # 有的时候长时间暂停，connect会断开，要重新连接一下
             try:
@@ -116,10 +114,10 @@ class Outputer(object):
             code, message = e.args
             print('未被归类的错误类型')
             print(code, message)
+            if code == 1366:
+                print(data['title'])
 
         return success,dupli
-    # def get_datas(self):
-    #     return self.datas
 
     def get_datas_quantity(self):
         data_num = {}
@@ -129,6 +127,7 @@ class Outputer(object):
 
     def clear_datas(self):
         self.raw_datas = []         #原始数据
+        self.datasWithoutClear = []
         return
 
     def close_db(self):
