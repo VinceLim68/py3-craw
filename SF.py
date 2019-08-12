@@ -7,11 +7,11 @@ class SF(MassController.MassController):
         self.comm_count = 1                         #计数：抓取小区的数量
         self.headers = {
             # "Host":"esf.xm.fang.com",
-            "Host":"xm.esf.fang.com",
+            # "Host":"xm.esf.fang.com",
             # "Origin":"http://esf.xm.fang.com",
-            "Referer":"http://esf.xm.fang.com/"
+            # "Referer":"https://xm.esf.fang.com/"
         }
-        self.delay = 3
+        self.delay = 1
 
     def add_comm(self,data):
         #把添加小区列表提出来，因为会有不一样的需求，有的需要小区名称，有的需要小区链接
@@ -33,7 +33,7 @@ class SF(MassController.MassController):
         while self.comms.has_new_url():
             comm = self.comms.get_new_url
             c1,c2 = self.comms.get_quantity()
-            comm_url = 'http://esf.xm.fang.com' + comm
+            comm_url = 'https://xm.esf.fang.com/' + comm
             # comm_url = 'http://xm.esf.fang.com/house/c61-kw' + comm + '/'
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))
             url_list = []
@@ -45,6 +45,7 @@ class SF(MassController.MassController):
         print('==================共抓取{0}个记录=================='.format(self.total))
 
 if __name__=="__main__":
-    url = ["http://esf.xm.fang.com/"]
+    # url = ["https://esf.xm.fang.com/"]
+    url = ["https://xm.esf.fang.com/"]
     ajk = SF(SfPage.SfPage)
     ajk.CommsController(url)

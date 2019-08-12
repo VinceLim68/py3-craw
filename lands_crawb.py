@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 def crawland(url):
     downloader = Downloader.Downloader()
-    html_cont = downloader.download(url)
+    html_cont,code = downloader.download(url)
     # html_cont = Downloader.Downloader.download(url)
     # print(html_cont)
     soup = BeautifulSoup(html_cont, 'html.parser',)

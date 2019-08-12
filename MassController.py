@@ -1,5 +1,6 @@
-import UrlManager, ToolsBox, Downloader, Outputer, ReqBuilder, WbPage,requests
-import time, random, datetime
+import UrlManager, ToolsBox, Downloader, Outputer, ReqBuilder, WbPage
+import time, random, datetime,re
+from urllib.parse import unquote
 
 
 class MassController(object):
@@ -92,11 +93,15 @@ class MassController(object):
                         return self.craw_a_page(new_url, retries - 1)
             time.sleep(30 * self.HTTP404)  # 被禁止访问了，消停一会
             if self.HTTP404 > self.HTTP404_stop:
-                self.delay = input("你似乎被禁止访问了，输入延时秒数后，保留已解析的数据......")
-                if self.delay == '':
-                    self.delay = 0
-                else:
-                    self.delay = ToolsBox.strToInt(self.delay)
+                # 在安居客中如果是“安全局宿舍”，会出现找不到的错误，这里给它自动跳过
+                match_comm = re.findall(r'kw=(.*)&from_url', new_url)
+                if unquote(match_comm[0],'utf-8') != '0':
+                # if unquote(match_comm[0],'utf-8') != '安全局宿舍':
+                    self.delay = input("你似乎被禁止访问了，输入延时秒数后，保留已解析的数据......")
+                    if self.delay == '':
+                        self.delay = 0
+                    else:
+                        self.delay = ToolsBox.strToInt(self.delay)
                 self.total = self.total + self.outputer.out_mysql()
                 self.HTTP404 = 0
             else:

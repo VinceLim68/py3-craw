@@ -37,7 +37,8 @@ class SfPage(PageParser.PageParser):
         else:
             for link in links:
                 if link.get('href') != None:
-                    new_urls.add("http://esf.xm.fang.com" + link.get('href'))
+                    new_urls.add("https://xm.esf.fang.com" + link.get('href'))
+                    # new_urls.add("http://esf.xm.fang.com" + link.get('href'))
         return new_urls
 
     def parse_datas(self,soup):
@@ -60,7 +61,7 @@ class SfPage(PageParser.PageParser):
                               advantage='')
 
             each_data['title'] = title.get('title')
-            each_data['details_url'] = "http://esf.xm.fang.com" + title.get('href')
+            each_data['details_url'] = "https://xm.esf.fang.com" + title.get('href')
             for item in house.children:
                 if isinstance(item, bs4.element.NavigableString):
                     d1 = self.parse_item(ToolsBox.clearStr(item))
@@ -88,9 +89,9 @@ if __name__ == "__main__":
     # comm = '泛华大厦'       #%b7%ba%bb%aa%b4%f3%cf%c3
     # print(parse.quote(comm, "gb2312"))
     # url = 'http://xm.esf.fang.com/house/c61-kw' + comm + '/'
-    # url = "http://esf.xm.fang.com/house/i34/"
-    url = "http://esf.xm.fang.com/house-xm2213064828/i32/"
-    html_cont = downloader.download(url)
+    url = "http://esf.xm.fang.com/house/i34/"
+    # url = "https://xm.esf.fang.com/house-xm2213064828/i32/"
+    html_cont,code = downloader.download(url)
     print(html_cont)
     # if isinstance(html_cont, int) and (400 <= (html_cont) < 600):
     #     print(html_cont)

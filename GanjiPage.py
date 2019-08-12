@@ -106,7 +106,7 @@ if __name__ == "__main__":
     url = 'http://xm.ganji.com/ershoufang/?key=%E5%A4%A9%E6%B9%96%E5%9F%8E%E5%A4%A9%E6%B9%96'
     headers = dict(Host="xm.ganji.com", Referer="http://xm.ganji.com/")
     html_cont,code = downloader.download(url, headers=headers)
-    soup = parser.get_soup(html_cont)
+    # soup = parser.get_soup(html_cont)
     # print(parser.is_check(soup))
     # print(html_cont)
     urls, datas = parser.page_parse(html_cont)
