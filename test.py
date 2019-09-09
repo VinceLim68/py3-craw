@@ -50,8 +50,11 @@ from urllib.parse import quote,unquote
 # plt.plot(Y4[0],Y4[1],'-r*',lw=2)
 # plt.axis([-1,3,-1,3]);plt.grid(True)
 # plt.show()
-new_url = 'http://xm.anjuke.com/sale/p1-rd1/?kw=%E5%AE%89%E5%85%A8%E5%B1%80%E5%AE%BF%E8%88%8D&from_url=kw_final#filtersort'
+new_url = '844242'
 print(new_url)
-match_comm = re.findall(r'kw=(.*)&from_url', new_url)
+match_comm = re.findall(r'^\d+$', new_url)
+print(new_url)
+print(match_comm)
 # ToolsBox.printDic(match_comm)
-print(unquote(match_comm[0],'utf-8')=='安全局宿舍')
+# print(unquote(match_comm[0],'utf-8')=='安全局宿舍')
+print(len(match_comm)==1)

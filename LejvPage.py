@@ -64,6 +64,13 @@ if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = LejvPage()
     url = 'http://xm.esf.leju.com/house'
-    html_cont = downloader.download(url)
+    headers = {
+        "Host": "xm.esf.leju.com",
+        "Referer": "http://xm.esf.leju.com/house/",
+        'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/7.0)',
+    }
+
+    html_cont,code = downloader.download(url,headers=headers)
+    print(html_cont)
     urls,datas = parser.page_parse(html_cont)
     ToolsBox.priList(urls)

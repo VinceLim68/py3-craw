@@ -49,6 +49,7 @@ class MatchID(object):
         getid = []              # getid:[开始位置，关键字，comm_id]
         
         # 轮询小区id与其关键字的对应数组
+
         for i in comm_arr:                              
             # i[1]=keywords ，关键字后带辅助字的，先将关键字与辅助字拆开
             key_words = i[1].split("/")

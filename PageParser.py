@@ -184,8 +184,8 @@ class PageParser(object):
             else:
                 title_temp += ' b:' + datadic['block'].strip()
         if 'community_address' in datadic.keys():
+            datadic['community_address'] = datadic['community_address'].strip()
             title_temp += ' a:' + datadic['community_address'].strip()
-            datadic['community_name'] = datadic['community_name'].strip()
         if 'title' in datadic.keys():
             title2 = title_temp.strip() + ' ' + datadic['title']
         else:

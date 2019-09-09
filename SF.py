@@ -9,7 +9,12 @@ class SF(MassController.MassController):
             # "Host":"esf.xm.fang.com",
             # "Host":"xm.esf.fang.com",
             # "Origin":"http://esf.xm.fang.com",
-            # "Referer":"https://xm.esf.fang.com/"
+            "Referer":"https://xm.esf.fang.com/",
+            "upgrade-insecure-requests": "1",
+            "accept": "text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, image / apng, * / *;q = 0.8",
+            "accept-encoding": "gzip, deflate, br",
+            "accept-language": "zh-CN, zh; q = 0.9",
+            "cache - control": "max - age = 0"
         }
         self.delay = 1
 

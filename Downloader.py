@@ -33,9 +33,13 @@ class Downloader(object):
     def download(self, url, headers={}, proxy=None):
 
         print("Downloadding : {0}".format(url))
-        code = 200
+        # code = 0
         try:
             r = requests.get(url=url, headers=headers, timeout=8, proxies=proxy, cookies=self.cookies)
+            # r = requests.get(url=url, headers=headers, timeout=8, proxies=proxy, cookies=self.cookies,allow_redirects=False)
+            # print(r.url)
+            # print(r.history)
+            # print(r.status_code)
 
             if len(r.cookies.items()) > 0:
                 self.cookies = dict(r.cookies.items())
@@ -59,13 +63,17 @@ class Downloader(object):
                 html = r.text.encode('ISO-8859-1').decode(r.apparent_encoding)
             else:
                 html = r.text
-            if 400 <= r.status_code < 600:
-                code = r.status_code
+
+            code = r.status_code
+            # if 400 <= r.status_code < 600:
+            #     code = r.status_code
                 # input('error code:{0}'.format(r.status_code))
                 # print(r.text)
         except Exception as e:
             print("Request failed(在Downloader里): {0}".format(e))
             html = None
+            code = 0
+            # html = r
 
 
         return html,code
