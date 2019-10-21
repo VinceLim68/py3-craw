@@ -25,7 +25,7 @@ class www917Page(PageParser.PageParser):
         else:
             for url in pages:
                 if 'javascript' not in url.get('href'):
-                    new_urls.add(' https://www.917.com' + url.get('href'))
+                    new_urls.add(' https://xm.917.com' + url.get('href'))
         return new_urls
 
     def parse_datas(self,soup):

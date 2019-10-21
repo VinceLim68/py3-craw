@@ -95,7 +95,7 @@ if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = MaitianPage()
     url = 'http://xm.maitian.cn/esfall/PG4'
-    html_cont = downloader.download(url)
-    print(html_cont)
-    # urls,datas = parser.page_parse(html_cont)
-    # ToolsBox.priList(datas)
+    html_cont,code = downloader.download(url)
+    # print(html_cont)
+    urls,datas = parser.page_parse(html_cont)
+    ToolsBox.priList(datas)

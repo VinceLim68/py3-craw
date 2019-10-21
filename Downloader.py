@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import datetime
 # from random import choice
 # import socket
 
@@ -70,6 +71,7 @@ class Downloader(object):
                 # input('error code:{0}'.format(r.status_code))
                 # print(r.text)
         except Exception as e:
+            print(datetime.datetime.now())
             print("Request failed(在Downloader里): {0}".format(e))
             html = None
             code = 0

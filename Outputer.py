@@ -69,8 +69,8 @@ class Outputer(object):
             success += s1
             dupli += d1
 
-        # for data in self.datasWithoutClear:
-        #     self.insert_data(sqlWithoutClear,data)
+        for data in self.datasWithoutClear:
+            self.insert_data(sqlWithoutClear,data)
 
 
         print("本次共{0}个数据，存入{1},重复{2}".format(len(self.raw_datas),success,dupli))

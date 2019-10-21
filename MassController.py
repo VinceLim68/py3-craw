@@ -83,6 +83,7 @@ class MassController(object):
                 self.downloader.getTitle(html_cont)
                 new_urls, new_datas = self.parser.page_parse(html_cont)
                 if new_datas == 'checkcode':  # 如果解析出是输入验证码
+                    print(str(datetime.datetime.now()))
                     self.delay = input("遇到验证码，输入延时秒数后，保留已解析的数据......")
                     if self.delay == '':
                         self.delay = 0
@@ -97,6 +98,7 @@ class MassController(object):
                 match_comm = re.findall(r'kw=(.*)&from_url', new_url)
                 if unquote(match_comm[0],'utf-8') != '0':
                 # if unquote(match_comm[0],'utf-8') != '安全局宿舍':
+                    print(str(datetime.datetime.now()))
                     self.delay = input("你似乎被禁止访问了，输入延时秒数后，保留已解析的数据......")
                     if self.delay == '':
                         self.delay = 0
@@ -113,6 +115,7 @@ class MassController(object):
             new_urls, new_datas = self.parser.page_parse(html_cont)  # 返回解析内容
 
             if new_datas == 'checkcode':  # 如果解析出是输入验证码
+                print(str(datetime.datetime.now()))
                 self.delay = input("遇到验证码，输入延时秒数后，保留已解析的数据......")
                 if self.delay == '':
                     self.delay = 0

@@ -87,9 +87,11 @@ class WbPage(PageParser.PageParser):
                 if len(match_comm) > 0:
                     print('/////////////////出现纯数字的小区了!!!!!!////////////////////////')
                     ToolsBox.priList(each_data)
+                    print(soup)
                     # print(each_data['community_name'])
-                    var1 = input(each_data['community_name']+'出现纯数字的小区了!!!!!!!!!')
-                page_datas.append(each_data)
+                    # var1 = input(each_data['community_name']+'出现纯数字的小区了!!!!!!!!!')
+                else:
+                    page_datas.append(each_data)
             else:
                 if ToolsBox.ShowInvalideData(each_data): page_datas.append(each_data)
 

@@ -47,8 +47,8 @@ class LjPage(PageParser.PageParser):
 
             info_item = info.get_text().split('|')
 
-            each_data['community_name'] = info_item[0].strip()  # 第1个总是小区名称
-            for i in range(1, len(info_item)):
+            # each_data['community_name'] = info_item[0].strip()  # 第1个总是小区名称
+            for i in range(0, len(info_item)):
                 d1 = self.parse_item(info_item[i].strip())
                 # d1 = self.add_advantage(d1,each_data)
                 # if ('advantage' in each_data.keys()) and ('advantage' in d1.keys()):
@@ -57,6 +57,8 @@ class LjPage(PageParser.PageParser):
                 each_data = self.add_advantage(d1,each_data)
 
             position = position.get_text().replace('\t', '').replace('\n', '').split()
+            each_data['community_name'] = position[0].strip()  # 10月21日改变了小区名称位置
+            # print(position)
             each_data['block'] = position[-1]
 
             if ')' not in position[0]:  # 链前的别墅会用'4层2008年建'的形式，加入')'，以便分隔
@@ -87,7 +89,7 @@ if __name__ == "__main__":
     headers = {"Host": "xm.lianjia.com",
                "Referer": "https://xm.lianjia.com/ershoufang/",
                "User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"}
-    html_cont = downloader.download(url,headers=headers)
+    html_cont,code = downloader.download(url,headers=headers)
     # print((html_cont))
     urls,datas = parser.page_parse(html_cont)
     # soup = parser.get_soup(html_cont)

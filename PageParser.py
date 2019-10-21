@@ -44,7 +44,7 @@ class PageParser(object):
                 new_urls = self.parse_urls(soup)
                 new_datas = self.parse_datas(soup)
         return new_urls,new_datas
-    
+
     def parse_floor(self,item):
         '''
         高层/(共30层)-->拆成楼层和总层数,        安居客、链家中使用
@@ -53,9 +53,9 @@ class PageParser(object):
         if '(' in item:
             sep = '('
         elif '/' in item:
-            sep = '/'  
+            sep = '/'
         elif '（' in item:      #2016.12.1增加全角的（
-            sep = '（'    
+            sep = '（'
         else:
             sep = '/'
         try:
@@ -81,7 +81,7 @@ class PageParser(object):
             with open('logtest.txt','a+') as fout:
                 fout.write('\n******' + str(datetime.datetime.now()) + ' *********Erro in parse_floor*************\n')
                 fout.write('Parse Failt of :%s \n'%item.encode('utf8'))
-                traceback.print_exc(file=fout) 
+                traceback.print_exc(file=fout)
                 print (traceback.format_exc())
         return floor_index,total_floor
 
@@ -99,6 +99,7 @@ class PageParser(object):
         r1_3 = '(\d+.?\d+)㎡'         #2016.9.13增加麦田的面积解析
         r1_4 = '(\d+.?\d+)m²'        #2017.3.8安居客
         r1_5 = '(\d+.?\d+)�O'        #2018.8.3搜房,这个乱码就是㎡
+        r1_6 = '(\d+.?\d+)平'        #2018.8.3搜房,这个乱码就是㎡
         r2_1 = '\d+室'
         r2_2 = '\d+房'
         r3_1 = '(\d+)元/'
@@ -118,6 +119,8 @@ class PageParser(object):
             parse_dict['area'] = int(round(float(re.search(r1_4, string).groups(0)[0]),0))
         elif re.search(r1_5, string, flags=0):  # 2018.8.3搜房的面积解析
             parse_dict['area'] = int(round(float(re.search(r1_5, string).groups(0)[0]), 0))
+        elif re.search(r1_6, string, flags=0):  # 2019.9.9乐居的面积解析
+            parse_dict['area'] = int(round(float(re.search(r1_6, string).groups(0)[0]), 0))
         elif re.search(r2_1, string, flags=0):
             parse_dict['spatial_arrangement'] = string.strip()
         elif re.search(r2_2, string, flags=0):
@@ -138,7 +141,7 @@ class PageParser(object):
             pass
         else:                           #re.search('[南北东西]', string, flags=0):
             parse_dict['advantage'] = string.strip()
-        
+
         return parse_dict
 
     def excep(self,str):

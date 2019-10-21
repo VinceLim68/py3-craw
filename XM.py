@@ -1,9 +1,10 @@
-import MassController,XmhousePage,LejvPage,GanjiPage,MaitianPage,DanxiaPage
+import MassController,XmhousePage,LejvPage,MaitianPage,DanxiaPage
 num = 0
 
-url=['http://esf.xmhouse.com/sell/t4_r_a_u_l_z_s_itp_b_it_if_ih_p-_ar-_pt_o_ps_2.html']
+url=['http://esf.xmhouse.com/sell/t4_r_a_u_l_z_s_itp_b_it_if_ih_p-_ar-_pt_o_ps_1.html']
 XM = MassController.MassController(XmhousePage.XmhousePage)
 XM.total = 0
+XM.headers = dict(Host="esf.xmhouse.com")
 XM.craw_controller(url)
 XM.total = XM.total + XM.outputer.out_mysql()
 num += XM.total

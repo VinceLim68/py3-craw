@@ -69,7 +69,8 @@ class MatchID(object):
                     # 在formatch中查找辅助字
                     for j in range(1,lenth):
                         # 只要找到一个，说明符合条件，即可退出循环
-                        if formatch.find(key_words[j].upper()) >=0:     
+                        # 只要找到一个，说明符合条件，即可退出循环
+                        if formatch.find(key_words[j].upper()) >=0:
                             #如果是有关键字的，起始位置提前一点，这样会优先于没有关键字的匹配
                             temp = [start-0.5,key_words[0].upper(),i[0]]    #key_words[0] = keyword , key_words[1]以后的是辅助字
                             getid.append(temp)                          #i[0]就是comm_id
