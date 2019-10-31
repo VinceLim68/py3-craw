@@ -83,6 +83,7 @@ class PageParser(object):
                 fout.write('Parse Failt of :%s \n'%item.encode('utf8'))
                 traceback.print_exc(file=fout)
                 print (traceback.format_exc())
+        # print(item)
         return floor_index,total_floor
 
     def parse_item(self,string):
@@ -108,40 +109,76 @@ class PageParser(object):
         r5_1 = '(\d{4})年'
         r5_2 = '年.*(\d{4})'
 
+        if re.search(r1_1, string, flags=0)\
+            or re.search(r1_2, string, flags=0)\
+            or re.search(r1_3, string, flags=0)\
+            or re.search(r1_4, string, flags=0)\
+            or re.search(r1_5, string, flags=0)\
+            or re.search(r1_6, string, flags=0)\
+            or re.search(r1_1, string, flags=0)\
+            or re.search(r2_2, string, flags=0)\
+            or re.search(r3_1, string, flags=0)\
+            or re.search(r3_2, string, flags=0)\
+            or re.search(r4, string, flags=0)\
+            or re.search(r1_2, string, flags=0)\
+            or re.search(r5_1, string, flags=0)\
+            or re.search(r5_2, string, flags=0):
 
-        if re.search(r1_1, string, flags=0):
-            parse_dict['area'] = int(re.search(r1_1, string).groups(0)[0])
-        elif re.search(r1_2, string, flags=0):
-            parse_dict['area'] = int(round(float(re.search(r1_2, string).groups(0)[0]),0))
-        elif re.search(r1_3, string, flags=0):                                          #2016.9.13增加麦田的面积解析
-            parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
-        elif re.search(r1_4, string, flags=0):                                          #2017.3.8安居客的面积解析
-            parse_dict['area'] = int(round(float(re.search(r1_4, string).groups(0)[0]),0))
-        elif re.search(r1_5, string, flags=0):  # 2018.8.3搜房的面积解析
-            parse_dict['area'] = int(round(float(re.search(r1_5, string).groups(0)[0]), 0))
-        elif re.search(r1_6, string, flags=0):  # 2019.9.9乐居的面积解析
-            parse_dict['area'] = int(round(float(re.search(r1_6, string).groups(0)[0]), 0))
-        elif re.search(r2_1, string, flags=0):
-            parse_dict['spatial_arrangement'] = string.strip()
-        elif re.search(r2_2, string, flags=0):
-            parse_dict['spatial_arrangement'] = string.strip()
-        elif re.search(r3_1, string, flags=0):
-            pass  #单价准备自己计算，不取值
-        elif re.search(r3_2, string, flags=0):
-            pass    #总价也不处理
-        elif re.search(r4, string, flags=0):
-            parse_dict['floor_index'],parse_dict['total_floor'] = self.parse_floor(string)
-        elif re.search(r5_1, string, flags=0):
-            parse_dict['builded_year'] = int(re.search(r5_1, string).groups(0)[0])
-        elif re.search(r5_2, string, flags=0):
-            parse_dict['builded_year'] = int(re.search(r5_2, string).groups(0)[0])
-        elif string == '|' or string == '|':
-            pass
-        elif string == '':
-            pass
-        else:                           #re.search('[南北东西]', string, flags=0):
-            parse_dict['advantage'] = string.strip()
+            if re.search(r1_1, string, flags=0):
+                parse_dict['area'] = int(re.search(r1_1, string).groups(0)[0])
+            elif re.search(r1_2, string, flags=0):
+                parse_dict['area'] = int(round(float(re.search(r1_2, string).groups(0)[0]),0))
+            elif re.search(r1_3, string, flags=0):                                          #2016.9.13增加麦田的面积解析
+                parse_dict['area'] = int(round(float(re.search(r1_3, string).groups(0)[0]),0))
+            elif re.search(r1_4, string, flags=0):                                          #2017.3.8安居客的面积解析
+                parse_dict['area'] = int(round(float(re.search(r1_4, string).groups(0)[0]),0))
+            elif re.search(r1_5, string, flags=0):  # 2018.8.3搜房的面积解析
+                parse_dict['area'] = int(round(float(re.search(r1_5, string).groups(0)[0]), 0))
+            elif re.search(r1_6, string, flags=0):  # 2019.9.9乐居的面积解析
+                parse_dict['area'] = int(round(float(re.search(r1_6, string).groups(0)[0]), 0))
+            else:
+                pass
 
+            if re.search(r2_1, string, flags=0) \
+                    or re.search(r2_2, string, flags=0):
+                # if re.search(r4, string, flags=0) and ')' in string:
+                #     split_strings = string.split(')')
+                #     # print(split_strings)
+                #     for split_string in split_strings:
+                #         # print(split_string)
+                #         parse_dict = self.parse_item(split_string)
+                #         # print(parse_dict)
+                #         # print('?'*20)
+                # else:
+                #     parse_dict['spatial_arrangement'] = string.strip()
+                parse_dict['spatial_arrangement'] = string.strip()
+
+            # elif
+            #     parse_dict['spatial_arrangement'] = string.strip()
+            # else:
+            #     pass
+
+            # elif re.search(r3_1, string, flags=0):
+            #     pass  #单价准备自己计算，不取值
+            # elif re.search(r3_2, string, flags=0):
+            #     pass    #总价也不处理
+            if re.search(r4, string, flags=0):
+                parse_dict['floor_index'],parse_dict['total_floor'] = self.parse_floor(string)
+
+            if re.search(r5_1, string, flags=0):
+                parse_dict['builded_year'] = int(re.search(r5_1, string).groups(0)[0])
+            elif re.search(r5_2, string, flags=0):
+                parse_dict['builded_year'] = int(re.search(r5_2, string).groups(0)[0])
+            else:
+                pass
+        else:
+            if string == '|' or string == '|':
+                pass
+            elif string == '':
+                pass
+            else:                           #re.search('[南北东西]', string, flags=0):
+                parse_dict['advantage'] = string.strip()
+        # print(parse_dict)
         return parse_dict
 
     def excep(self,str):
@@ -245,10 +282,13 @@ if __name__=="__main__":
     # print(len(url) )
 
 
-    # str2 = '湖里大道′
+    str2 = "高楼层(共6层) 1室1厅"
+
     p = PageParser()
-    flag = p.excep('厦门周边')
-    print(flag)
+    example = p.parse_item(str2)
+    print(example)
+    # flag = p.excep('厦门周边')
+    # print(flag)
     # print(p.excep('湖里大道′))
     # print str[0:3] #截取第一位到第三位的字符
     # parser = HtmlParser()

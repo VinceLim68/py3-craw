@@ -242,6 +242,11 @@ class MatchID(object):
         # 再从当前库取
         self.get_and_update('for_sale_property')
         print('一共匹配了{0}个记录'.format(self.matchnum))
+
+        #再从重复库取
+        self.get_and_update('for_sale_property_without_clear')
+        print('一共匹配了{0}个记录'.format(self.matchnum))
+
         self.close_db()
 if __name__=="__main__":
 

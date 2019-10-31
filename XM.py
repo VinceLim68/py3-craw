@@ -1,7 +1,7 @@
 import MassController,XmhousePage,LejvPage,MaitianPage,DanxiaPage
 num = 0
 
-url=['http://esf.xmhouse.com/sell/t4_r_a_u_l_z_s_itp_b_it_if_ih_p-_ar-_pt_o_ps_1.html']
+url=['http://esf.xmhouse.com/sell']
 XM = MassController.MassController(XmhousePage.XmhousePage)
 XM.total = 0
 XM.headers = dict(Host="esf.xmhouse.com")

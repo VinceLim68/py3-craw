@@ -1,4 +1,4 @@
-import PageParser,ToolsBox,Downloader
+import PageParser,ToolsBox,Downloader,re
 import json
 
 class BeikePage(PageParser.PageParser):
@@ -42,14 +42,20 @@ class BeikePage(PageParser.PageParser):
                              details_url=title.get('href'), advantage='')
             each_data['title'] = title.get_text().strip()
 
-            houseInfos = ToolsBox.clearStr(detail.get_text()).split('|')
+            # houseInfos = ToolsBox.clearStr(detail.get_text()).split('|')
+            houseInfos = re.split(r'\s*[|,\s]\s*',ToolsBox.clearStr(detail.get_text()))
 
             # each_data['community_name'] = houseInfos[0]
             each_data['community_name'] = comm.get_text().strip()
 
             # houseInfos = houseInfos[1:]         #第一个是小区名称，切片去除
             for item in houseInfos:
-                d1 = self.parse_item(item)
+                if '层' in item and ')' in item and ('室' in item or '房' in item):
+                    split_strings = item.split(')')
+                    for split_string in split_strings:
+                        d1 = self.parse_item(split_string)
+                else:
+                    d1 = self.parse_item(item)
                 each_data = self.add_advantage(d1, each_data)
 
             # p_list = position.get_text().split('\n')

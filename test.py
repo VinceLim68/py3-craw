@@ -50,11 +50,29 @@ from urllib.parse import quote,unquote
 # plt.plot(Y4[0],Y4[1],'-r*',lw=2)
 # plt.axis([-1,3,-1,3]);plt.grid(True)
 # plt.show()
-new_url = '844242'
-print(new_url)
-match_comm = re.findall(r'^\d+$', new_url)
-print(new_url)
-print(match_comm)
+# new_url = '844242'
+# print(new_url)
+# match_comm = re.findall(r'^\d+$', new_url)
+# print(new_url)
+# print(match_comm)
 # ToolsBox.printDic(match_comm)
 # print(unquote(match_comm[0],'utf-8')=='安全局宿舍')
-print(len(match_comm)==1)
+# print(len(match_comm)==1)
+string = '高楼层(共6层) 1室1厅 | 31.25平米 | 南'
+# a =string.split('|').split(' ')
+a = re.split(r'\s*[|,\s]\s*',string)
+print(a)
+# dic = {}
+# r2_1 = '\d+室'
+# r2_2 = '\d+房'
+# r3_1 = '(\d+)元/'
+# r3_2 = '(\d+)万'
+# r4 = '\d+层'
+# # if re.search(r4, string, flags=0) and ')' in string:
+# #     print(string.split(')'))
+#     # re.split(")", string)
+# dic['a'] = 5
+# listtest = dic
+# dic['b'] = 8
+# listtest = dic
+# print(listtest)

@@ -33,6 +33,7 @@ class XmhousePage(PageParser.PageParser):
             for url in urls:
                 if url.has_attr('href'):
                     new_urls.add('http://esf.xmhouse.com' + url['href'])
+            # ToolsBox.priList(new_urls)
         return new_urls
 
     def parse_datas(self,soup):
@@ -88,7 +89,7 @@ if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = XmhousePage()
     url = 'http://esf.xmhouse.com/sell/t4_r_a_u_l_z_s_itp_b_it_if_ih_p-_ar-_pt_o_ps_2.html'
-    html_cont = downloader.download(url)
+    html_cont,code = downloader.download(url)
     # html_cont = unicode(html_cont,'gbk')
     # print((html_cont))
     # soup = parser.get_soup(html_cont)
@@ -98,6 +99,6 @@ if __name__ == "__main__":
     # datas = parser.parse_datas(soup)
     # urls = parser.parse_urls(soup)
     # ToolsBox.printDic(urls)
-    ToolsBox.priList(datas)
+    ToolsBox.priList(urls)
     # print(datas)
     # print(urls)
