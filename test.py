@@ -58,10 +58,42 @@ from urllib.parse import quote,unquote
 # ToolsBox.printDic(match_comm)
 # print(unquote(match_comm[0],'utf-8')=='安全局宿舍')
 # print(len(match_comm)==1)
-string = '高楼层(共6层) 1室1厅 | 31.25平米 | 南'
+string = '共6层'
+# string = '7/15层'
+# string = '12层     1室1厅'
+
+split1='[）,\),\s]+'
+split2='[\(,（,\/]'
 # a =string.split('|').split(' ')
-a = re.split(r'\s*[|,\s]\s*',string)
-print(a)
+# a = re.split(r'[\(,\/,|,（,）,\),\s]+',string)
+a = re.split(split1,string)
+b = re.split(split2,a[0])
+# print(a)
+# print(b)
+if re.search(split2,a[0]):
+    total_string = b[1]
+    index = b[0]
+else:
+    total_string = b[0]
+    index = ''
+total_floor = int(re.sub("\D", "", total_string))
+if u"高" in index:
+    floor_index = int(total_floor*5/6)
+elif u"低" in index:
+    floor_index = int(total_floor/6)
+else:
+    floor_index = int(total_floor/2)
+print(floor_index)
+print(total_floor)
+# after_sep = (item.split(sep)[1]) if sep in item else item
+#             # print(after_sep)
+# get_num = re.sub("\D", "", after_sep)
+#
+# total_floor = int(get_num)
+# index = item.split(sep)[0] if sep in item else " "
+
+# a = re.split(r'\s*[|,\s]\s*',string)
+# print(a[0])
 # dic = {}
 # r2_1 = '\d+室'
 # r2_2 = '\d+房'

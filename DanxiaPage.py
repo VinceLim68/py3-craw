@@ -67,11 +67,11 @@ if __name__ == "__main__":
         "Referer": "https://danxia.com/house/all",
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
     }
-    html_cont = downloader.download(url,headers=headers)
-    soup = parser.get_soup(html_cont)
+    html_cont,code = downloader.download(url,headers=headers)
+    # soup = parser.get_soup(html_cont)
     # datas = parser.parse_datas(soup)
     # print(datas)
     urls,datas = parser.page_parse(html_cont)
-    for data in urls:
+    for data in datas:
         print('='*50)
         ToolsBox.printDic(data)

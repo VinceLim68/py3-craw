@@ -50,33 +50,53 @@ class PageParser(object):
         高层/(共30层)-->拆成楼层和总层数,        安居客、链家中使用
         传入：        item-->字符串        sep-->分隔符
         '''
-        if '(' in item:
-            sep = '('
-        elif '/' in item:
-            sep = '/'
-        elif '（' in item:      #2016.12.1增加全角的（
-            sep = '（'
-        else:
-            sep = '/'
-        try:
-            after_sep = (item.split(sep)[1]) if sep in item else item
-            # print(after_sep)
-            get_num = re.sub("\D", "", after_sep)
+        # if '(' in item:
+        #     sep = '('
+        # elif '/' in item:
+        #     sep = '/'
+        # elif '（' in item:      #2016.12.1增加全角的（
+        #     sep = '（'
+        # else:
+        #     sep = '/'
 
-            # toNum = filter(str.isdigit,((item.split(sep)[1]) if sep in item else item).encode("utf-8"))
-            # str1 = filter(str.isdigit(),toNum.encode("utf-8"))
-            # print(get_num)
-            total_floor = int(get_num)
-            # total_floor = int(filter(str.isdigit,((item.split(sep)[1]) if sep in item else item).encode("utf-8")))
-            index = item.split(sep)[0] if sep in item else " "
-            if index == u" ":
-                floor_index = 0
-            elif u"高" in index:
-                floor_index = int(total_floor*5/6)
-            elif u"低" in index:
-                floor_index = int(total_floor/6)
+        # print(item)
+        # 修改整个模块，应对“高层/(共30层)1室1厅”的情况
+        split1 = '[）,\)]+'       #第一次拆分，把相连的‘1室1室’之类的拆掉
+        split2 = '[\(,（,\/]'        #第二次拆分，把楼层和总层分开
+        try:
+            a = re.split(split1, item)
+            b = re.split(split2, a[0])
+            # print(a)
+            if re.search(split2, a[0]):
+                total_string = b[1]
+                index = b[0]
             else:
-                floor_index = int(total_floor/2)
+                total_string = b[0]
+                index = ''
+            # input(total_string)
+            # input(index)
+            total_floor = int(re.sub("\D", "", total_string))
+            if u"高" in index:
+                floor_index = int(total_floor * 5 / 6)
+            elif u"低" in index:
+                floor_index = int(total_floor / 6)
+            else:
+                floor_index = int(total_floor / 2)
+
+                # after_sep = (item.split(sep)[1]) if sep in item else item
+                # # print(after_sep)
+                # get_num = re.sub("\D", "", after_sep)
+                #
+                # total_floor = int(get_num)
+                # index = item.split(sep)[0] if sep in item else " "
+                # if index == u" ":
+                #     floor_index = 0
+                # elif u"高" in index:
+                #     floor_index = int(total_floor*5/6)
+                # elif u"低" in index:
+                #     floor_index = int(total_floor/6)
+                # else:
+                #     floor_index = int(total_floor/2)
         except Exception as e:
             with open('logtest.txt','a+') as fout:
                 fout.write('\n******' + str(datetime.datetime.now()) + ' *********Erro in parse_floor*************\n')
@@ -115,12 +135,11 @@ class PageParser(object):
             or re.search(r1_4, string, flags=0)\
             or re.search(r1_5, string, flags=0)\
             or re.search(r1_6, string, flags=0)\
-            or re.search(r1_1, string, flags=0)\
+            or re.search(r2_1, string, flags=0)\
             or re.search(r2_2, string, flags=0)\
             or re.search(r3_1, string, flags=0)\
             or re.search(r3_2, string, flags=0)\
             or re.search(r4, string, flags=0)\
-            or re.search(r1_2, string, flags=0)\
             or re.search(r5_1, string, flags=0)\
             or re.search(r5_2, string, flags=0):
 
@@ -153,15 +172,6 @@ class PageParser(object):
                 #     parse_dict['spatial_arrangement'] = string.strip()
                 parse_dict['spatial_arrangement'] = string.strip()
 
-            # elif
-            #     parse_dict['spatial_arrangement'] = string.strip()
-            # else:
-            #     pass
-
-            # elif re.search(r3_1, string, flags=0):
-            #     pass  #单价准备自己计算，不取值
-            # elif re.search(r3_2, string, flags=0):
-            #     pass    #总价也不处理
             if re.search(r4, string, flags=0):
                 parse_dict['floor_index'],parse_dict['total_floor'] = self.parse_floor(string)
 
@@ -282,7 +292,8 @@ if __name__=="__main__":
     # print(len(url) )
 
 
-    str2 = "高楼层(共6层) 1室1厅"
+    str2 = "高楼层(共6层)1室1厅"
+    # str2 = "1室1厅"
 
     p = PageParser()
     example = p.parse_item(str2)

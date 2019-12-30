@@ -7,6 +7,8 @@ class GJ(MassController.MassController):
         self.comm_count = 1                         #计数：抓取小区的数量
         self.delay = 1
         self.headers = {'Host': "xm.ganji.com", 'Referer': "http://xm.ganji.com/"}
+        self.nodata = 1000
+        self.nodata_stop = 1004
 
     def CommsController(self,url):
         self.craw_controller(url)

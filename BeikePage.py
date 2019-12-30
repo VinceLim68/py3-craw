@@ -6,9 +6,6 @@ class BeikePage(PageParser.PageParser):
     def parse_urls(self, soup):
         new_urls = set()
         pagelinks = soup.select(".house-lst-page-box")
-        # print(len(pagelinks))
-        # print(pagelinks[0].get('page-data'))
-        # print(page['totalPage'])
 
         if len(pagelinks) == 0:
             print("本页面没有翻页链接。")
@@ -29,7 +26,7 @@ class BeikePage(PageParser.PageParser):
 
         details = soup.select(".houseInfo")
         # comms = soup.select(".houseInfo > a ")
-        comms = soup.select(".positionInfo")
+        comms = soup.select(".positionInfo a")
         # regions = soup.select(".positionInfo a  ")
         # ToolsBox.priList(details)
         # positions = soup.select("div.positionInfo")
@@ -44,56 +41,19 @@ class BeikePage(PageParser.PageParser):
 
             # houseInfos = ToolsBox.clearStr(detail.get_text()).split('|')
             houseInfos = re.split(r'\s*[|,\s]\s*',ToolsBox.clearStr(detail.get_text()))
-
+            # ToolsBox.priList(houseInfos)
             # each_data['community_name'] = houseInfos[0]
             each_data['community_name'] = comm.get_text().strip()
+            if len(each_data['community_name']) >= 20:
+                input(each_data['community_name'] + ':' + str(len(each_data['community_name'])))
+
 
             # houseInfos = houseInfos[1:]         #第一个是小区名称，切片去除
             for item in houseInfos:
-                if '层' in item and ')' in item and ('室' in item or '房' in item):
-                    split_strings = item.split(')')
-                    for split_string in split_strings:
-                        d1 = self.parse_item(split_string)
-                else:
-                    d1 = self.parse_item(item)
+                d1 = self.parse_item(item)
                 each_data = self.add_advantage(d1, each_data)
 
-            # p_list = position.get_text().split('\n')
-            # for item in p_list:
-            #     if item.strip() != "":
-            #         d1 = self.parse_item(item.strip())
-            #         each_data = self.add_advantage(d1, each_data)
 
-            # each_data['region'] = region.get_text().strip()
-            # print(each_data['region'])
-            # print(price.get_text())
-            # # 这是第二行的数据，主要是放建成年份和楼层
-            # temp = position.contents[1]
-            # # print(temp)
-            # # 防止格式不完全是“高楼层(共7层)2006年建板塔结合 ”，
-            # # 有时是“3层2011年建暂无数据 - 马銮湾”
-            # if '层)' in temp:
-            #     sep = '层)'
-            # else:
-            #     sep = '层'
-            # after_sep = (temp.split(sep)) if sep in temp else temp
-            # # 拆分完后再把sep加回来
-            # if len(after_sep) > 1 and sep in temp:
-            #     after_sep[0] = after_sep[0] + sep
-            #
-            # # 这个是第一行“东方高尔夫别墅 | 6室2厅 | 372.54平米 | 南 | 其他”
-            # thisdetail = detail.contents[-1].split('|')
-            #
-            # # 把第一行和第二行的数组拼起来
-            # if isinstance(after_sep, list):
-            #     thisdetail = thisdetail + after_sep
-            # else:
-            #     thisdetail.append(after_sep)
-            #
-            # for item in thisdetail:
-            #     d1 = self.parse_item(item)
-            #     each_data = self.add_advantage(d1, each_data)
-            #
             each_data['total_price'] = ToolsBox.strToInt(price.get_text())
             each_data['from'] = "Beike"
             each_data = self.pipe(each_data)

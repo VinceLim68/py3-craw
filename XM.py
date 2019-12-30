@@ -33,6 +33,7 @@ DX.headers = {
 DX.craw_controller(url)
 DX.total = DX.total + DX.outputer.out_mysql()
 num += DX.total
+# print('丹夏网{0}'.format( DX.total))
 print('厦门HOUSE网:{0},乐居网{1},丹夏网{2},共{3}个'.format(XM.total, LEJV.total, DX.total,num))
 
 # url = ['http://xm.maitian.cn/esfall/PG2']

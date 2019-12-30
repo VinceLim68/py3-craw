@@ -135,7 +135,16 @@ class MassController(object):
                     with open('logtest.txt', 'a+') as fout:
                         fout.write('\n*******' + str(datetime.datetime.now()) + '*************')
                         fout.write('\n 本页面无数据:%s. \n' % new_url)
-                    self.nodata = 0
+                    if self.nodata < 999:
+                        self.delay = input('页面连续无数据，可点击上面链接检查，如无问题，输入延时秒数后，保留已解析的数据......')
+                        if self.delay == '':
+                            self.delay = 0
+                        else:
+                            self.delay = ToolsBox.strToInt(self.delay)
+                        self.nodata = 0
+                    else:
+                        #对self.nodata = 1000以上的，如赶集网忽略没有数据
+                        self.nodata = 1000
             else:  # 正常情况，解析
                 print('本页面      datas:{0}，urls:{1}'.format(len(new_datas), len(new_urls)))
                 # 把页面链接放入url管理器
@@ -158,7 +167,7 @@ class MassController(object):
                     if storenum:
                         self.total = self.total + storenum
                 self.count += 1
-                self.nodata = 0  # 如果有数据，把self.nodata计数器清零
+                self.nodata = 0 if self.nodata < 999 else 1000  # 如果有数据，把self.nodata计数器复原
                 self.HTTP404 = 0  # 如果有数据，把self.HTTP404计数器清零
         # 3、html_cont内容是None，这是出现500以上的download失败
         else:
