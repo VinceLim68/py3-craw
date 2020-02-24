@@ -5,16 +5,12 @@ import re
 from bs4 import BeautifulSoup
 
 
-# reload(sys)
-# sys.setdefaultencoding("utf-8")
 
 # 爬取土地成交记录，并计算楼面地价
 
 def crawland(url):
     downloader = Downloader.Downloader()
     html_cont,code = downloader.download(url)
-    # html_cont = Downloader.Downloader.download(url)
-    # print(html_cont)
     soup = BeautifulSoup(html_cont, 'html.parser',)
     records = soup.select("table.tab4 > tr")
     lands = []
@@ -117,22 +113,29 @@ def write_into_file(fout, name, lands):
 
 
 def get_price(string):
-    # price1 = 0
-    # print(string)
     if not isinstance(string, str):string = string.decode()
     # print(string)
     if isinstance(string, str):
+        # price = strToFloat(string)
+        # print(price)
+        # print(string)
+        # print("亿" in string)
         if "万" in string:
-            price1 = re.sub("\D", "", string.split('万')[0])
+            # price1 = re.sub("\D", "", string.split('万')[0])
+            price1 = myfilter(string.split('万')[0])
             price1 = float(price1) * 10000
+            # price1 = price * 10000
         elif "亿" in string:
-            price1 = re.sub("\D", "", string.split('亿')[0])
+            # price1 = re.sub("\D", "", string.split('亿')[0])
+            price1 = myfilter(string.split('亿')[0])
             price1 = float(price1) * 100000000
+            # price1 = price * 100000000
         else:
             price1 = myfilter(string)
-
+            # price1 = price
+        # print(price1)
     return price1
-
+    # return
 
 def get_area(string):
     sub = ['-', '地上总建筑面积', '＜', '≤', '低于', '小于']
@@ -143,6 +146,13 @@ def get_area(string):
             break
     return myfilter(string)
 
+def strToFloat(string1):
+    print(string1)
+    if isinstance(string1, str):
+        string = re.findall(r'\d+\.?\d*', string1)
+        print(string)
+        # string1 = float(string[0])
+    return string1
 
 def myfilter(string):
     # 输入字符串
@@ -161,18 +171,15 @@ def myfilter(string):
 
 
 if __name__ == "__main__":
-    # downloader = Downloader.Downloader()
+    print(get_price('274000～606500'))
     fout = xlsxwriter.Workbook('厦门出让土地汇总.xlsx')
 
-    url = 'http://tz.xmtfj.gov.cn/jyjg_19.xhtml?a=&y='
-    # url = ['http://tz.xmtfj.gov.cn/jyjg_19.xhtml?a=&y=']
-    # data = downloader.download(url)
-    # print(data)
+    url = 'http://zygh.xm.gov.cn/tz/search/jyjg_19.xhtml'
     data = crawland(url)
     name = '经营性土地'
     write_into_file(fout, name, data)
 
-    url = 'http://tz.xmtfj.gov.cn/jyjg_20.xhtml'
+    url = 'http://zygh.xm.gov.cn/tz/search/jyjg_20.xhtml'
     data = crawland(url)
     name = '工业用地'
     write_into_file(fout, name, data)
