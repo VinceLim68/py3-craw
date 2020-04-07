@@ -44,6 +44,7 @@ print('厦门HOUSE网:{0},乐居网{1},丹夏网{2},共{3}个'.format(XM.total, 
 # MT.craw_controller(url)
 # MT.total = MT.total + MT.outputer.out_mysql()
 # num += MT.total
+# print(num)
 # print('厦门HOUSE网:{0},乐居网{1},丹夏网{2},麦田:{3},共{4}个'.format(XM.total, LEJV.total, DX.total,MT.total,num))
 
 
