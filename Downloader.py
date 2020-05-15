@@ -36,7 +36,7 @@ class Downloader(object):
         print("Downloadding : {0}".format(url))
         # code = 0
         try:
-            r = requests.get(url=url, headers=headers, timeout=8, proxies=proxy, cookies=self.cookies)
+            r = requests.get(url=url, headers=headers, timeout=(3,7), proxies=proxy, cookies=self.cookies)
             # r = requests.get(url=url, headers=headers, timeout=8, proxies=proxy, cookies=self.cookies,allow_redirects=False)
             # print(r.url)
             # print(r.history)

@@ -20,7 +20,7 @@ class Outputer(object):
             # self.conn=pymysql.connect(host = "192.168.1.207",user = "root",passwd = "root",db = "property_info",charset = "utf8")
             self.conn=pymysql.connect(host = "office.xmcdhpg.cn",user = "root",passwd = "root",db = "property_info",charset = "utf8",port = 6153)
         except:
-            print( "Connect failed")
+            print( "初始化时Connect failed")
         self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)            # 用字典
 
 
@@ -101,11 +101,34 @@ class Outputer(object):
         except pymysql.err.InterfaceError as e:
             # 有的时候长时间暂停，connect会断开，要重新连接一下
             try:
-                self.conn = pymysql.connect(host="192.168.1.207", user="root", passwd="root", db="property_info",
-                                            charset="utf8")
+                # self.conn = pymysql.connect(host="192.168.1.207", user="root", passwd="root", db="property_info", charset="utf8")
+                self.conn = pymysql.connect(host="office.xmcdhpg.cn", user="root", passwd="root", db="property_info",
+                                            charset="utf8", port=6153)
             except:
                 print("Connect failed")
             self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
+        except pymysql.err.OperationalError as e:
+            if e.args[0] == 2013:
+                #‘Lost connection to MySQL server during query’
+                try:
+                    # self.conn = pymysql.connect(host="192.168.1.207", user="root", passwd="root", db="property_info", charset="utf8")
+                    self.conn = pymysql.connect(host="office.xmcdhpg.cn", user="root", passwd="root", db="property_info",
+                                                charset="utf8", port=6153)
+                except:
+                    print("操作错误OperationalError时Connect failed")
+                self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
+            else:
+                print("operationalError but is not Lost connecttion")
+                print(e.args[0])
+                print(e.args[1])
+        except TimeoutError:
+            # TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+            try:
+                self.conn = pymysql.connect(host="office.xmcdhpg.cn", user="root", passwd="root", db="property_info",
+                                            charset="utf8", port=6153)
+            except:
+                print("操作错误OperationalError时Connect failed")
+            self.cur = self.co
         except Exception as e:
             with open('logtest.txt', 'a+') as fout:
                 fout.write('========' + str(datetime.datetime.now()) + 'record by outputer \n')
