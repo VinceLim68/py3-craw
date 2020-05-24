@@ -3,7 +3,15 @@ import traceback
 import datetime
 import time
 import re
+import pymysql
 
+# 统一拿连接数据库的实例，以后有修改就可以一次改完
+def get_database() -> object:
+    """
+
+    :rtype: object
+    """
+    return pymysql.connect(host ='localhost', user ="root", passwd ="root", db ="property_info", charset ="utf8", port = 3306)
 
 def mylog(func):
     def _deco(*a, **b):

@@ -18,7 +18,8 @@ class Outputer(object):
 
         try:
             # self.conn=pymysql.connect(host = "192.168.1.207",user = "root",passwd = "root",db = "property_info",charset = "utf8")
-            self.conn=pymysql.connect(host = "office.xmcdhpg.cn",user = "root",passwd = "root",db = "property_info",charset = "utf8",port = 6153)
+            self.conn = ToolsBox.get_database()
+            # self.conn=pymysql.connect(host = "office.xmcdhpg.cn",user = "root",passwd = "root",db = "property_info",charset = "utf8",port = 6153)
         except:
             print( "初始化时Connect failed")
         self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)            # 用字典

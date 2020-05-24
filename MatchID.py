@@ -9,7 +9,8 @@ class MatchID(object):
 
     def __init__(self):
         try:
-            self.db = pymysql.connect(host ='office.xmcdhpg.cn', user ="root", passwd ="root", db ="property_info", charset ="utf8", port = 6153)
+            self.db = ToolsBox.get_database()
+            # self.db = pymysql.connect(host ='office.xmcdhpg.cn', user ="root", passwd ="root", db ="property_info", charset ="utf8", port = 6153)
         except:
             print( "连接失败！")
         if self.db:

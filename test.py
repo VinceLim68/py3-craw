@@ -110,18 +110,19 @@ from urllib.parse import quote,unquote
 # print(listtest)
 #
 # import pymysql
-# db = pymysql.connect(host ='office.xmcdhpg.cn', user ="root", passwd ="root", db ="property_info", charset ="utf8", port = 6153)
-
+# db = pymysql.connect(host ='localhost', user ="root", passwd ="root", db ="property_info", charset ="utf8", port = 3306)
+db = ToolsBox.get_database()
+print(db)
 # print(f'{6:^30}')
-# print('\n'.join([' '.join([f'{i}*{j}={i*j:2d}' for j in range(1,i+1)]) for i in range(1,10)]))
-import pygame
-path = r'C:\Users\Administrator\Desktop\sound_test.wav'
-#初始化音频
-pygame.mixer.init()
-#加载路径文件
-pygame.mixer.music.load(path)
-#播放
-pygame.mixer.music.play()
-#停止播放
-pygame.mixer.music.stop()
-#代码运行后持续300秒
+# # print('\n'.join([' '.join([f'{i}*{j}={i*j:2d}' for j in range(1,i+1)]) for i in range(1,10)]))
+# import pygame
+# path = r'C:\Users\Administrator\Desktop\sound_test.wav'
+# #初始化音频
+# pygame.mixer.init()
+# #加载路径文件
+# pygame.mixer.music.load(path)
+# #播放
+# pygame.mixer.music.play()
+# #停止播放
+# pygame.mixer.music.stop()
+# #代码运行后持续300秒
