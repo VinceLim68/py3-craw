@@ -1,14 +1,15 @@
 import pymysql
 import datetime
 import traceback
-
+import ToolsBox
 
 class CrawInit(object):
     # 在抓取数据之前，先把指定时间之间的记录移到总库中去。
     def __init__(self):
         try:
-            self.conn = pymysql.connect(host="office.xmcdhpg.cn", user="root", passwd="root", db="property_info",
-                                        charset="utf8", port=6153)
+            self.conn = ToolsBox.get_database()
+            # self.conn = pymysql.connect(host="office.xmcdhpg.cn", user="root", passwd="root", db="property_info",
+            #                             charset="utf8", port=6153)
         except:
             print("Connect failed")
         self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
