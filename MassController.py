@@ -70,7 +70,6 @@ class MassController(object):
 
         # 下载
         html_cont,code = self.downloader.download(new_url, headers=self.headers, proxy=proxy)
-        # html_cont = self.downloader.download(new_url, headers=self.headers, proxy=proxy)
 
         # 对下载内容进行处理
         # 1、如果被404的处理
@@ -78,7 +77,6 @@ class MassController(object):
             # if isinstance(html_cont, int) and (400 <= (html_cont) < 600):
             self.HTTP404 += 1
             print("返回异常（在MassController里）: {0}".format(code))
-            # print("返回异常（在MassController里）: {0}".format(html_cont))
             if html_cont is not None:
                 self.downloader.getTitle(html_cont)
                 new_urls, new_datas = self.parser.page_parse(html_cont)
@@ -124,6 +122,9 @@ class MassController(object):
                 self.total = self.total + self.outputer.out_mysql()
                 if retries > 0:
                     return self.craw_a_page(new_url, retries - 1)
+            elif new_datas == '0':                              #这是查询出来没有数据记录
+                print('这页查出来的记录数为0，不是解析不出来')
+                print('本页面      datas:没有，urls:当然没有')
             elif len(new_datas) == 0 and len(new_urls) == 0:  # 解析无数据
                 self.nodata += 1
                 if self.nodata < self.nodata_stop:
@@ -183,10 +184,12 @@ class MassController(object):
                 self.total = self.total + self.outputer.out_mysql()
                 self.HTTP404 = 0
             else:
+                # if retries > 0:
+                #     return self.craw_a_page(new_url, retries - 1)
                 return self.craw_a_page(new_url)
 
         # 延时模块：放在最后，第一次抓取时不用延时
-        if self.delay > 0:
+        if not 0 >= self.delay:
             time.sleep(sleepSeconds)  # 2017.5。15把下载延时功能放在这里，这个模块相当于控制器
 
     def add_comm(self, data):

@@ -19,13 +19,18 @@ class LjPage(PageParser.PageParser):
     def parse_urls(self, soup):
         new_urls = set()
         links = soup.select("div.house-lst-page-box")
-        if links == None :
-            print("本页面没有翻页链接。")
-        else:
+        # print('qqqqqqqq')
+        # print(links)
+        # if links == None :
+        #     print("本页面没有翻页链接。")
+        # else:
+        if links:
             t_page = eval(links[0].get('page-data'))['totalPage']
             url = links[0].get('page-url')
             for i in range(1, t_page + 1):
                 new_urls.add("http://xm.lianjia.com" + url.replace("{page}", str(i)))
+        else:
+            print("本页没有翻页链接")
         return new_urls
 
     def parse_datas(self,soup):
@@ -85,7 +90,7 @@ class LjPage(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = LjPage()
-    url ="https://xm.lianjia.com/ershoufang/pg1/"
+    url ="https://xm.lianjia.com/ershoufang/rs%E5%90%8C%E5%AE%89%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6%E4%B8%80%E3%80%81%E4%BA%8C%E6%9C%9F/"
     headers = {"Host": "xm.lianjia.com",
                "Referer": "https://xm.lianjia.com/ershoufang/",
                "User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"}

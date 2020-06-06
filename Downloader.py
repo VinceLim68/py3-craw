@@ -75,9 +75,6 @@ class Downloader(object):
             print("Request failed(在Downloader里): {0}".format(e))
             html = None
             code = 0
-            # html = r
-
-
         return html,code
 
 

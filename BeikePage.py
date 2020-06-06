@@ -25,24 +25,16 @@ class BeikePage(PageParser.PageParser):
         page_datas = []
 
         details = soup.select(".houseInfo")
-        # comms = soup.select(".houseInfo > a ")
         comms = soup.select(".positionInfo a")
-        # regions = soup.select(".positionInfo a  ")
-        # ToolsBox.priList(details)
-        # positions = soup.select("div.positionInfo")
         prices = soup.select(".totalPrice")
         titles = soup.select("div.title a.CLICKDATA")
 
-        # for title,comm,detail,position,price,region in zip(titles,comms,details,positions,prices,regions):
         for title,detail,price,comm in zip(titles,details,prices,comms):
             each_data = dict(builded_year=0, spatial_arrangement='', floor_index=0, total_floor=0,
                              details_url=title.get('href'), advantage='')
             each_data['title'] = title.get_text().strip()
 
-            # houseInfos = ToolsBox.clearStr(detail.get_text()).split('|')
             houseInfos = re.split(r'\s*[|,\s]\s*',ToolsBox.clearStr(detail.get_text()))
-            # ToolsBox.priList(houseInfos)
-            # each_data['community_name'] = houseInfos[0]
             each_data['community_name'] = comm.get_text().strip()
             if len(each_data['community_name']) >= 20:
                 input(each_data['community_name'] + ':' + str(len(each_data['community_name'])))
@@ -63,15 +55,20 @@ class BeikePage(PageParser.PageParser):
             else:
                 if ToolsBox.ShowInvalideData(each_data): page_datas.append(each_data)
             # print(each_data)
+
+        if not page_datas:
+            item_num = soup.select(".fl span")
+            page_datas = item_num[0].get_text().strip()
         return page_datas
 
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = BeikePage()
-    # url = ' https://xm.ke.com/ershoufang/pg1rs嘉源新城（53、55、57）'
-    url = 'https://xm.ke.com/ershoufang/pg2/'
+    url = 'https://xm.ke.com/ershoufang/pg1rs%E9%87%91%E7%A5%A5%E5%A4%A7%E5%8E%A6/'
+    # url = 'https://xm.ke.com/ershoufang/pg1rs%E5%9D%91%E5%86%85%E8%B7%AF10-2%E5%8F%B7/'
     html_cont,code = downloader.download(url)
-    soup = parser.get_soup(html_cont)
+    # soup = parser.get_soup(html_cont)
     urls,datas = parser.page_parse(html_cont)
-    ToolsBox.priList(datas)
+    # ToolsBox.priList(datas)
     # ToolsBox.priList(urls)
+    print(datas=='0')
