@@ -58,7 +58,9 @@ class BeikePage(PageParser.PageParser):
 
         if not page_datas:
             item_num = soup.select(".fl span")
-            page_datas = item_num[0].get_text().strip()
+            if item_num:
+                page_datas = item_num[0].get_text().strip()
+
         return page_datas
 
 if __name__ == "__main__":

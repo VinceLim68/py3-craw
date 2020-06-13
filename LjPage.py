@@ -19,11 +19,6 @@ class LjPage(PageParser.PageParser):
     def parse_urls(self, soup):
         new_urls = set()
         links = soup.select("div.house-lst-page-box")
-        # print('qqqqqqqq')
-        # print(links)
-        # if links == None :
-        #     print("本页面没有翻页链接。")
-        # else:
         if links:
             t_page = eval(links[0].get('page-data'))['totalPage']
             url = links[0].get('page-url')
@@ -46,19 +41,12 @@ class LjPage(PageParser.PageParser):
             each_data['title'] = title.get_text()
             each_data['details_url'] = title.get('href')
             each_data['total_price'] = ToolsBox.strToInt(totalPrice.get_text())
-            # print(each_data['total_price'])
-            # each_data['total_price'] = int(
-            #     round(float(re.search('(\d+.?\d+)万', totalPrice.get_text()).groups(0)[0]), 0))
 
             info_item = info.get_text().split('|')
 
             # each_data['community_name'] = info_item[0].strip()  # 第1个总是小区名称
             for i in range(0, len(info_item)):
                 d1 = self.parse_item(info_item[i].strip())
-                # d1 = self.add_advantage(d1,each_data)
-                # if ('advantage' in each_data.keys()) and ('advantage' in d1.keys()):
-                #     d1['advantage'] = each_data['advantage'] + ',' + d1['advantage']
-                # each_data = dict(each_data, **d1)
                 each_data = self.add_advantage(d1,each_data)
 
             position = position.get_text().replace('\t', '').replace('\n', '').split()
@@ -78,18 +66,21 @@ class LjPage(PageParser.PageParser):
 
             each_data = self.pipe(each_data)
 
-            # page_datas.append(each_data)
-
             if each_data:
                 page_datas.append(each_data)
             else:
                 if ToolsBox.ShowInvalideData(each_data): page_datas.append(each_data)
 
+        if not page_datas:
+            total_num = soup.select('.total span')
+            if total_num:
+                page_datas = total_num[0].get_text().strip()
         return page_datas
 
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = LjPage()
+    # url ="https://xm.lianjia.com/ershoufang/rs%E5%90%8C%E5%AE%89%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6%E4%B8%80%E3%80%81%E4%BA%8C%E6%9C%9F/"
     url ="https://xm.lianjia.com/ershoufang/rs%E5%90%8C%E5%AE%89%E5%A4%A7%E5%94%90%E4%B8%96%E5%AE%B6%E4%B8%80%E3%80%81%E4%BA%8C%E6%9C%9F/"
     headers = {"Host": "xm.lianjia.com",
                "Referer": "https://xm.lianjia.com/ershoufang/",
@@ -101,6 +92,6 @@ if __name__ == "__main__":
     # datas = parser.parse_datas(soup)
     # urls = parser.parse_urls(soup)
     # ToolsBox.printDic(urls)
-    # print(datas)
-    ToolsBox.priList(datas)
+    print(datas=='0')
+    # ToolsBox.priList(datas)
     # ToolsBox.priList(urls)
