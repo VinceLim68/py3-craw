@@ -39,6 +39,8 @@ class MatchID(object):
                 if 0 < len(comm.strip()):
                     kv = [data['comm_id'], comm.strip()]
                     comm_arr.append(kv)
+        # 这里返回的都是一对一的小区名和id的key-value值
+        # 如[1002004, '新华城'], [1002005, '双莲池小区'], [1002005, '双莲池社区'],
         return comm_arr
 
     def get_id_from_arr(self,data,comm_arr):
@@ -52,7 +54,8 @@ class MatchID(object):
         # 轮询小区id与其关键字的对应数组
 
         for i in comm_arr:                              
-            # i[1]=keywords ，关键字后带辅助字的，先将关键字与辅助字拆开
+            # i[1]=keywords ，关键字后带辅助字的，先将关键字与辅助字拆开；
+            # i[0]是存放小区id的
             key_words = i[1].split("/")
             lenth = len(key_words)      #根据lenth判断是否有辅助字
             # 在小区名称中查找关键字，不含辅助字
@@ -72,7 +75,9 @@ class MatchID(object):
                         # 只要找到一个，说明符合条件，即可退出循环
                         if formatch.find(key_words[j].upper()) >=0:
                             #如果是有关键字的，起始位置提前一点，这样会优先于没有关键字的匹配
-                            temp = [start-0.5,key_words[0].upper(),i[0]]    #key_words[0] = keyword , key_words[1]以后的是辅助字
+                            # 2020/10/20 发现用位置提前的方式给有辅助字的加权重不合适，用辅助字本来小区就不精准
+                            temp = [start,key_words[0].upper(),i[0]]    #key_words[0] = keyword , key_words[1]以后的是辅助字
+                            # temp = [start-0.5,key_words[0].upper(),i[0]]    #key_words[0] = keyword , key_words[1]以后的是辅助字
                             getid.append(temp)                          #i[0]就是comm_id
                             break
                 # 如果没有辅助字
@@ -96,7 +101,8 @@ class MatchID(object):
                             # 只要找到一个，说明符合条件，即可退出循环
                             if formatch.find(key_words[j].upper()) >= 0:
                                 # 如果是有关键字的，起始位置提前一点，这样会优先于没有关键字的匹配
-                                temp = [start1 - 0.5, key_words[0].upper(),
+                                # temp = [start1 - 0.5, key_words[0].upper(),
+                                temp = [start1 , key_words[0].upper(),
                                         i[0]]  # key_words[0] = keyword , key_words[1]以后的是辅助字
                                 getid.append(temp)  # i[0]就是comm_id
                                 break
@@ -105,15 +111,12 @@ class MatchID(object):
                         temp = [start1, key_words[0].upper(), i[0]]
                         getid.append(temp)
 
-
                 # 返回：[起始位置，关键字，id]
         return getid
 
     def get_datas(self,n,step,tablename):
         #从数据库里按要求查出挂牌记录集        
-        # sql = "SELECT id,title,community_name FROM for_sale_property WHERE community_id < 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
         sql = "SELECT id,title,community_name FROM " + tablename + " WHERE community_id <= 999 ORDER BY id LIMIT " + str(n) + "," + str(step)
-
         self.cursor.execute(sql)
         datas = self.cursor.fetchall()
         return datas
@@ -146,39 +149,64 @@ class MatchID(object):
         """
         flag = False                            #标志位，如果能解析出唯一id,则标志位设成ture
         
-        getid.sort(key=lambda x:x[0])           #按照匹配关键字的起始位置排序     
-        
-        #起始位置最小的getid
-        first = getid[0]
-        
-        # 用第一个匹配成的合成一个字段：起始位置+小区名称+小区id
-        # get = str(getid[0][0]) +',' + str(getid[0][1]) +',' + str(getid[0][2]) + "/"      
-        # 传进getid,挑选出get
-        get = getid[0]
-        
-        for l in range(1,len(getid)):
-            # 如果第二个匹配到的关键字起始位置大于第一个，就以第一个为准，不用再匹配了
-            if(getid[l][0] > first[0]):         
+        getid.sort(key=lambda x:x[0])           #按照匹配关键字的起始位置排序
+
+        # print('getid ofter sorted:%s'%getid)
+
+        ##########以下是2010/10/21重写的##############
+        result = []
+        result.append(getid[0])         #先放第一个
+        for l in range(1,len(getid)):       #循环比较getid里的每个元素
+            if(getid[l][0] > result[0][0]):      # 如果第二个匹配到的关键字起始位置大于第一个，就以第一个为准，不用再匹配了
                 break
             else:                               #如果有并列第一：
-                if len(getid[l][1]) > len(first[1]):        #字符串长的优先
-                    first = getid[l]
-                elif len(getid[l][1]) == len(first[1]):     #字符串长度相同的
-                    if getid[l][2] != first[2]:
-                    # 起始位置相同，关键字长度也相同，有时是取到了同一个小区id，那就不处理了。
+                if len(getid[l][1]) > len(result[0][1]):        #字符串长的优先
+                    # 只要发现了比原来存的字串还长的小区，就把原来的清空，标志成无重复
+                    result = []
+                    result.append(getid[l])
+                    flag = False
+                    # result[0] = getid[l]
+                elif len(getid[l][1]) == len(result[0][1]):     #字符串长度相同的
+                    if getid[l][2] != result[0][2]:
+                    # 起始位置相同，关键字长度也相同，如果小区id也相同，那就不处理了。
                     # 否则把标志位设成ture,要人工判断一下
-                        get.append(getid[l])
-                        # get += str(getid[l][0]) +',' + str(getid[l][1]) +',' + str(getid[l][2]) + "/"
+                        result.append(getid[l])
                         flag = True
+
+        # first = getid[0]
+        # # 用第一个匹配成的合成一个字段：起始位置+小区名称+小区id
+        # # 传进getid,挑选出get
+        # get = getid[0]
+        #
+        # for l in range(1,len(getid)):
+        #     # 如果第二个匹配到的关键字起始位置大于第一个，就以第一个为准，不用再匹配了
+        #     print('getid[l] is %s'%getid[l])
+        #     print('get is %s'%get)
+        #     print('first is %s'%first)
+        #     if(getid[l][0] > first[0]):
+        #         print('now break')
+        #         break
+        #     else:                               #如果有并列第一：
+        #         if len(getid[l][1]) > len(first[1]):        #字符串长的优先
+        #             first = getid[l]
+        #         elif len(getid[l][1]) == len(first[1]):     #字符串长度相同的
+        #             if getid[l][2] != first[2]:
+        #             # 起始位置相同，关键字长度也相同，有时是取到了同一个小区id，那就不处理了。
+        #             # 否则把标志位设成ture,要人工判断一下
+        #                 get.append(getid[l])
+        #                 # get += str(getid[l][0]) +',' + str(getid[l][1]) +',' + str(getid[l][2]) + "/"
+        #                 flag = True
+        # print('first is %s'%first)
         # 成功就写进id,没成功就空着即可
+
         if flag:
             print('*********匹配多个小区id**********')
             ToolsBox.printDic(data)
             print('||||||||||||||||匹配多个小区|||||||||||||||||')
-            ToolsBox.printDic(get)
-            return len(get)
+            ToolsBox.printDic(result)
+            return len(result)
         else:
-            return first[2]
+            return result[0][2]
 
     def close_db(self):
         self.cursor.close()
@@ -221,6 +249,7 @@ class MatchID(object):
         datas = self.get_datas(n, step, tablename)
         input('当前库为{0},共有{1}条记录待处理，按任意键继续....'.format(tablename,len(datas)))
         for data in datas:
+            # print(data)
             commid = self.matchid(data)
             if commid > 999:
                 resu = self.update_id(data['id'], commid,tablename)

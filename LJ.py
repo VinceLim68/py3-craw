@@ -17,7 +17,7 @@ class LJ(MassController.MassController):
             comm = self.comms.get_new_url
             comm = ToolsBox.clear_comm(comm)
             c1,c2 = self.comms.get_quantity()
-            comm_url = "http://xm.lianjia.com/ershoufang/rs" + parse.quote(comm)
+            comm_url = "https://xm.lianjia.com/ershoufang/rs" + parse.quote(comm)
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))
             url_list = []
             url_list.append(comm_url)
@@ -28,6 +28,6 @@ class LJ(MassController.MassController):
         print('==================共抓取{0}个记录=================='.format(self.total))
 
 if __name__=="__main__":
-    url = ["http://xm.lianjia.com/ershoufang/pg1/"]
+    url = ["https://xm.lianjia.com/ershoufang/pg1/"]
     lj = LJ(LjPage.LjPage)
     lj.CommsController(url)

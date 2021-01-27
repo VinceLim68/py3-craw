@@ -7,7 +7,11 @@ class WB(MassController.MassController):
         self.comm_count = 1                         #计数：抓取小区的数量
         self.delay = 1
         self.headers = {
-            "Host": "xm.58.com",
+            "Request Method": "GET",
+            "Status Code": "200 OK",
+            "Remote Address": "180.101.49.206:443",
+            "Referrer Policy": "no-referrer-when-downgrade"
+            # "Host": "xm.58.com",
         }
 
     def CommsController(self,url):
@@ -18,7 +22,7 @@ class WB(MassController.MassController):
             comm = ToolsBox.clear_comm(comm)
             c1, c2 = self.comms.get_quantity()
             # comm_url = "http://xm.58.com/ershoufang/?key=" + (comm)
-            comm_url = "http://xm.58.com/ershoufang/?key=" + quote(comm, safe='/:?=')
+            comm_url = "https://xm.58.com/ershoufang/?key=" + quote(comm, safe='/:?=')
             print('*******{0}/{1}:{2}*********'.format(self.comm_count, c1+c2, comm))
             url_list = []
             url_list.append(comm_url)

@@ -23,7 +23,7 @@ class LjPage(PageParser.PageParser):
             t_page = eval(links[0].get('page-data'))['totalPage']
             url = links[0].get('page-url')
             for i in range(1, t_page + 1):
-                new_urls.add("http://xm.lianjia.com" + url.replace("{page}", str(i)))
+                new_urls.add("https://xm.lianjia.com" + url.replace("{page}", str(i)))
         else:
             print("本页没有翻页链接")
         return new_urls

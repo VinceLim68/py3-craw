@@ -111,8 +111,8 @@ from urllib.parse import quote,unquote
 #
 # import pymysql
 # db = pymysql.connect(host ='localhost', user ="root", passwd ="root", db ="property_info", charset ="utf8", port = 3306)
-db = ToolsBox.get_database()
-print(db)
+# db = ToolsBox.get_database()
+# print(db)
 # print(f'{6:^30}')
 # # print('\n'.join([' '.join([f'{i}*{j}={i*j:2d}' for j in range(1,i+1)]) for i in range(1,10)]))
 # import pygame
@@ -126,3 +126,30 @@ print(db)
 # #停止播放
 # pygame.mixer.music.stop()
 # #代码运行后持续300秒
+
+# 单独匹配小区id的测试程序
+import MatchID
+# matchid = MatchID.MatchID()
+# # print(matchid.comm_arr)
+# add = { 'title': 'r:同安-城北二手房 a:汀溪街 降价出售，江头公园旁，嘉禾路，国泰大厦，精装4房，电梯中层', 'community_name': '大唐水云间'}
+# # commid = matchid.matchid(add)
+# # print('2'*40)
+# # print(commid)
+# getid = matchid.get_id_from_arr(add, matchid.comm_arr)
+# print('get id from arr is %s'%getid)
+# id = matchid.handle_match_mul(add,getid)
+# print(id)
+
+from fake_useragent import UserAgent
+ua = UserAgent()
+print(ua.random)
+
+# var1 = []
+# var2 = [1,2,3]
+# var1.append(var2)
+#
+# var3=[3,3,3]
+# var1.append(var3)
+# print(var1)
+# var1[0]=var3
+# print(var1)

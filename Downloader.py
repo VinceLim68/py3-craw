@@ -1,18 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import datetime
-# from random import choice
-# import socket
-
-# 这几条应该放在程序的主入口
-import sys
-
-
-# import io
-# sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8') 
-
-# import urllib.request
-# from spider import html_downloader
 
 class Downloader(object):
     def __init__(self):
@@ -34,13 +22,10 @@ class Downloader(object):
     def download(self, url, headers={}, proxy=None):
 
         print("Downloadding : {0}".format(url))
-        # code = 0
         try:
             r = requests.get(url=url, headers=headers, timeout=(3,7), proxies=proxy, cookies=self.cookies)
+            # r = requests.get(url=url, headers=headers)
             # r = requests.get(url=url, headers=headers, timeout=8, proxies=proxy, cookies=self.cookies,allow_redirects=False)
-            # print(r.url)
-            # print(r.history)
-            # print(r.status_code)
 
             if len(r.cookies.items()) > 0:
                 self.cookies = dict(r.cookies.items())
@@ -48,16 +33,6 @@ class Downloader(object):
             else:
                 self.cookies = {}
                 print('未返回cookies')
-                # input('有cookies,按任意键继续......')
-
-            # if 400 <= r.status_code < 600:
-            #     html = r.status_code
-            # else:
-            #     # requests 在解析页面时，如果title没有声明charset,会默认使用'ISO-8859-1'，造成解码错误
-            #     if r.encoding == 'ISO-8859-1':
-            #         html = r.text.encode('ISO-8859-1').decode(r.apparent_encoding)
-            #     else:
-            #         html = r.text
 
             # 2019.3.11简化了返回，不管怎么样都返回html
             if r.encoding == 'ISO-8859-1':
@@ -66,10 +41,6 @@ class Downloader(object):
                 html = r.text
 
             code = r.status_code
-            # if 400 <= r.status_code < 600:
-            #     code = r.status_code
-                # input('error code:{0}'.format(r.status_code))
-                # print(r.text)
         except Exception as e:
             print(datetime.datetime.now())
             print("Request failed(在Downloader里): {0}".format(e))

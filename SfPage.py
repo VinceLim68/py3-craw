@@ -10,7 +10,7 @@ class SfPage(PageParser.PageParser):
 
         if len(ischeck) > 0:            #如果找不到title,就认为不是验证界面
             title = ischeck[0].get_text().strip()
-            iscode = (title == "404 Not Found")
+            iscode = (title == "访问验证-房天下")
         else:
             iscode = False
         if iscode :

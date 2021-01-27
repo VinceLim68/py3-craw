@@ -19,9 +19,12 @@ class CrawInit(object):
 
     def gt_max_FAT(self):
         # 获得最大的时间
+        sql = "select min(first_acquisition_time) as mind from for_sale_property"
+        self.cur.execute(sql)
+        self.mind = self.cur.fetchall()[0]['mind']
+        print('在for_sale_property库中的最早采集数据时间是{0}'.format(self.mind))
         sql = "select max(first_acquisition_time) as maxd from allsales"
         self.cur.execute(sql)
-        # rows1 =
         self.maxd = self.cur.fetchall()[0]['maxd']
         print('在allsales库中的最晚采集数据时间是{0}'.format(self.maxd))
 
