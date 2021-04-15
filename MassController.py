@@ -42,13 +42,17 @@ class MassController(object):
                 if URL in self.urls.new_urls:print('url in new_urls:' + URL)
                 if URL in self.urls.old_urls:print('url in old_urls:' + URL)
 
-        # 2、循环抓取数据
+        # 2、对于抓小区均价的，只抓一页；对于挂牌数据，循环抓取
+        # if isComm:
+        #     self.craw_a_page_of_commPrice(URL)
+        # else:
+        #     while self.urls.has_new_url():
+        #         URL = self.urls.get_new_url
+        #         self.craw_a_page(URL)
+
         while self.urls.has_new_url():
             URL = self.urls.get_new_url
-            if isComm:
-                self.craw_a_page_of_commPrice(URL)
-            else:
-                self.craw_a_page(URL)
+            self.craw_a_page_of_commPrice(URL) if isComm else self.craw_a_page(URL)
 
 
     @ToolsBox.mylog
@@ -260,10 +264,11 @@ class MassController(object):
 
                 # 把页面链接放入url管理器
                 self.urls.add_new_urls(new_urls)
+                # ToolsBox.priList(new_urls)
                 # 把小区名称放入小区管理器
-                for data in new_datas:
-                    self.add_comm(data)
-                ToolsBox.priList(new_datas)
+                # for data in new_datas:
+                #     self.add_comm(data)
+                # ToolsBox.priList(new_datas)
                 # 把挂牌信息传入outputer，清除无效数据后，放在outputer.raw_datas记录集中
                 # self.outputer.collect_data(new_datas)
                 # data_num = self.outputer.get_datas_quantity()
@@ -306,8 +311,8 @@ class MassController(object):
 
 if __name__ == "__main__":
     url = ['http://xm.58.com/ershoufang/pn2/']
-    MC = MassController(WbPage.WbPage)
-    MC.craw_controller(url)
+    # MC = MassController(WbPage.WbPage)
+    # MC.craw_controller(url)
 
     # if from_where == 1:
     #     root_url = ['http://xm.anjuke.com/sale/p1-rd1/?kw=' + serch_for + '&from_url=kw_final#filtersort']

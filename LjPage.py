@@ -18,14 +18,17 @@ class LjPage(PageParser.PageParser):
 
     def parse_urls(self, soup):
         new_urls = set()
+        # 链家不管是否有翻页，都有这个类
         links = soup.select("div.house-lst-page-box")
         if links:
             t_page = eval(links[0].get('page-data'))['totalPage']
             url = links[0].get('page-url')
+            print(url)
             for i in range(1, t_page + 1):
                 new_urls.add("https://xm.lianjia.com" + url.replace("{page}", str(i)))
         else:
             print("本页没有翻页链接")
+        # ToolsBox.priList(new_urls)
         return new_urls
 
     def parse_datas(self,soup):
@@ -92,6 +95,6 @@ if __name__ == "__main__":
     # datas = parser.parse_datas(soup)
     # urls = parser.parse_urls(soup)
     # ToolsBox.printDic(urls)
-    print(datas=='0')
+    print(datas)
     # ToolsBox.priList(datas)
     # ToolsBox.priList(urls)

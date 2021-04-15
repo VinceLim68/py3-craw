@@ -47,14 +47,15 @@ Ajk.headers = {
 
 Lj = MassController.MassController(LjCommPrice.LjCommPrice)
 Lj.headers = {
+    "User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
     "Request Method": "GET",
-    "Status Code": "200 OK",
-    "Remote Address": "175.24.25.87:443",
-    "Referrer Policy": "no-referrer-when-downgrade"
+    "Remote Address": "152.136.248.91:443",
+    "Referrer Policy": "no-referrer-when-downgrade",
+    "Host": "xm.lianjia.com"
 }
-community_name = "蔚蓝国际"
-ajkurl = ["https://fz.anjuke.com/community/?kw="+community_name]
-ljurl=['https://fz.lianjia.com/xiaoqu/pg1rs'+community_name]
+community_name = " 大唐世家 "
+ajkurl = ["https://xm.anjuke.com/community/?kw="+community_name]
+ljurl=['https://xm.lianjia.com/xiaoqu/pg1rs'+community_name]
 
-Ajk.craw_controller(ajkurl,isComm=True)
+# Ajk.craw_controller(ajkurl,isComm=True)
 Lj.craw_controller(ljurl,isComm=True)

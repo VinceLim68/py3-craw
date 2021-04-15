@@ -35,6 +35,8 @@ class BeikePage(PageParser.PageParser):
             each_data['title'] = title.get_text().strip()
 
             houseInfos = re.split(r'\s*[|,\s]\s*',ToolsBox.clearStr(detail.get_text()))
+            # print(houseInfos)
+            # print("1"*20)
             each_data['community_name'] = comm.get_text().strip()
             if len(each_data['community_name']) >= 20:
                 input(each_data['community_name'] + ':' + str(len(each_data['community_name'])))
@@ -42,6 +44,7 @@ class BeikePage(PageParser.PageParser):
 
             # houseInfos = houseInfos[1:]         #第一个是小区名称，切片去除
             for item in houseInfos:
+                # print(item)
                 d1 = self.parse_item(item)
                 each_data = self.add_advantage(d1, each_data)
 
@@ -66,7 +69,8 @@ class BeikePage(PageParser.PageParser):
 if __name__ == "__main__":
     downloader = Downloader.Downloader()
     parser = BeikePage()
-    url = 'https://xm.ke.com/ershoufang/pg1rs%E9%87%91%E7%A5%A5%E5%A4%A7%E5%8E%A6/'
+    # url = 'https://xm.ke.com/ershoufang/pg1rs%E9%87%91%E7%A5%A5%E5%A4%A7%E5%8E%A6/'
+    url = 'https://xm.ke.com/ershoufang/'
     # url = 'https://xm.ke.com/ershoufang/pg1rs%E5%9D%91%E5%86%85%E8%B7%AF10-2%E5%8F%B7/'
     html_cont,code = downloader.download(url)
     # soup = parser.get_soup(html_cont)

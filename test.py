@@ -141,8 +141,8 @@ import MatchID
 # print(id)
 
 from fake_useragent import UserAgent
-ua = UserAgent()
-print(ua.random)
+# ua = UserAgent()
+# print(ua.random)
 
 # var1 = []
 # var2 = [1,2,3]
@@ -153,3 +153,93 @@ print(ua.random)
 # print(var1)
 # var1[0]=var3
 # print(var1)
+#
+# def get_add_com_similar(self, add1: str, add2: str = ""):
+    # 把地址拆成路和号分别比较
+# regex = "(?P<road>.+?路|.+?道|.+?街|.+?巷|.+?road|.+?线|.+?段|.+?里|.+?弄|.+?条|.+?出口|.+?入口|.+?高速|.+?快速|.+?胡同)" \
+#                 "(?P<road_number>([a-zA-Z0-9一二三四五六七八九十百千甲之乙丙丁支-]+(弄|号院|号)(?!楼))+)"
+#
+# add1 = "宝圣东路一巷127号"
+# add1 = "合阳大道宝龙城市花园"
+# add1 = "桃源南路2号附24号"
+# add1 = "鱼嘴镇和韵支路（堰坪湖旁）"
+# add1 = "宝圣东路、靠近机场路"
+# add1 = "前进街邦泰花园|江津区德感街道鼎康路55号"
+# add1 = "空港大道63号（空港广场对面|中国银行旁）"
+# add1list = re.search(regex, add1)
+# if add1list :
+#     print(add1list.groupdict())
+# else:
+#     print('no')
+#
+# r4_1 = '[高中低]楼层.?共\d+层'
+# string = "低楼层共20层3室2厅"
+# print(re.search(r4_1, '高楼层(共5层)3室1厅', flags=0))
+# # str1 = re.search(r4_1,"", string, flags=0).group(0)
+# string = re.sub(r4_1, "", string, count=0, flags=0)
+# print(ToolsBox.clearStr(string))
+# r = '[县镇区]$'
+# str = '厦门区镇'
+# string = re.sub(r, "", str, count=0, flags=0)
+# print(string)
+# input_file = "C:\\Users\\15007\\Documents\\WeChat Files\\VinceLim68\\FileStorage\\File\\2021-03\\厦门2月.xlsx"
+# datas = ToolsBox.read_excel(input_file,"Sheet")
+# # for data in datas:
+# #     ToolsBox.printDic(data)
+# # print(datas)
+# import pymysql
+# conn = pymysql.connect(host ='localhost', user ="root", passwd ="root", db ="yunping", charset ="utf8", port = 3306)  # 链接数据库
+# cur = conn.cursor()
+# COLstr = ''  # 列的字段
+# ROWstr = ''  # 行字段
+# dic = datas[0]
+# ColumnStyle = ' VARCHAR(20)'
+# for key in dic.keys():
+#     COLstr = COLstr + ' ' + key + ColumnStyle + ','
+#     ROWstr = ROWstr + dic[key] + ','
+# insterstr = "INSERT INTO %s VALUES "+ ROWstr[:-1]
+# print(insterstr)
+
+def dic2sql(dic, sql):
+    sf = ''
+
+    for key in dic:
+        tup = (key, dic[key])
+        sf += (str(tup) + ',')
+    sf = sf.rstrip(',')
+
+    sql2 = sql % sf
+    return sql2
+
+
+dic = {'apple': 216, 'jar': 138}
+sql = "insert into users (login,userid) VALUES %s;"
+
+ret = dic2sql(dic, sql)
+print(ret)
+
+# def InsertData(TableName, dic):
+#     try:
+#
+
+#
+#         # 判断表是否存在，存在执行try，不存在执行except新建表，再insert
+#     try:
+#         cur.execute("SELECT * FROM %s" % (TableName))
+#         cur.execute("INSERT INTO %s VALUES (%s)" % (TableName, ROWstr[:-1]))
+#
+#     except MySQLdb.Error, e:
+#         cur.execute("CREATE TABLE %s (%s)" % (TableName, COLstr[:-1]))
+#         cur.execute("INSERT INTO %s VALUES (%s)" % (TableName, ROWstr[:-1]))
+#     conn.commit()
+#     cur.close()
+#     conn.close()
+#
+#     except MySQLdb.Error, e:
+#     print
+#     "Mysql Error %d: %s" % (e.args[0], e.args[1])
+#
+#
+# if __name__ == '__main__':
+#     dic = {"a": "b", "c": "d"}
+#     InsertData('testtable', dic)

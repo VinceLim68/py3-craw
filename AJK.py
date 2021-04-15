@@ -22,6 +22,7 @@ class AJK(MassController.MassController):
             comm = ToolsBox.clear_comm(comm)
             c1,c2 = self.comms.get_quantity()
             comm_url = 'https://xm.anjuke.com/sale/p1-rd1/?kw=' + parse.quote(comm) + '&from_url=kw_final#filtersort'
+            # comm_url = 'https://xm.anjuke.com/sale/p1-rd1/?kw=' + parse.quote(comm) + '&from_url=kw_final#filtersort'
             print('*******{0}/{1}:{2}*********'.format(self.comm_count,c1+c2,comm))
             url_list = []
             url_list.append(comm_url)

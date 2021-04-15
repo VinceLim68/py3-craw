@@ -41,6 +41,8 @@ class Downloader(object):
                 html = r.text
 
             code = r.status_code
+            print(r.url)
+            # print(code)
         except Exception as e:
             print(datetime.datetime.now())
             print("Request failed(在Downloader里): {0}".format(e))
@@ -78,10 +80,10 @@ if __name__ == "__main__":
     #     'Connection':'Keep-Alive',
     #     # 'Cookie':'bangbigtip2=1; f=n; id58=c5/nn1eXLAxDpemLKp4DAg==; bj58_id58s="RW52WjJGMXNzSTMxNDE1MA=="; bdshare_firstime=1479370463887; tj_ershoubiz=true; bj58_new_uv=4; 58home=xm; als=0; commontopbar_myfeet_tooltip=end; final_history=641251%2C844280; ppStore_fingerprint=BF49DD3F0EFD254891AB944E01811768FC16A47947ED9328%EF%BC%BF1503299536233; ipcity=xm%7C%u53A6%u95E8%7C0; city=xm; XQH=%7B%22w%22%3A%5B%7B%22id%22%3A%22653163%22%2C%22t%22%3A1502702580455%7D%2C%7B%22id%22%3A%22642439%22%2C%22t%22%3A1503303414539%7D%2C%7B%22id%22%3A%22641376%22%2C%22t%22%3A1503307125841%7D%2C%7B%22id%22%3A%22641937%22%2C%22t%22%3A1503307136217%7D%2C%7B%22id%22%3A%22844231%22%2C%22t%22%3A1503326003430%7D%2C%7B%22id%22%3A%22893456%22%2C%22t%22%3A1503458370824%7D%5D%7D; Hm_lvt_ae019ebe194212c4486d09f377276a77=1502702581,1503303415,1503326004,1503458374; Hm_lpvt_ae019ebe194212c4486d09f377276a77=1503458374; __utma=253535702.389478886.1469758150.1503326004.1503458387.27; __utmc=253535702; __utmz=253535702.1503458387.27.21.utmcsr=xm.58.com|utmccn=(referral)|utmcmd=referral|utmcct=/ershoufang/; xxzl_deviceid=DQevm4nNXuo9PMVG%2BNgkMxPtgIef%2Brda40ndWcUirqiaL9bEoxOloNXhfg%2BZZPCP; 58tj_uuid=d94e7310-bff6-4e62-9c19-36d5b6e6585d; new_session=0; new_uv=54; utm_source=; spm=; init_refer=; commontopbar_city=606%7C%u53A6%u95E8%7Cxm'
     #     }
-    down = Downloader.Downloader()
-    content = down.download(url, headers)
-    # print(content.encode('GB18030'))
-    print(content)
+    # down = Downloader.Downloader()
+    # content = down.download(url, headers)
+    # # print(content.encode('GB18030'))
+    # print(content)
     # print(sys.getdefaultencoding())
     # r = requests.get(url)
     # resp = requests.get(url=url)
